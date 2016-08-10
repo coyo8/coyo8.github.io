@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog archive
+permalink: /blog/
 ---
 <div class="page-content wc-container">
   <h1>Blog Archive</h1>
@@ -13,5 +14,5 @@ title: Blog archive
     		{% capture year %}{{currentyear}}{% endcapture %}
   		{% endif %}
     <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-{% endfor %}
-</div>
+  {% endfor %}
+
