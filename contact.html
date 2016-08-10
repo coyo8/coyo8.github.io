@@ -1,0 +1,20 @@
+---
+layout: page
+title: Contact Me
+permalink: /contact/
+---
+
+
+<form action="//formspree.io/rahul@rudrakos.com" method="POST">
+  <fieldset class="contact-form">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email address" required name="_replyto">
+    <input type="text" name="subject" placeholder="Subject" required>
+    <input type="hidden" name="_next" value="{{'/thanks' | prepend: site.baseurl | prepend: site.url}}"/>
+    <input type="text" name="_gotcha" style="display:none"/>
+    <textarea name="message" placeholder="Add your message here" required></textarea>
+    <input type="submit" id="submit" value="Send" >
+  </fieldset>
+</form>
+
+

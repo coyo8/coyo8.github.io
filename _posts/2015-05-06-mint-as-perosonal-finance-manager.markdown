@@ -1,0 +1,1 @@
+2015-05-06-mint-as-perosonal-finance-manager.markdown
