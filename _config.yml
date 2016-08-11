@@ -4,11 +4,11 @@
 baseurl: ""
 
 # Site live URL
-# url: http://www.rudrakos.com
+url: http://www.rudrakos.com
 # url: http://rahulrrixe.github.io
 
 # Localhost
-url: http://127.0.0.1:4000
+# url: http://127.0.0.1:4000
 
 include: ["_pages"]
 
