@@ -40,8 +40,7 @@ body {
 }
 
 .wc-container {
-    width: 90%;
-    max-width: $M; // see breakpoints in _sass/partials/_layout.scss
+    width: 100%;
     margin: 0 auto;
 
     &::after { /* Clearfix */
@@ -49,6 +48,31 @@ body {
         display: table;
         clear: both;
     }
+}
+
+.container {
+  display: flex;
+}
+
+.col-4 {
+  width: 20%;
+  border-right: 0.5px double black;
+}
+
+.header {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.col-6 {
+  width: 80%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header-links > li {
+  padding: 12px 72px 12px 24px;
+  font-size: 18px;
 }
 
 .wc-img { /* replace text with a background-image */
@@ -486,6 +510,7 @@ body.theme-base-01 {
   footer.main-footer {
     background-color: $base-01;
     color: $base-07;
+    padding: 20px;
   }
 
   header.main-header {
@@ -621,6 +646,9 @@ pre {
 Post styles
 
 --------------------------------- */
+.contact {
+  width: 80%;
+}
 
 div.posts {
 

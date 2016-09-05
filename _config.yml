@@ -1,28 +1,24 @@
-# Harmony Jekyll theme general configurations
+# Trivium Jekyll theme general configurations
 
-# Base URL
-baseurl: ""
+# url: "//rudrakos.com"
 
-# Site live URL
-url: http://www.rudrakos.com
-# url: http://rahulrrixe.github.io
+# Serving
+detach:             false
+port:               4000
+host:               127.0.0.1
+show_dir_listing:   false
+baseurl:            ""
 
-# Localhost
-# url: http://127.0.0.1:4000
-
+# include all different pages
 include: ["_pages"]
 
-# Harmony theme configuration. Please change accordingly.
-harmony:
+# Trivium theme configuration. Please change accordingly.
+trivium:
   name: Rudrakos
   # Little description about your site
-  description: bit size writings of wealthopia
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and
-  # in your feed.xml site description.
-  meta_description: > #
-   Rudrakos is a personal site of Rahul Ranjan.
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  description: This is a personal site of Rahul Ranjan.
+  meta_description: Rudrakos is a personal site of Rahul Ranjan.
+
   author: # Author details
     name: Rahul Ranjan
     email: rahul@rudrakos.com
@@ -30,6 +26,10 @@ harmony:
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-41921241-4
+  # Addthis
+  addthis_key: ra-56eccc9a39a92456
+  # Disqus
+  disqus_key: rudrakos.disqus.com/embed.js
 
   # Profile links, leave blank to ignore
   social:
@@ -37,14 +37,16 @@ harmony:
     twitter: RahulRRixe
     facebook: rranjan93
     gplus: +RahulRanjan
+
   # Toggle disclaimer in footer
   show_disclaimer: true
 
-# Conversion / Build settings
+# Conversion markdown build settings
 markdown:    kramdown
-
-# This is how you put pygments config in jekyll 2.0 instead of pygments: true
 highlighter: rouge
+lsi:                false
+excerpt_separator:  "\n\n"
+incremental:        false
 
 # Permalinks
 permalink: pretty
