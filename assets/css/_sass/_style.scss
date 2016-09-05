@@ -1,0 +1,124 @@
+@import "vars";
+
+/*
+ * Basic
+ */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: "Inconsolata";
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*
+ * Navbar
+ */
+
+#title-name {
+    font-size: 30px;
+    color: #1A237E;
+    display: inline-block;
+}
+.navbar {
+    padding: 50px 0 50px 0;
+}
+.navbar-ul {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    margin-left: 20px;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0 5px 0 10px;
+}
+.alignable {
+    display: inline-block;
+}
+.pull-left {
+    @extend .alignable;
+    float: left;
+}
+.pull-right {
+    @extend .alignable;
+    float: right;
+}
+
+/* divs */
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+.wrapper {
+    min-height: calc(100vh - 70px);
+}
+
+.container a {
+    text-decoration: none;
+    color: $accent;
+}
+.container a:hover {
+    text-decoration: underline;
+}
+
+
+/* Social Icons */
+#twitter-ic {color: #55acee !important;}
+#git-ic {color: #333 !important;}
+#rss-ic {color: #ff9933 !important;}
+#gplus-ic {color: #dd4b39 !important;}
+
+
+/* footer */
+.footer {
+    height: 50px;
+}
+
+
+/* posts */
+.post-title {
+    font-size: 3.0vh;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+    .container {
+        max-width: $med-width;
+        transition: 0.3s ease all;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 83%;
+    }
+    .navbar-ul {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 580px) {
+    #author-name {
+        display: inline-block;
+    }
+}
+
+@import "typography";
+@import "tables";
+@import "_font-awesome.min";
+

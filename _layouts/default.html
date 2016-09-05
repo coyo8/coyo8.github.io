@@ -14,66 +14,31 @@
         <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/assets/css/images/logo1.png">
         <!-- trivium styles -->
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
-
-        <!-- Modernizr js -->
-        <script async src="{{ site.baseurl }}/assets/js/modernizr.js"></script>
-
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     </head>
-    <body class="{{ site.trivium.basetheme }}">
-        <div class="main-header">
-            <div class="container wc-container">
-                <div class="col-4">
-                    <div class="header">
-                        <img class="wc-img" src="{{site.baseurl}}/assets/css/images/logo1.png" alt="Logo">
-                        <h1><a href="{{ site.baseurl }}/">{{ site.trivium.name }}</a></h1>
-                        {% include header-links.html %}
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    {{ content }}
-                </div>
-
-            </div>
+    <body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="title-name" class="alignable pull-left" href="/">{{ site.trivium.name }}</a>
+            {% include header-links.html %}
         </div>
+        <div style="clear:both"></div>
+        <hr>
 
-        <footer class="main-footer">
-            <div class="wc-container">
-                <div class="column one">
-                    {% include footer-links.html %}
-                </div>
-                <div class="column two">
-                    {% include social.html %}
-                </div>
-            </div>
-            <p class="wc-container disclaimer">
-                {% include footer.html %}
-            </p>
-        </footer>
+        <div class="container content">
+            {{ content }}
+        </div>
+    </div>
 
-        <script type="text/javascript">
-          /* To avoid render blocking css */
-          var cb = function() {
-            var l = document.createElement('link'); l.rel = 'stylesheet';
-            l.href = 'http://fonts.googleapis.com/css?family=Inconsolata:300&subset=latin';
-            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-          };
-          var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-              webkitRequestAnimationFrame || msRequestAnimationFrame;
-          if (raf) raf(cb);
-          else window.addEventListener('load', cb);
-        </script>
-        <!-- jQuery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- When no internet load JQuery from local -->
-        <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery.min.js"><\/script>')</script>
-        <!-- Site js -->
-        <script src="{{ site.baseurl }}/assets/js/all.js"></script>
-        <!-- Google analytics  -->
-        {% include google-analytics.html %}
-        <script id="dsq-count-scr" src="//rudrakos.disqus.com/count.js" async></script>
 
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        {% include addthis.html %}
+    <footer class="footer">
+        {% include social.html %}
+    </footer>
+
+    <!-- Google analytics  -->
+    {% include google-analytics.html %}
+    <script id="dsq-count-scr" src="//rudrakos.disqus.com/count.js" async></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    {% include addthis.html %}
     </body>
 </html>

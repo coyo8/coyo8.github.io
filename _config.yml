@@ -42,11 +42,13 @@ trivium:
   show_disclaimer: true
 
 # Conversion markdown build settings
-markdown:    kramdown
-highlighter: rouge
+markdown:           kramdown
+highlighter:        rouge
 lsi:                false
 excerpt_separator:  "\n\n"
 incremental:        false
+
+
 
 # Permalinks
 permalink: pretty

@@ -1,37 +1,18 @@
-<h6>Follow me</h6>
+{% if site.trivium.social.twitter %}
+<a id="twitter-ic" href="https://twitter.com/{{ site.trivium.social.twitter }}" target="_blank">
+    <i class="fa fa-twitter fa-lg"></i>
+</a>
+{% endif %}
 
-<ul class="social-media">
+{% if site.trivium.social.github %}
+<a id="git-ic" href="https://github.com/{{ site.trivium.social.github }}" target="_blank">
+    <i class="fa fa-github-square fa-lg"></i>
+</a>
+{% endif %}
 
-    {% if site.trivium.social.twitter %}
-    <li>
-        <a title="{{ site.trivium.social.twitter }} on Twitter"
-            href="https://twitter.com/{{ site.trivium.social.twitter }}"
-            class="twitter wc-img-replace" target="_blank">Twitter</a>
-    </li>
-    {% endif %}
-
-    {% if site.trivium.social.github %}
-    <li>
-        <a title="{{ site.trivium.social.github }} on Github"
-            href="https://github.com/{{ site.trivium.social.github }}"
-            class="github wc-img-replace" target="_blank">Github</a>
-    </li>
-    {% endif %}
-
-    {% if site.trivium.social.facebook %}
-    <li>
-        <a title="{{ site.trivium.social.facebook }} on Facebook"
-            href="https://facebook.com/{{ site.trivium.social.facebook }}"
-            class="facebook wc-img-replace" target="_blank">Facebook</a>
-    </li>
-    {% endif %}
-
-    {% if site.trivium.social.gplus %}
-    <li>
-        <a title="{{ site.trivium.social.gplus }} on Google Plus"
-            href="https://plus.google.com/{{ site.trivium.social.gplus }}"
-            class="google wc-img-replace" target="_blank">Google</a>
-    </li>
-    {% endif %}
-
-</ul>
+{% if site.trivium.social.gplus %}
+<a id="gplus-ic" href="https://plus.google.com/{{ site.trivium.social.gplus }}
+target="_blank">
+    <i class="fa fa-google-plus-square fa-lg"></i>
+</a>
+{% endif %}

@@ -1,27 +1,25 @@
 ---
 layout: default
 ---
-<div id="home" class="page-content wc-container">
-	<div class="posts">
+<div>
+	<div>
   		{% for post in site.posts limit:10 %}
-  			<div class="post">
-    			<h3 class="post-title">
+  			<div>
+          <div class="post-title">
 			      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
 			        {{ post.title }}
 			      </a>
-    			</h3>
-
-          <p class="post-meta">
-            {% if (post.categories.size > 0 %}
-            <span class="categories">
+          </div>
+          <p>
+            {% if post.categories.size > 0 %}
+            <span>
             {{ post.categories | array_to_sentence_string }}
             </span> |
             {% endif %}
-            <span class="post-date">
+            <span>
             {{ post.date | date: "%b %-d, %Y" }}
             </span>
           </p>
-
   				<p>
 	  				{{ post.excerpt }}
   				</p>
@@ -32,8 +30,5 @@ layout: default
   				</p>
   			</div>
   		{% endfor %}
-	</div>
-	<div class="post-footer">
-		<div class="column-full"><a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></div>
 	</div>
 </div>

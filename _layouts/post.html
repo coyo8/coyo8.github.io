@@ -2,21 +2,20 @@
 layout: default
 ---
 
-<div class="page-content wc-container">
-
-	<div class="post">
-		<h1>{{ page.title }}</h1>
-		<p class="post-meta">
-			{% if (page.categories.size > 0 %}
-      <span class="categories">
+<div>
+	<div>
+		<div class="post-title"> {{ page.title }} </div>
+		<p>
+			{% if page.categories.size > 0 %}
+      <span>
       {{ page.categories | array_to_sentence_string }}
       </span> |
 	    {% endif %}
-	    <span class="post-date">
+	    <span>
     	{{ page.date | date: "%b %-d, %Y" }}
 	    </span>
 		</p>
-		<div class="post">
+		<div>
 			{{ content }}
 		</div>
 	</div>
