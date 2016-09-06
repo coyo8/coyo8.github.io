@@ -1,0 +1,24 @@
+- name: Python REPL for Apache Libcloud
+  image: konklone
+  desc: An interactive, stateful AJAX shell that runs Python code on Docker sandboxed enivironment.
+
+- name: CoffeeCartel
+  image: konklone
+  desc: CoffeeCartel is a web application which helps coffephiles to stores their coffeebeans name. It implements all the CRUD operation alongwith search using knockout.js
+
+- name: Eric Mill
+  image: konklone
+  desc: ""
+
+- name: Eric Mill
+  image: konklone
+  desc: ""
+
+- name: Eric Mill
+  image: konklone
+  desc: ""
+
+- name: Eric Mill
+  image: konklone
+  desc: ""
+

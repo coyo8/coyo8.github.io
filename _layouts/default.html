@@ -18,6 +18,9 @@
 
         <!-- Rss feed -->
         <link rel="alternate" type="application/rss+xml" title="Example" href="{{ site.url }}/blog/feed/"/>
+
+         <!-- Google analytics  -->
+         {% include google-analytics.html %}
     </head>
     <body>
     <div class="wrapper">
@@ -46,10 +49,6 @@
             <p> Code licensed under <a href="http://opensource.org/licenses/mit-license.html"> MIT License </a> </p>
         </div>
     </footer>
-
-    <!-- Google analytics  -->
-    {% include google-analytics.html %}
-    <script id="dsq-count-scr" src="//rudrakos.disqus.com/count.js" async></script>
     </body>
 </html>
 
