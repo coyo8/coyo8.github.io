@@ -67,9 +67,12 @@ $ node app
 For production environments...
 
 ```python
-$ npm install --production
-$ npm run predeploy
-$ NODE_ENV=production node app
+print("Hello World!")
+
+# For Loop
+for i in range(10):
+  l = []
+  l.append(i)
 ```
 
 ### Plugins
@@ -111,15 +114,18 @@ $ gulp watch
 ```sh
 $ karma start
 ```
+
 #### Building for source
 For production release:
 ```sh
 $ gulp build --prod
 ```
+
 Generating pre-built zip archives for distribution:
 ```sh
 $ gulp build dist --prod
 ```
+
 ### Docker
 Dillinger is very easy to install and deploy in a Docker container.
 

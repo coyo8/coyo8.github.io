@@ -12,3 +12,19 @@ $image-size: 85px;
 $max-width: 700px;
 $med-width: 600px;
 $small-width: 480px;
+
+/*
+  Font Sizes
+*/
+$base-spacing: 1.2 * 1em;
+
+/* colors */
+$black-color: #000;
+$dark-gray-color: #404040;
+$light-gray-color: #ccc;
+$dark-grey-color: #263238;
+$light-red-color: #ef5350;
+$light-blue-color: #1976D2;
+
+/* Font Colors */
+$base-font-color: rgba($dark-gray-color, .8);

@@ -91,6 +91,25 @@ hr {
 .post-title {
     font-size: 3.0vh;
     font-weight: bold;
+    color: $accent;
+}
+
+.post-pagination {
+    display: flex;
+    flex-direction: row;
+
+    .first {
+        width: 33%;
+        text-align: left;
+    }
+    .second {
+        width: 33%;
+        text-align: center;
+    }
+    .third {
+        width: 33%;
+        text-align: right;
+    }
 }
 
 
@@ -120,5 +139,6 @@ hr {
 
 @import "typography";
 @import "tables";
-@import "_font-awesome.min";
+@import "font-awesome.min";
+@import "syntax-highlight-native";
 

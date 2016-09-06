@@ -20,6 +20,8 @@ layout: default
 		</div>
 	</div>
 
+	<div style="clear:both"></div>
+  <hr>
 
 	{% if site.related_posts %}
 	<div class="related">
@@ -35,16 +37,19 @@ layout: default
 	</div>
 	{% endif %}
 
-	<div class="post-footer">
-		<div class="column-1">
+	<div style="clear:both"></div>
+  <hr>
+
+	<div class="post-pagination">
+		<div class="first">
 			{% if page.previous %}
 				<a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}"><< Older</a>
 			{% else %}
 				<span><< Older</span>
 			{% endif %}
 		</div>
-		<div class="column-2"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
-		<div class="column-3">
+		<div class="second"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
+		<div class="third">
 			{% if page.next %}
 				<a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">Newer >></a>
 			{% else %}
@@ -53,6 +58,8 @@ layout: default
 		</div>
 	</div>
 
+	<div style="clear:both"></div>
+  <hr>
 	<!-- disqus js -->
   {% include disqus.html %}
 </div>
