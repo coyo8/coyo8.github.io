@@ -83,9 +83,23 @@ hr {
 
 /* footer */
 .footer {
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 70px;
+    align-items: flex-start;
 }
 
+.footer-box {
+    flex: 1;
+}
+
+.footer-box a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
+
+}
 
 /* posts */
 .post-title {
