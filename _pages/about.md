@@ -47,5 +47,10 @@ I am 23 years old and juggled through different problems and opportunities in li
     <i class="fa fa-google-plus-square fa-lg"></i>
   </a>
   {% endif %}
+  {% if site.trivium.social.medium %}
+  <a id="medium-ic" href="https://medium.com/@{{ site.trivium.social.medium }}" target="_blank">
+    <i class="fa fa-medium fa-lg"></i>
+  </a>
+  {% endif %}
 </div>
 
