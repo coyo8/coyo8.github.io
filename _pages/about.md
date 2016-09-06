@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: default
 title: About me
 permalink: /about/
 ---
+
+## About me
 
 Hi, I am Rahul.
 
