@@ -35,9 +35,13 @@
 
 
     <footer class="container footer">
-        <div class="footer-box">
-            {% include social.html %}
-        </div>
+        {% if page.url == "/contact/" %}
+
+        {% else %}
+            <div class="footer-box">
+                {% include social.html %}
+            </div>
+        {% endif %}
     </footer>
 
     <!-- Google analytics  -->

@@ -74,14 +74,28 @@ hr {
 }
 
 
-/* Social Icons */
+/*
+    Social Icons
+*/
 #twitter-ic {color: #55acee !important;}
 #git-ic {color: #333 !important;}
 #rss-ic {color: #ff9933 !important;}
 #gplus-ic {color: #dd4b39 !important;}
+#fb-ic {color: #3b5998 !important;}
 
+.social-icon {
+  display: inline;
+  margin: 0 5px;
 
-/* footer */
+    a:hover {
+        text-decoration: none !important;
+    }
+}
+
+/*
+ footer
+*/
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -101,7 +115,10 @@ hr {
     padding-right: 3px;
 }
 
-/* posts */
+/*
+ posts
+*/
+
 .post-title {
     font-size: 3.0vh;
     font-weight: bold;
