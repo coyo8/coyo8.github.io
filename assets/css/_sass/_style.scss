@@ -89,6 +89,7 @@ hr {
 
     a:hover {
         text-decoration: none !important;
+        opacity: 0.5;
     }
 }
 
@@ -105,10 +106,12 @@ hr {
 
 .footer-box {
     flex: 1;
+    margin-top: 10px;
 }
 
 .footer-box a:hover {
     text-decoration: none;
+    opacity: 0.5;
 }
 
 .footer-social {

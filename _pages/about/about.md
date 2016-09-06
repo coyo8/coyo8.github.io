@@ -11,13 +11,37 @@ I am 23 years old and juggled through different problems and opportunities in li
   * Computer Science in real life
   * Personal finance
 
-### Contact me
+---
 
-Find me on [Google+][google] / [Github][github] / [Twitter][Twitter] or just say `Hello` at
-[rahul@rudrakos.com](mailto:rahul@rudrakos.com).
+## Contact me
 
+* Email: [rahul@rudrakos.com](mailto:rahul@rudrakos.com)
 
-[email]: mailto:rahul@rudrakos.com
-[github]: https://github.com/rahulrrixe
-[google]: https://plus.google.com/+RahulRRixe
-[twitter]: https://twitter.com/RahulRRixe
+* Phone: [+91-9819737113](tel:+91-9819737113)
+
+---
+
+## Follow me
+<div class="social-icon">
+  {% if site.trivium.social.twitter %}
+  <a id="twitter-ic" href="https://twitter.com/{{ site.trivium.social.twitter }}" target="_blank">
+    <i class="fa fa-twitter fa-lg"></i>
+  </a>
+  {% endif %}
+  {% if site.trivium.social.github %}
+  <a id="git-ic" href="https://github.com/{{ site.trivium.social.github }}" target="_blank">
+    <i class="fa fa-github-square fa-lg"></i>
+  </a>
+  {% endif %}
+  {% if site.trivium.social.facebook %}
+  <a id="fb-ic" href="https://facebook.com/{{ site.trivium.social.facebook }}" target="_blank">
+    <i class="fa fa-facebook-square fa-lg"></i>
+  </a>
+  {% endif %}
+  {% if site.trivium.social.gplus %}
+  <a id="gplus-ic" href="https://plus.google.com/{{ site.trivium.social.gplus }}" target="_blank">
+    <i class="fa fa-google-plus-square fa-lg"></i>
+  </a>
+  {% endif %}
+</div>
+
