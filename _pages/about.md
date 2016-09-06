@@ -6,6 +6,8 @@ permalink: /about/
 
 ## About me
 
+<img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg">
+
 Hi, I am Rahul.
 
 I am 23 years old and juggled through different problems and opportunities in life. I thought to share it with you all. Most of my bits will try to dive into following two broad topics
