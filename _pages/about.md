@@ -8,12 +8,16 @@ permalink: /about/
 
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg">
 
-Hi, I am Rahul.
 
-I am 23 years old and juggled through different problems and opportunities in life. I thought to share it with you all. Most of my bits will try to dive into following two broad topics
+Welcome to my virtual realm! I make softwares, teach students and help lazy brain grow. I like everything about computers and science behind learning.
 
-  * Computer Science in real life
-  * Personal finance
+I am currently a course manager at [Udacity][udacity] leading [Full Stack Nanodegree][fsnd] program. I am also a member of [Python Software Foundation][PSF]. I’ve worked at [The Walt Disney Company][disney] and [CMU][cmu] as a Software Engineer and HCI Researcher respectively.
+
+To get updated with my newest projects, go straight to my [GitHub][github] account. Apart form these if you would like to stumble upon my older writings which still reside in my [medium][medium] blog.
+
+The site name, Rudrakos (pronounced “roo d-ruh kohs”) is a combination of two sanskrit words i.e. [Rudra][rudra] (mightiest of mighty) and Kosa (pocket), meaning container of omnipotent.
+
+Still haven't found what you are looking for or want to meet for a coffee? Feel free to contact me.
 
 ---
 
@@ -54,3 +58,12 @@ I am 23 years old and juggled through different problems and opportunities in li
   {% endif %}
 </div>
 
+
+[github]: <https://github.com/{{ site.trivium.social.github }}>
+[medium]: <https://medium.com/@{{ site.trivium.social.medium }}>
+[udacity]: <https://udacity.com>
+[fsnd]: <https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004>
+[PSF]: <https://www.python.org/psf>
+[rudra]: <https://en.wikipedia.org/wiki/Rudra>
+[cmu]: <https://www.hcii.cmu.edu/>
+[disney]: <http://www.disneyinteractive.com/>
