@@ -21,7 +21,7 @@ layout: default
             </span>
           </p>
   				<p>
-	  				{{ post.excerpt }}
+	  				{{ post.description }}
   				</p>
   				<p>
   					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
@@ -29,6 +29,10 @@ layout: default
 					</a>
   				</p>
   			</div>
+
+        <div style="clear:both"></div>
+        <hr>
+
   		{% endfor %}
 	</div>
 </div>

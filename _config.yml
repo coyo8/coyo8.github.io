@@ -1,6 +1,6 @@
 # Trivium Jekyll theme general configurations
 
-url: "http://rudrakos.com"
+# url: "http://rudrakos.com"
 
 # Serving
 detach:             false
@@ -29,7 +29,7 @@ trivium:
   # Addthis
   addthis_key: ra-56eccc9a39a92456
   # Disqus
-  disqus_key: rudrakos.disqus.com/embed.js
+  disqus_key: rudrakos
 
   # Profile links, leave blank to ignore
   social:
