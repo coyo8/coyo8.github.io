@@ -19,6 +19,11 @@ The site name, Rudrakos (pronounced “roo d-ruh kohs”) is a combination of tw
 
 Still haven't found what you are looking for or want to meet for a coffee? Feel free to contact me.
 
+<div class="social-icon"><a id="pdf-ic" href="{{ site.url }}/assets/pdf/cv.pdf" target="_blank">
+    <i class="fa fa-file-pdf-o social-icon"></i> Download CV
+  </a>
+</div>
+
 ---
 
 ## Contact me
