@@ -11,10 +11,13 @@
         href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
         <!-- Add favicon -->
-        <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/assets/css/images/logo1.png">
+        <link rel="shortcut icon" type="image/png" href="{{ site.url }}/assets/css/images/logo1.png">
         <!-- trivium styles -->
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Rss feed -->
+        <link rel="alternate" type="application/rss+xml" title="Example" href="{{ site.url }}/blog/feed/"/>
     </head>
     <body>
     <div class="wrapper">
