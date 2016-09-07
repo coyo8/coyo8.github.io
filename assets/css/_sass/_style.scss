@@ -159,6 +159,25 @@ ff0000
 }
 
 
+/*
+ projects
+*/
+
+.project-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box-item {
+    background-color: tomato;
+    box-sizing: border-box;
+    padding: 112px;
+    margin: 1px 1px 1px 1px;
+    flex: 1 0 3;
+}
+
+
 /* Mobile */
 
 @media (max-width: 800px) {
@@ -180,6 +199,10 @@ ff0000
 @media (max-width: 580px) {
     #author-name {
         display: inline-block;
+    }
+
+    .project-container {
+        justify-content: center;
     }
 }
 
