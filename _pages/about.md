@@ -36,6 +36,7 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 ---
 
 ## Follow me
+
 <div class="social-icon">
   {% if site.trivium.social.twitter %}
   <a id="twitter-ic" href="https://twitter.com/{{ site.trivium.social.twitter }}" target="_blank">
