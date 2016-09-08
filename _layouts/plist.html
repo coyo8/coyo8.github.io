@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="project-list-container">
+  {% for project in site.data.projects.quirky_hacks %}
+  <div class="rect-item">
+    {{ project.name }}
+  </div>
+  {% endfor %}
+</div>
+

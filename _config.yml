@@ -1,6 +1,6 @@
 # Trivium Jekyll theme general configurations
 
-# url: "http://rudrakos.com"
+url: "http://rudrakos.com"
 
 # Serving
 detach:             false
@@ -67,3 +67,13 @@ exclude:
 sass:
     sass_dir: assets/css/_sass
     style: :compressed
+
+# collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  categories:
+    output: true
+    permalink: /projects/categories/:path/
+
