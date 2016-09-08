@@ -4,5 +4,8 @@ layout: default
 
 
 <div class="project-detail-container">
-    {{ content }}
+    Hello World
+    {% for pdesc in site.projects %}
+        {{ pdesc.title }}
+    {% endfor %}
 </div>

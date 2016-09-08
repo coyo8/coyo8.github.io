@@ -1,8 +1,7 @@
-
-
-quirky_hacks:
+quirky-hacks:
   - name: Python REPL for Apache Libcloud
-    image: konklone
+    image: hello
+    url: quirky-hacks/python-repl/
     desc: An interactive, stateful AJAX shell that runs Python code on Docker sandboxed enivironment.
 
   - name: CoffeeCartel

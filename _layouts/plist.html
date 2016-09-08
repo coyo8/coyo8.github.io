@@ -3,9 +3,11 @@ layout: default
 ---
 
 <div class="project-list-container">
-  {% for project in site.data.projects.quirky_hacks %}
+  {% for project in site.data.projects.quirky-hacks %}
   <div class="rect-item">
-    {{ project.name }}
+    <a href="{{site.url}}/projects/{{project.url}}">
+      <p> {{ project.name }} </p>
+    </a>
   </div>
   {% endfor %}
 </div>
