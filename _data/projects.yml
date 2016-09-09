@@ -1,48 +1,111 @@
 quirky_hacks:
+  - name: Tweet Sweet
+    url: https://tweetsweet.herokuapp.com/
+    img: twitterbot.png
+    desc: Tweet Sweet is custom twitterbot which helps you to increase your followers by automating favorites and retweets.
+
   - name: Python REPL for Apache Libcloud
-    image: hello
-    url: quirky-hacks/python-repl/
+    img: repl.jpg
+    url: https://libcloudrepl.herokuapp.com/
     desc: An interactive, stateful AJAX shell that runs Python code on Docker sandboxed enivironment.
 
+  - name: What Can I learn from Udacity!
+    url: https://whatcanilearnfromudacity.herokuapp.com/
+    img: wcilfu.png
+    desc: This application helps students in finding right Nanodegree program. I built this during Udacity employees hack.
+
   - name: CoffeeCartel
-    image: konklone
-    desc: CoffeeCartel is a web application which helps coffephiles to stores their coffeebeans name. It implements all the CRUD operation alongwith search using knockout.js
+    img: coffee.jpg
+    url: http://coffeecartel.herokuapp.com/
+    desc: CoffeeCartel is a web application which helps coffee-philes to keep track of their favorite beans.
+
+  - name: SEC Filings crawler
+    img: crawler.jpg
+    url: https://github.com/rahulrrixe/SEC-Edgar
+    desc: Download all companies periodic reports, filings and forms from EDGAR database.
 
 on_paper_only:
   - name: Charperone
+    img:
+    desc: A travel companion which gives you path infomartion beforehand.
 
   - name: JScout
+    img:
+    desc: AI based tool to reduce your boringness!
 
   - name: Smartxplorer
+    img:
+    desc: Voice based question recognistion system. No one will need to type a question again.
 
   - name: Dwindler
+    img:
+    desc: Automating switch boards particulary in Universities and offices for optimizing power usage.
 
   - name: Hop Scotch
-
-  - name: Lost Em
+    img:
+    desc: An Eye movements detector which add new dimension for interaction with digital devices particulary in playing games and operating smart phones.
 
   - name: Sketch In Air
+    img:
+    desc: Kinect along with depth sensor based application which detects your writing using hand movements in air.
 
   - name: Tap Lola
+    img:
+    desc: A human laughter tracker along with analytics.
 
 open_source:
   - name: Tahrir
+    img:
+    desc:
 
   - name: Fresque
+    img:
+    desc:
 
   - name: Mozregression
+    img:
+    desc:
 
   - name: Releng API
+    img:
+    desc:
 
 research_bites:
   - name: Magus Mundus
+    img: magus.jpg
+    desc:
+
+  - name: Social Media Privacy
+    img: privacy.jpg
+    desc:
 
   - name: Personality Recommender
+    img: personality.jpg
+    desc:
+
+  - name: Cultural
+    img: culture.jpg
+    desc:
+
+  - name: HMM location Recommender
+    img: location.jpg
+    desc:
+
+  - name: Galaxy Image Classification
+    img: galaxy.jpg
+    desc:
 
   - name: Dr Cursive
+    img: cursive
+    desc:
 
 talks:
   - name: Getting started with Github, Mozcafe
+    img:
+    desc:
 
   - name: Hello World
+    img:
+    desc:
+
 
