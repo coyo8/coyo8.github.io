@@ -90,7 +90,6 @@ hr {
   margin: 0 5px;
 
     a:hover {
-        text-decoration: none !important;
         opacity: 0.5;
     }
 }
@@ -165,10 +164,6 @@ hr {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-
-    a:hover {
-        text-decoration: none !important;
-    }
 }
 
 .box-item {
@@ -182,7 +177,6 @@ hr {
     text-align: center;
 
     p {
-        color: white;
         font-size: 4.0vh;
         margin-top: 20%;
     }
@@ -203,27 +197,46 @@ hr {
   position: relative;
   display: flex;
   flex-flow: column wrap;
-
-  a:hover {
-      text-decoration: none !important;
-  }
 }
 
 .rect-item {
   width: 100%;
-  height: 90px;
   margin: .1vw;
-  background: orange;
+  background: $accent;
+}
 
+.project-tab {
+  display: flex;
+}
+
+.rect-item .thumbnail {
+    margin: .1vw;
+    max-height: 100px;
+    width: 20%;
+}
+
+.rect-item .text {
+    width: 80%;
+}
+
+
+/* Some common settings */
+.rect-item, .box-item {
   p {
-        color: white;
-  }
+      color: white;
+    }
   /* This make the whole div clickable */
   a {
-        display: block;
-        height: 100%;
-        width: 100%;
-    }
+      display: block;
+      height: 100%;
+      width: 100%;
+  }
+}
+
+.project-list-container, .project-container, .social-icon {
+  a:hover {
+    text-decoration: none !important;
+  }
 }
 
 

@@ -2,13 +2,61 @@
 layout: default
 ---
 
+{% if page.url == '/project/category/quirky_hacks/' %}
 <div class="project-list-container">
-  {% for project in site.data.projects.quirky-hacks %}
+  {% for project in site.data.projects.quirky_hacks %}
   <div class="rect-item">
-    <a href="{{site.url}}/projects/{{project.url}}">
+    <a href="{{site.url}}/project/{{project.url}}">
       <p> {{ project.name }} </p>
     </a>
   </div>
   {% endfor %}
 </div>
+{% elsif page.url == '/project/category/on_paper_only/' %}
+<div class="project-list-container">
+  {% for project in site.data.projects.on_paper_only %}
+  <div class="rect-item">
+    <a href="{{site.url}}/project/{{project.url}}">
+      <div class="project-tab">
+        <img class="thumbnail" src="{{site.url}}/assets/images/projects/cursive.jpg" alt=""/>
+        <div class="text">
+        <h3 style="color: black;"> {{ project.name }} </h3>
+        <p> project description</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% elsif page.url == '/project/category/open_source/' %}
+<div class="project-list-container">
+  {% for project in site.data.projects.open_source %}
+  <div class="rect-item">
+    <a href="{{site.url}}/project/{{project.url}}">
+      <p> {{ project.name }} </p>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% elsif page.url == '/project/category/research_bites/' %}
+<div class="project-list-container">
+  {% for project in site.data.projects.research_bites %}
+  <div class="rect-item">
+    <a href="{{site.url}}/project/{{project.url}}">
+      <p> {{ project.name }} </p>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% elsif page.url == '/project/category/talks/' %}
+<div class="project-list-container">
+  {% for project in site.data.projects.talks %}
+  <div class="rect-item">
+    <a href="{{site.url}}/project/{{project.url}}">
+      <p> {{ project.name }} </p>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
 

@@ -1,4 +1,4 @@
-quirky-hacks:
+quirky_hacks:
   - name: Python REPL for Apache Libcloud
     image: hello
     url: quirky-hacks/python-repl/
@@ -7,4 +7,42 @@ quirky-hacks:
   - name: CoffeeCartel
     image: konklone
     desc: CoffeeCartel is a web application which helps coffephiles to stores their coffeebeans name. It implements all the CRUD operation alongwith search using knockout.js
+
+on_paper_only:
+  - name: Charperone
+
+  - name: JScout
+
+  - name: Smartxplorer
+
+  - name: Dwindler
+
+  - name: Hop Scotch
+
+  - name: Lost Em
+
+  - name: Sketch In Air
+
+  - name: Tap Lola
+
+open_source:
+  - name: Tahrir
+
+  - name: Fresque
+
+  - name: Mozregression
+
+  - name: Releng API
+
+research_bites:
+  - name: Magus Mundus
+
+  - name: Personality Recommender
+
+  - name: Dr Cursive
+
+talks:
+  - name: Getting started with Github, Mozcafe
+
+  - name: Hello World
 

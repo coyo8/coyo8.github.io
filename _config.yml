@@ -72,8 +72,8 @@ sass:
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /project/:path/
   categories:
     output: true
-    permalink: /projects/categories/:path/
+    permalink: /project/category/:path/
 
