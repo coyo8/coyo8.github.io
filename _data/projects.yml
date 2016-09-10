@@ -31,6 +31,7 @@ on_paper_only:
 
   - name: JScout
     img:
+    url:
     desc: AI based tool to reduce your boringness!
 
   - name: Smartxplorer
@@ -55,20 +56,24 @@ on_paper_only:
 
 open_source:
   - name: Tahrir
-    img:
-    desc:
+    img: tahrir.png
+    url: https://github.com/fedora-infra/tahrir
+    desc: A pyramid app for issuing your own Open Badges.
 
   - name: Fresque
-    img:
-    desc:
+    img: fedora.jpg
+    url: https://fedoraproject.org/wiki/GSOC_2015/Student_Application_rahulrrixe
+    desc: Fresque is a standard Python web application that abstracts away intricacies in package review process.
 
   - name: Mozregression
-    img:
-    desc:
+    img: mozregression.png
+    url: http://mozilla.github.io/mozregression/
+    desc: Mozregression is an interactive regression range finder for Mozilla nightly and inbound builds.
 
-  - name: Releng API
-    img:
-    desc:
+  - name: Libcloud CLI
+    img: libcloud.png
+    url: https://github.com/rahulrrixe/libcloudCLI
+    desc: Command Line Interface for Apache Libcloud which is a standard Python library that abstracts away differences among multiple cloud provider APIs.
 
 research_bites:
   - name: Magus Mundus
@@ -96,7 +101,7 @@ research_bites:
     desc:
 
   - name: Dr Cursive
-    img: cursive
+    img: cursive.jpg
     desc:
 
 talks:
