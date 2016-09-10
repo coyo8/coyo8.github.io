@@ -194,6 +194,10 @@ hr {
     opacity: 1;
 }
 
+/*
+  Project
+  List
+*/
 .project-list-container {
   position: relative;
   display: flex;
@@ -205,15 +209,19 @@ hr {
   margin: .1vw;
 
   .thumbnail {
-    margin: .1vw;
-    border: .1vw solid black;
-    max-height: 120px;
-    width: 20%;
+    height: $image-size;
+    width: $project-image-size;
+    border-radius: 10%;
+    margin: 1.0vw 0 1.0vw 1.0vw;
+   /* border: .1vw solid black;*/
   }
-
   .text {
     width: 80%;
-    margin-left: 1.0vw;
+    margin: 1.0vw 0 0 1.0vw;
+
+  }
+  p {
+    color: black;
   }
 }
 
@@ -222,21 +230,23 @@ hr {
 }
 
 .rect-item:hover {
-  background: lighten($accent, 5);
-
-  h3, p {
-    color: white;
-  }
+    background: #1565C0;
+    .text {
+      p, .post-title {
+       color: white;
+      }
+    }
 }
 
-/* Some common settings */
-.rect-item, .box-item {
+/* Some
+  common
+  settings
+*/
+.box-item, .rect-item {
   /* This make the whole div clickable */
   a {
       display: block;
-      height: 100%;
       width: 100%;
-      color: black;
   }
 
   a:hover {
@@ -274,8 +284,21 @@ hr {
         display: inline-block;
     }
 
-    .project-container {
+    .project-container, .project-tap {
         justify-content: center;
+    }
+
+    /* arrange the title text */
+    .text {
+      div {
+        margin-top: 5vw;
+      }
+      .post-title {
+        font-size: 15px;
+      }
+      p {
+        display: none;
+      }
     }
 }
 

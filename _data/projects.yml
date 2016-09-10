@@ -2,7 +2,7 @@ quirky_hacks:
   - name: Tweet Sweet
     url: https://tweetsweet.herokuapp.com/
     img: twitterbot.png
-    desc: Tweet Sweet is custom twitterbot which helps you to increase your followers by automating favorites and retweets.
+    desc: Tweet Sweet is a custom twitterbot which helps you to increase your followers by automating favorites and retweets.
 
   - name: Python REPL for Apache Libcloud
     img: repl.jpg
