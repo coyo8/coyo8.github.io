@@ -1,4 +1,9 @@
 quirky_hacks:
+  - name: What Can I learn from Udacity!
+    url: https://whatcanilearnfromudacity.herokuapp.com/
+    img: wcilfu.png
+    desc: This application helps students in finding right Nanodegree program. I built this during Udacity employees hack.
+
   - name: Tweet Sweet
     url: https://tweetsweet.herokuapp.com/
     img: twitterbot.png
@@ -8,11 +13,6 @@ quirky_hacks:
     img: repl.jpg
     url: https://libcloudrepl.herokuapp.com/
     desc: An interactive, stateful AJAX shell that runs Python code on Docker sandboxed enivironment.
-
-  - name: What Can I learn from Udacity!
-    url: https://whatcanilearnfromudacity.herokuapp.com/
-    img: wcilfu.png
-    desc: This application helps students in finding right Nanodegree program. I built this during Udacity employees hack.
 
   - name: CoffeeCartel
     img: coffee.jpg
