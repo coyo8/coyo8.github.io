@@ -49,7 +49,15 @@ lsi:                false
 excerpt_separator:  "\n\n"
 incremental:        false
 
-
+# Mapbox
+mapbox-token: pk.eyJ1IjoicmFodWxycml4ZSIsImEiOiI2MWJlODU5ZGM5MGQyN2JkYjllNDQ2ZjMxYjUzOTQyMSJ9.RdkniV4ToKfsY4cRXO8NvA
+mapid: mapbox.streets
+mapid-winter: mapbox.streets
+mapboxjs: v2.3.0
+font-awesome: 4.6.3
+leafletjs: v0.4.0
+jquery: 2.2.2
+modernizr: 2.8.3
 
 # Permalinks
 permalink: pretty
