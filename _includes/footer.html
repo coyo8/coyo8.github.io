@@ -1,4 +1,12 @@
-{% if site.trivium.show_disclaimer %}
-	Made with love.
-{% endif %}
-Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
+<footer class="container footer">
+    <div class="footer-box">
+        {% if page.url == "/about/" %}
+            &nbsp;
+        {% else %}
+            {% include social.html %}
+        {% endif %}
+    </div>
+    <div class="right">
+        <p> Code licensed under <a href="http://opensource.org/licenses/mit-license.html"> MIT License </a> </p>
+    </div>
+</footer>
