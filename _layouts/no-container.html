@@ -1,0 +1,16 @@
+{% include top.html %}
+<link href="https://api.tiles.mapbox.com/mapbox.js/{{site.mapboxjs}}/mapbox.css" rel="stylesheet" />
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/{{site.leafletjs}}/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/{{site.leafletjs}}/MarkerCluster.Default.css' rel='stylesheet' />
+<script src="https://api.tiles.mapbox.com/mapbox.js/{{site.mapboxjs}}/mapbox.js"></script>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/{{site.leafletjs}}/leaflet.markercluster.js'></script>
+<!-- Google analytics  -->
+{% include google-analytics.html %}
+<body>
+  <div class="wrapper">
+    {% include header.html %}
+    {{ content }}
+  </div>
+{% include footer.html %}
+</body>
+</html>

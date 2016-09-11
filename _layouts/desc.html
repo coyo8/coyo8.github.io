@@ -3,8 +3,7 @@ layout: default
 ---
 
 <div class="project-detail-container">
-    Hello World
-    {% for pdesc in site.projects %}
-        {{ pdesc.title }}
+    {% for desc in site.projects %}
+        {{ desc.title }}
     {% endfor %}
 </div>

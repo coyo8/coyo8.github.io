@@ -26,32 +26,32 @@ quirky_hacks:
 
 on_paper_only:
   - name: Charperone
-    img:
+    img:  sprites/spr30.gif
     desc: A travel companion which gives you path infomartion beforehand.
 
   - name: JScout
-    img:
+    img:  sprites/spr5.gif
     url:
     desc: AI based tool to reduce your boringness!
 
   - name: Smartxplorer
-    img:
+    img:  sprites/spr7.gif
     desc: Voice based question recognistion system. No one will need to type a question again.
 
   - name: Dwindler
-    img:
+    img: sprites/spr4.gif
     desc: Automating switch boards particulary in Universities and offices for optimizing power usage.
 
-  - name: Hop Scotch
-    img:
-    desc: An Eye movements detector which add new dimension for interaction with digital devices particulary in playing games and operating smart phones.
+  - name: HopScotch
+    img: sprites/spr10.gif
+    desc: Enabling eyes as new interaction dimesnion particulary in playing games and operating smart phones.
 
-  - name: Sketch In Air
-    img:
+  - name: Sketcher
+    img:  sprites/spr36.gif
     desc: Kinect along with depth sensor based application which detects your writing using hand movements in air.
 
-  - name: Tap Lola
-    img:
+  - name: TapLola
+    img: sprites/spr20.gif
     desc: A human laughter tracker along with analytics.
 
 open_source:
@@ -68,7 +68,7 @@ open_source:
   - name: Mozregression
     img: mozregression.png
     url: http://mozilla.github.io/mozregression/
-    desc: Mozregression is an interactive regression range finder for Mozilla nightly and inbound builds.
+    desc: Mozregression is an interactive regression range finder for Mozilla nightly and inbound builds.`
 
   - name: Libcloud CLI
     img: libcloud.png

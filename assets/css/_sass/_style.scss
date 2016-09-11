@@ -12,6 +12,8 @@ html {
 body {
     margin: 0;
     font-family: "Inconsolata";
+    font-color: #050604;
+    line-height: 1.4em;
 }
 
 hr {
@@ -208,6 +210,11 @@ hr {
   position: relative;
   display: flex;
   flex-flow: column wrap;
+
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .rect-item {
@@ -217,10 +224,19 @@ hr {
   .thumbnail {
     height: $image-size;
     width: $project-image-size;
-    border-radius: 10%;
+    /*border-radius: 10%;*/
     margin: 1.0vw 0 1.0vw 1.0vw;
    /* border: .1vw solid black;*/
   }
+
+  .sprite {
+    width: 75px;
+    height: 75px;
+    /*border-radius: 10%;*/
+    margin: 1.0vw 0 1.0vw 1.0vw;
+   /* border: .1vw solid black;*/
+  }
+
   .text {
     width: 80%;
     margin: 1.0vw 0 0 1.0vw;
@@ -229,6 +245,12 @@ hr {
   p {
     color: black;
   }
+
+  .project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $accent;
+  }
 }
 
 .project-tab {
@@ -236,10 +258,9 @@ hr {
 }
 
 .rect-item:hover {
-  background: lighten($accent, 10);
   .text {
-    p, .post-title {
-     color: white;
+    .project-title {
+      text-decoration: underline !important;
     }
   }
   /* This make the whole div clickable */
@@ -268,7 +289,6 @@ hr {
 
 
 /* Mobile */
-
 @media (max-width: 800px) {
     .container {
         max-width: $med-width;
@@ -283,6 +303,12 @@ hr {
     .navbar-ul {
         margin-top: 5px;
     }
+    .thumbnail {
+      display: none;
+    }
+    .sprite {
+      display: none;
+    }
 }
 
 @media (max-width: 580px) {
@@ -294,16 +320,15 @@ hr {
         justify-content: center;
     }
 
+    .box-item {
+      min-width: 100%;
+    }
+
     /* arrange the title text */
     .text {
+      min-width: 100%;
       div {
         margin-top: 5vw;
-      }
-      .post-title {
-        font-size: 15px;
-      }
-      p {
-        display: none;
       }
     }
 }
