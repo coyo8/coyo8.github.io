@@ -1,116 +1,108 @@
 quirky_hacks:
   - name: What Can I learn from Udacity!
     url: https://whatcanilearnfromudacity.herokuapp.com/
-    img: wcilfu.png
+    img: hacks/graduate.png
     desc: This application helps students in finding right Nanodegree program. I built this during Udacity employees hack.
 
   - name: Tweet Sweet
     url: https://tweetsweet.herokuapp.com/
-    img: twitterbot.png
+    img: hacks/robot.png
     desc: Tweet Sweet is a custom twitterbot which helps you to increase your followers by automating favorites and retweets.
 
   - name: Python REPL for Apache Libcloud
-    img: repl.jpg
+    img: hacks/computer.png
     url: https://libcloudrepl.herokuapp.com/
     desc: An interactive, stateful AJAX shell that runs Python code on Docker sandboxed enivironment.
 
   - name: CoffeeCartel
-    img: coffee.jpg
+    img: hacks/coffee-cup.png
     url: http://coffeecartel.herokuapp.com/
     desc: CoffeeCartel is a web application which helps coffee-philes to keep track of their favorite beans.
 
   - name: SEC Filings crawler
-    img: crawler.jpg
+    img: hacks/crab.png
     url: https://github.com/rahulrrixe/SEC-Edgar
     desc: Download all companies periodic reports, filings and forms from EDGAR database.
 
 on_paper_only:
   - name: Charperone
-    img:  sprites/spr30.gif
+    img:  paper/car.png
     desc: A travel companion which gives you path infomartion beforehand.
 
   - name: JScout
-    img:  sprites/spr5.gif
+    img:  paper/poster.png
     url:
     desc: AI based tool to reduce your boringness!
 
   - name: Smartxplorer
-    img:  sprites/spr7.gif
+    img:  paper/vocal.png
     desc: Voice based question recognistion system. No one will need to type a question again.
 
   - name: Dwindler
-    img: sprites/spr4.gif
+    img: paper/power-button.png
     desc: Automating switch boards particulary in Universities and offices for optimizing power usage.
 
   - name: HopScotch
-    img: sprites/spr10.gif
+    img: paper/eye-mask.png
     desc: Enabling eyes as new interaction dimesnion particulary in playing games and operating smart phones.
 
   - name: Sketcher
-    img:  sprites/spr36.gif
+    img: paper/canvas.png
     desc: Kinect along with depth sensor based application which detects your writing using hand movements in air.
 
   - name: TapLola
-    img: sprites/spr20.gif
+    img: paper/costume.png
     desc: A human laughter tracker along with analytics.
 
 open_source:
-  - name: Tahrir
-    img: tahrir.png
-    url: https://github.com/fedora-infra/tahrir
-    desc: A pyramid app for issuing your own Open Badges.
+  - name: Mozregression
+    img: others/mozilla.png
+    url: http://mozilla.github.io/mozregression/
+    desc: Mozregression is an interactive regression range finder for Mozilla nightly and inbound builds.
 
   - name: Fresque
-    img: fedora.jpg
+    img: others/fedora.png
     url: https://fedoraproject.org/wiki/GSOC_2015/Student_Application_rahulrrixe
     desc: Fresque is a standard Python web application that abstracts away intricacies in package review process.
 
-  - name: Mozregression
-    img: mozregression.png
-    url: http://mozilla.github.io/mozregression/
-    desc: Mozregression is an interactive regression range finder for Mozilla nightly and inbound builds.`
+  - name: Tahrir
+    img: others/fedora.png
+    url: https://github.com/fedora-infra/tahrir
+    desc: A pyramid app for issuing your own Open Badges.
 
   - name: Libcloud CLI
-    img: libcloud.png
+    img: others/libcloud.png
     url: https://github.com/rahulrrixe/libcloudCLI
     desc: Command Line Interface for Apache Libcloud which is a standard Python library that abstracts away differences among multiple cloud provider APIs.
 
 research_bites:
   - name: Magus Mundus
-    img: magus.jpg
+    img: research/gamepad.png
     desc:
 
   - name: Social Media Privacy
-    img: privacy.jpg
+    img: research/padlock.png
     desc:
 
   - name: Personality Recommender
-    img: personality.jpg
+    img: research/family.png
     desc:
 
   - name: Cultural
-    img: culture.jpg
+    img: research/six.png
     desc:
 
   - name: HMM location Recommender
-    img: location.jpg
-    desc:
-
-  - name: Galaxy Image Classification
-    img: galaxy.jpg
+    img: research/map.png
     desc:
 
   - name: Dr Cursive
-    img: cursive.jpg
+    img: research/writing.png
     desc:
 
 talks:
   - name: Getting started with Github, Mozcafe
-    img:
-    desc:
-
-  - name: Hello World
-    img:
+    img: others/conference.png
     desc:
 
 

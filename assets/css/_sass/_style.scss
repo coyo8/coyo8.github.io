@@ -105,14 +105,15 @@ hr {
     flex-direction: column;
     min-height: 70px;
     align-items: flex-start;
+}
 
-    p {
-        font-size: 12px;
-    }
-
-    .right {
-        margin: auto;
-    }
+.footer-text {
+  flex: 1;
+  margin: auto;
+  p {
+    font-size: 1.5vh;
+    line-height: 0.5em;
+  }
 }
 
 .footer-box {
@@ -222,10 +223,10 @@ hr {
   margin: .1vw;
 
   .thumbnail {
-    height: $image-size;
+    height: $project-image-size;
     width: $project-image-size;
     /*border-radius: 10%;*/
-    margin: 1.0vw 0 1.0vw 1.0vw;
+    margin: 1.0vw 1.0vw 1.0vw 1.0vw;
    /* border: .1vw solid black;*/
   }
 
@@ -239,7 +240,7 @@ hr {
 
   .text {
     width: 80%;
-    margin: 1.0vw 0 0 1.0vw;
+    margin-left: 1.0vw;
 
   }
   p {
@@ -304,9 +305,6 @@ hr {
         margin-top: 5px;
     }
     .thumbnail {
-      display: none;
-    }
-    .sprite {
       display: none;
     }
 }
