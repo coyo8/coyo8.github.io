@@ -1,6 +1,6 @@
 # Trivium Jekyll theme general configurations
 
-url: "http://rudrakos.com"
+# url: "http://rudrakos.com"
 
 # Serving
 detach:             false
@@ -78,10 +78,10 @@ sass:
 
 # collections
 collections:
-  projects:
+  project:
     output: true
-    permalink: /project/:title/
-  categories:
+    permalink: /project/:path/
+  category:
     output: true
-    permalink: /project/category/:path/
+    permalink: /category/:path/
 

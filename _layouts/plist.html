@@ -2,35 +2,35 @@
 layout: default
 ---
 {% assign proj_cat = page.url | split:'/' | last %}
-{% if page.url == '/project/category/quirky-hacks/' %}
+{% if page.url == '/category/quirky-hacks/' %}
 <div class="project-list-container">
   {% for project in site.data.projects.quirky-hacks %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/on-paper-only/' %}
+{% elsif page.url == '/category/on-paper-only/' %}
 <div class="project-list-container">
   {% for project in site.data.projects.on-paper-only %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/open-source/' %}
+{% elsif page.url == '/category/open-source/' %}
 <div class="project-list-container">
   {% for project in site.data.projects.open-source %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/research-bites/' %}
+{% elsif page.url == '/category/research-bites/' %}
 <div class="project-list-container">
   {% for project in site.data.projects.research-bites %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/talks/' %}
+{% elsif page.url == '/category/talks/' %}
 <div class="project-list-container">
   {% for project in site.data.projects.talks %}
     {% include mini_desc.html %}
