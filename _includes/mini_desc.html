@@ -1,6 +1,6 @@
 <div class="rect-item">
   {% if project.url == nil %}
-    <a href="{{site.url}}/project/{{proj_cat}}/{{ project.name | downcase }}">
+    <a href="{{site.url}}/project/{{proj_cat}}/{{ project.name | downcase | replace:' ', '-' | url_encode }}">
   {% else %}
     <a href="{{project.url}}" target="_blank">
   {% endif %}
