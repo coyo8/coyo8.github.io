@@ -80,7 +80,7 @@ sass:
 collections:
   projects:
     output: true
-    permalink: /project/:path/
+    permalink: /project/:title/
   categories:
     output: true
     permalink: /project/category/:path/

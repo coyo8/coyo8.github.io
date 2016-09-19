@@ -1,5 +1,6 @@
 ---
 layout: proj
+title: hopscotch
 ---
 
 # HopScotch

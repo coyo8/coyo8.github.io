@@ -1,8 +1,9 @@
 ---
 layout: proj
+title: charperone
 ---
 
-# CHAPERONE
+# CHARPERONE
 
 <hr>
 ### INTRODUCTION
