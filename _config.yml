@@ -1,6 +1,6 @@
 # Trivium Jekyll theme general configurations
 
-# url: "http://rudrakos.com"
+url: "http://rudrakos.com"
 
 # Serving
 detach:             false

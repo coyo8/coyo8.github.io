@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign proj_cat = page.url | split:'/' | last %}
+
 {% if page.url == '/category/quirky-hacks/' %}
 <div class="project-list-container">
   {% for project in site.data.projects.quirky-hacks %}
