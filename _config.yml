@@ -85,3 +85,5 @@ collections:
     output: true
     permalink: /category/:path/
 
+# githib meta info
+repository: rahulrrixe/rahulrrixe.github.io

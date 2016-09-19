@@ -2,66 +2,72 @@
 layout: default
 ---
 
+
 <div>
+	<div class="post-title"> {{ page.title }} </div>
+	<p>
+		{% if page.categories.size > 0 %}
+    <span>
+    {{ page.categories | array_to_sentence_string }}
+    </span> |
+    {% endif %}
+    <span>
+  	{{ page.date | date: "%b %-d, %Y" }}
+    </span>
+	</p>
 	<div>
-		<div class="post-title"> {{ page.title }} </div>
-		<p>
-			{% if page.categories.size > 0 %}
-      <span>
-      {{ page.categories | array_to_sentence_string }}
-      </span> |
-	    {% endif %}
-	    <span>
-    	{{ page.date | date: "%b %-d, %Y" }}
-	    </span>
-		</p>
-		<div>
-			{{ content }}
-		</div>
+		{{ content }}
 	</div>
-
-	<div style="clear:both"></div>
-  <hr>
-
-	{% if site.related_posts %}
-	<div class="related">
-		<h4>Related Posts</h2>
-		<ul class="posts">
-		    {% for post in site.related_posts limit:3 %}
-		    <li>
-			  <span>{{ post.date | date_to_string }} &raquo;</span>
-			  <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
-		    </li>
-		    {% endfor %}
-		</ul>
-	</div>
-	{% endif %}
-
-	<div style="clear:both"></div>
-  <hr>
-
-	<div class="post-pagination">
-		<div class="first">
-			{% if page.previous %}
-				<a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}"><< {{ page.previous.title }} </a>
-			{% else %}
-				<span><< {{ page.previous.title }}</span>
-			{% endif %}
-		</div>
-		<div class="second"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
-		<div class="third">
-			{% if page.next %}
-				<a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">{{ page.next.title }} >></a>
-			{% else %}
-				<span>{{ page.next.title }} >></span>
-			{% endif %}
-		</div>
-	</div>
-
-	<div style="clear:both"></div>
-  <hr>
 </div>
+
+<hr>
+<!-- Add improve button -->
+{% include improve.html %}
+<hr>
+
+{% if site.related_posts %}
+<div class="related">
+	<h4>Related Posts</h2>
+	<ul class="posts">
+	    {% for post in site.related_posts limit:3 %}
+	    <li>
+		  <span>{{ post.date | date_to_string }} &raquo;</span>
+		  <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+	    </li>
+	    {% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+<div style="clear:both"></div>
+<hr>
+
+<div class="post-pagination">
+	<div class="first">
+		{% if page.previous %}
+			<a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}"><< {{ page.previous.title }} </a>
+		{% else %}
+			<span><< {{ page.previous.title }}</span>
+		{% endif %}
+	</div>
+	<div class="second"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
+	<div class="third">
+		{% if page.next %}
+			<a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">{{ page.next.title }} >></a>
+		{% else %}
+			<span>{{ page.next.title }} >></span>
+		{% endif %}
+	</div>
+</div>
+
+<div style="clear:both"></div>
+<hr>
+
 <!-- disqus js -->
 {% include disqus.html %}
+<div style="clear:both"></div>
+<hr>
+
+
 
 

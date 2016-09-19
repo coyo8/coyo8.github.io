@@ -68,4 +68,39 @@
         font-style: italic;
         text-align: center;
     }
+
+    .improve-article-wrapper {
+        display: block;
+        height: 40px;
+        margin-bottom: 1vh;
+        p {
+            font-size: 2vh;
+        }
+        /*
+        .button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 1vh 2vh;
+            text-align: center;
+            display: inline-block;
+            font-size: 2vh;
+            text-decoration: none;
+
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+
+        .button:hover {
+            opacity: 50;
+        }*/
+    }
+    .improve-article {
+        min-width: 100%;
+        text-align: left;
+    }
+    .improve-button {
+        min-width: 30%;
+        align-content: left;
+    }
 }

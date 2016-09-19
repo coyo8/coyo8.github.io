@@ -9,13 +9,13 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! I make softwares, teach students and help lazy brain grow. I like everything about computers and science behind learning.
+Welcome to my virtual realm! I make software, teach students and help lazy brains grow. I like everything about computers and science behind learning.
 
 I am currently a course manager at [Udacity][udacity] leading [Full Stack Nanodegree][fsnd] program. I am also a member of [Python Software Foundation][PSF]. I’ve worked at [The Walt Disney Company][disney] and [CMU][cmu] as a Software Engineer and HCI Researcher respectively.
 
 To get updated with my newest projects, go straight to my [GitHub][github] account. Apart form these if you would like to stumble upon my older writings which still reside in my [medium][medium] blog.
 
-The site name, Rudrakos (pronounced “roo d-ruh kohs”) is a combination of two sanskrit words i.e. [Rudra][rudra] (mightiest of mighty) and Kosa (pocket), meaning container of omnipotent.
+The site name, [Rudrakos]() (pronounced “roo d-ruh kohs”) is a combination of two sanskrit words i.e. [Rudra][rudra] (mightiest of mighty) and Kosa (pocket), meaning container of omnipotent.
 
 Still haven't found what you are looking for or want to meet for a coffee? Feel free to contact me.
 
