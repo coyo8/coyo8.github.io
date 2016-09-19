@@ -1,4 +1,4 @@
-quirky_hacks:
+quirky-hacks:
   - name: What Can I learn from Udacity!
     url: https://whatcanilearnfromudacity.herokuapp.com/
     img: hacks/graduate.png
@@ -24,14 +24,13 @@ quirky_hacks:
     url: https://github.com/rahulrrixe/SEC-Edgar
     desc: Download all companies periodic reports, filings and forms from EDGAR database.
 
-on_paper_only:
+on-paper-only:
   - name: Charperone
     img:  paper/car.png
     desc: A travel companion which gives you path infomartion beforehand.
 
   - name: JScout
     img:  paper/poster.png
-    url:
     desc: AI based tool to reduce your boringness!
 
   - name: Smartxplorer
@@ -54,7 +53,7 @@ on_paper_only:
     img: paper/costume.png
     desc: A human laughter tracker along with analytics.
 
-open_source:
+open-source:
   - name: Mozregression
     img: others/mozilla.png
     url: http://mozilla.github.io/mozregression/
@@ -75,7 +74,7 @@ open_source:
     url: https://github.com/rahulrrixe/libcloudCLI
     desc: Command Line Interface for Apache Libcloud which is a standard Python library that abstracts away differences among multiple cloud provider APIs.
 
-research_bites:
+research-bites:
   - name: Magus Mundus
     img: research/gamepad.png
     desc:

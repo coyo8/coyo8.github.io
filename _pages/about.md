@@ -6,7 +6,7 @@ permalink: /about/
 
 ## About me
 
-<img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg">
+<img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
 Welcome to my virtual realm! I make softwares, teach students and help lazy brain grow. I like everything about computers and science behind learning.

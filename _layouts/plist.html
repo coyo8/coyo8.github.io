@@ -1,31 +1,31 @@
 ---
 layout: default
 ---
-
-{% if page.url == '/project/category/quirky_hacks/' %}
+{% assign proj_cat = page.url | split:'/' | last %}
+{% if page.url == '/project/category/quirky-hacks/' %}
 <div class="project-list-container">
-  {% for project in site.data.projects.quirky_hacks %}
+  {% for project in site.data.projects.quirky-hacks %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/on_paper_only/' %}
+{% elsif page.url == '/project/category/on-paper-only/' %}
 <div class="project-list-container">
-  {% for project in site.data.projects.on_paper_only %}
+  {% for project in site.data.projects.on-paper-only %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/open_source/' %}
+{% elsif page.url == '/project/category/open-source/' %}
 <div class="project-list-container">
-  {% for project in site.data.projects.open_source %}
+  {% for project in site.data.projects.open-source %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}
 </div>
-{% elsif page.url == '/project/category/research_bites/' %}
+{% elsif page.url == '/project/category/research-bites/' %}
 <div class="project-list-container">
-  {% for project in site.data.projects.research_bites %}
+  {% for project in site.data.projects.research-bites %}
     {% include mini_desc.html %}
     <hr>
   {% endfor %}

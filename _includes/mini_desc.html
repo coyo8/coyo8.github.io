@@ -1,5 +1,9 @@
 <div class="rect-item">
-  <a href="{{project.url}}" target="_blank">
+  {% if project.url == nil %}
+    <a href="{{site.url}}/project/{{proj_cat}}/{{ project.name | downcase }}">
+  {% else %}
+    <a href="{{project.url}}" target="_blank">
+  {% endif %}
     <div class="project-tab">
       <img class="thumbnail" src="{{site.url}}/assets/images/projects/{{project.img}}" alt="{{project.name}}"/>
       <div class="text">
