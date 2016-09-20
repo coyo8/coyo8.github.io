@@ -26,8 +26,10 @@ Traditional search system are limited to suggesting web links which are relevant
 ### SYSTEM ORGANIZATION
 
 <figure>
-<img  src="{{ site.url }}/assets/images/projects/paper/system-design/smartxplorer.png" alt="system design">
-<figcaption>Fig1.1 Overview of the SmartXplorer implementation design</figcaption>
+<div class="large">
+  <img  src="{{ site.url }}/assets/images/projects/paper/system-design/smartxplorer.png" alt="system design">
+  <figcaption>Fig1.1 Overview of the SmartXplorer implementation design</figcaption>
+</div>
 </figure>
 
 ### DEVELOPMENT PLAN

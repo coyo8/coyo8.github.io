@@ -1,8 +1,8 @@
 @import "vars";
 
-/*
- * Basic
- */
+/*----------
+  Basic
+------------- */
 
 html {
     height: 100%;
@@ -23,9 +23,9 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/*
- * Navbar
- */
+/* --------------
+  Navbar
+--------------- */
 
 #title-name {
     font-size: 30px;
@@ -57,7 +57,9 @@ hr {
     float: right;
 }
 
-/* divs */
+/* -----------
+divs
+------------- */
 
 .container {
     max-width: $max-width;
@@ -96,9 +98,9 @@ hr {
     }
 }
 
-/*
+/* ------------
  footer
-*/
+--------------- */
 
 .footer {
     display: flex;
@@ -111,7 +113,7 @@ hr {
   flex: 1;
   margin: auto;
   p {
-    font-size: 1.5vh;
+    font-size: 1.6vh;
     line-height: 0.5em;
   }
 }
@@ -130,9 +132,9 @@ hr {
     padding-right: 3px;
 }
 
-/*
- posts
-*/
+/* ----------
+   posts
+------------- */
 
 .post-title {
     font-size: 3.0vh;
@@ -159,9 +161,9 @@ hr {
 }
 
 
-/*
+/* -----------
  projects
-*/
+-------------- */
 
 .project-container {
     position: relative;
@@ -193,7 +195,7 @@ hr {
     }
 }
 
-.box-item:hover, .box-iterm:focus {
+.box-item:hover {
   background: lighten($accent, 3);
 
   /* This make the whole div clickable */
@@ -203,10 +205,10 @@ hr {
   }
 }
 
-/*
+/* ------------
   Project
   List
-*/
+-------------- */
 .project-list-container {
   position: relative;
   display: flex;
@@ -271,10 +273,11 @@ hr {
   }
 }
 
-/* Some
+/* -------
+  Some
   common
   settings
-*/
+--------- */
 .box-item, .rect-item {
 
   a:hover {
@@ -289,7 +292,9 @@ hr {
 }
 
 
-/* Mobile */
+/* ---------
+   Mobile
+----------- */
 @media (max-width: 800px) {
     .container {
         max-width: $med-width;

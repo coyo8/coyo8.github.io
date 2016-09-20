@@ -36,8 +36,10 @@ We will first experiment with a couple RFID tag and readers and make a small dat
 ### SYSTEM ORGANIZATION
 
 <figure>
-<img  src="{{ site.url }}/assets/images/projects/paper/system-design/dwindler.png" alt="system design">
-<figcaption>Fig1.1 Overview of the Dwindler design</figcaption>
+<div class="large">
+  <img  src="{{ site.url }}/assets/images/projects/paper/system-design/dwindler.png" alt="system design">
+  <figcaption>Fig1.1 Overview of the Dwindler design</figcaption>
+</div>
 </figure>
 
 ### Equiptments

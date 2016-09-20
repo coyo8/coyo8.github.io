@@ -23,8 +23,10 @@ Integrate air writing into the artistic world rather than just accepting pre-def
 ### SYSTEM ORGANIZATION
 
 <figure>
-<img  src="{{ site.url }}/assets/images/projects/paper/system-design/sketcher.png" alt="system design">
-<figcaption>Fig1.1 Overview of the Sketcher implementation design</figcaption>
+  <div class="large">
+    <img  src="{{ site.url }}/assets/images/projects/paper/system-design/sketcher.png" alt="system design">
+    <figcaption>Fig1.1 Overview of the Sketcher implementation design</figcaption>
+  </div>
 </figure>
 
 ### DEVELOPMENT PLAN

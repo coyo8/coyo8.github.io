@@ -10,7 +10,7 @@ Magus Mundus is a 3D game where the player takes the form of a young wizard call
 
 In the process, he has to safeguard the rare plants in his environment from the witches. Solving puzzles with the help of the magical cat Felix, the player goes on a valiant quest where the knowledge about the plants in the environment takes him closer to his ultimate goal.
 
-### WHY
+### WHY?
 
 * To create factual knowledge associations in memory as above and thereby realising medicinal properties of plants and associated Indian cultural and traditional values.
 * To develop understanding of the significance of conservation of endangered plants.
@@ -20,8 +20,16 @@ In the process, he has to safeguard the rare plants in his environment from the 
 
 ### GAME PLAY WALKTHROUGH
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VALgAvXyGv0" frameborder="0" allowfullscreen></iframe>
+<div class="videowrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VALgAvXyGv0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ### POSTER
 
-Click <a href="{{ site.url }}/assets/pdf/magus-mundus-poster.pdf" target="_blank">here</a> to open the poster in new tab.
+Click <a href="{{ site.url }}/assets/pdf/magus-mundus-poster.pdf" target="_blank">here</a> to view the poster.
+
+### Mentor
+1. Amy Ogan
+2. Erin Walker
+3. Erik Harpstead
+

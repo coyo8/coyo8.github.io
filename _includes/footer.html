@@ -1,8 +1,6 @@
 <footer class="container footer">
     <div class="footer-box">
-        {% if page.url == "/about/" %}
-            &nbsp;
-        {% else %}
+        {% if page.url != "/about/" %}
             {% include social.html %}
         {% endif %}
     </div>

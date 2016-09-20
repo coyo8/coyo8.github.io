@@ -77,27 +77,27 @@ open-source:
 research-bites:
   - name: Magus Mundus
     img: research/gamepad.png
-    desc:
+    desc: Can game be used for learning complex concepts? In this project we tried 3-D game to teach scientific names of plants along with it's medicinal values to K-12 students.
 
   - name: Social Media Privacy
     img: research/padlock.png
-    desc:
+    desc: How to bridge advertising and privacy in Social Media?
 
   - name: Personality Recommender
     img: research/family.png
-    desc:
+    desc: Build user personality profile using web interaction data and use this personality persona for recommendation.
 
   - name: Cultural
     img: research/six.png
-    desc:
+    desc: Exploring the potential of educational games in culture teaching.
 
   - name: HMM location Recommender
     img: research/map.png
-    desc:
+    desc: Using hidden markov model to determine patients movements pattern.
 
   - name: Dr Cursive
     img: research/writing.png
-    desc:
+    desc: Cursive handwriting tutor App
 
 talks:
   - name: Getting started with Github, Mozcafe
