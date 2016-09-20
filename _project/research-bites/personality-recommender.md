@@ -19,4 +19,4 @@ In this Project we have developed a completely new methodology using Machine Lea
 I have the draft copy of the thesis. Click <a href="{{ site.url }}/assets/pdf/personality.pdf" target="_blank">here</a> to read it.
 
 ### MENTOR
-1. Prof. O.P. Vyas
+1. [Prof. O.P. Vyas](https://scholar.google.co.in/citations?user=9-NwhCAAAAAJ)

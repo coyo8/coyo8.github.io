@@ -19,4 +19,4 @@ The paper got accepted at <a href="http://ieeexplore.ieee.org/document/6779371/"
 I have the draft copy of paper. Click <a href="{{ site.url }}/assets/pdf/nmsant.pdf" target="_blank">here</a> to read.
 
 ### Mentor
-1. Prof. O.P. Vyas
+1. [Prof. O.P. Vyas](https://scholar.google.co.in/citations?user=9-NwhCAAAAAJ)

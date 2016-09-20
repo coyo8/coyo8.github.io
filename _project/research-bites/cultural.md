@@ -19,6 +19,6 @@ Each game will address a specific problem faced by the TA or direct him to a sol
 Click <a href="{{ site.url }}/assets/pdf/culture.pdf" target="_blank">here</a> to view the poster.
 
 ### MENTOR
-1. Amy Ogan
-2. David Gerritsen
+1. [Prof. Amy Ogan](https://www.hcii.cmu.edu/people/amy-ogan)
+2. [David Gerritsen](https://www.hcii.cmu.edu/people/david-gerritsen)
 

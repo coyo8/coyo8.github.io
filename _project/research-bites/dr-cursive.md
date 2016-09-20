@@ -15,6 +15,8 @@ Dr. Cursive is handwriting tutor app.
 ### WHY?
 We have paper based method for improving hand writing but due to advent of digital technolgy, more and more people now rely on writing on digital devices. For us the problem was to bring the same expereince of imrpoving writing or learning the art of calligraphy on digital devices. These devices offer hand written messages and recently the use of this form has been becomming more prevalent. Since the ages people have appreciated beautiful handwriting and same holds true on digital devices.
 
+[Everyone has terrible handwriting these days.](http://www.slate.com/articles/life/human_guinea_pig/2009/09/dead_letters.html)
+
 ### PROGRESS
 <figure>
   <div class="small">

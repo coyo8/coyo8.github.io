@@ -57,7 +57,7 @@ Wanderer has been made to solve above problem using mobile phones integrated wit
 Click <a href="{{ site.url }}/assets/apps/wanderer.apk" target="_blank">here</a> to download the Android APK.
 
 ### MENTOR
-1. Kshitij Marwah
+1. [Kshitij Marwah](http://www.kshitijmarwah.com/)
 
 
 ### ACRONYMNS

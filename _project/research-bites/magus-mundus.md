@@ -29,7 +29,7 @@ In the process, he has to safeguard the rare plants in his environment from the 
 Click <a href="{{ site.url }}/assets/pdf/magus-mundus-poster.pdf" target="_blank">here</a> to view the poster.
 
 ### Mentor
-1. Amy Ogan
-2. Erin Walker
-3. Erik Harpstead
+1. [Prof. Amy Ogan](https://www.hcii.cmu.edu/people/amy-ogan)
+2. [Prof. Erin Walker](http://faculty.engineering.asu.edu/ewalker/)
+3. [Erik Harpstead](http://www.erikharpstead.net)
 
