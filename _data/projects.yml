@@ -100,8 +100,15 @@ research-bites:
     desc: Cursive handwriting tutor App
 
 talks:
-  - name: Getting started with Github, Mozcafe
+  - name: Beginners Python tutorial
+    img: others/py.png
+    desc: My first talk was on how to get started with python.
+    location: IIIT Allahabad | Aug 7, 2013
+
+  - name: Getting started with Open Source contribution
     img: others/conference.png
-    desc:
+    desc: When I started contributed to open source, I personally had huge learning curve to understand the process. This talk demystifes the process.
+    location: Mozcafe, IIIT Allahabd
+
 
 

@@ -49,6 +49,7 @@ lsi:                false
 excerpt_separator:  "\n\n"
 incremental:        false
 
+
 # Mapbox
 mapbox-token: pk.eyJ1IjoicmFodWxycml4ZSIsImEiOiI2MWJlODU5ZGM5MGQyN2JkYjllNDQ2ZjMxYjUzOTQyMSJ9.RdkniV4ToKfsY4cRXO8NvA
 mapid: mapbox.streets

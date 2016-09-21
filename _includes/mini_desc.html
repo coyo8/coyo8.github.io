@@ -9,6 +9,9 @@
       <div class="text">
         <div class="project-title"> {{ project.name }} </div>
         <p> {{ project.desc }} </p>
+        {% if page.url == '/category/talks/' %}
+        <p> <i class="fa fa-map-marker" aria-hidden="true"></i> {{project.location}} </p>
+        {% endif %}
       </div>
     </div>
   </a>
