@@ -16,14 +16,6 @@ body {
     line-height: 1.4em;
 }
 
-hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-
 /*--------------
   Header
   -------------- */
@@ -70,7 +62,7 @@ hr {
   border: 0;
   border-top: .5px solid #eee;
   border-bottom: .5px solid #eee;
-  margin: 1.5rem auto;
+  margin: 1.0rem auto;
 }
 
 strong {
@@ -208,6 +200,7 @@ divs
     font-size: 3.0vh;
     font-weight: bold;
     color: $accent;
+    margin-bottom: 0.5rem;
 }
 
 .post-pagination {
