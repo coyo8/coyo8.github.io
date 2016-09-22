@@ -2,6 +2,9 @@
  * Customization Variables
  */
 
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600';
+
+/* Custom */
 $accent: #2962FF;
 $image-size: 85px;
 $project-image-size: 70px;
@@ -29,3 +32,9 @@ $light-green-color: #f44336;
 
 /* Font Colors */
 $base-font-color: rgba($dark-gray-color, .8);
+
+/* code */
+$code-color: #bf616a;
+$code-background-color: #f9f9f9;
+$code-font: Menlo, Monaco, monospace;
+$code-gist-font: Menlo, Monaco, "Courier New", monospace !important;

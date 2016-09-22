@@ -2,7 +2,7 @@
 layout: proj
 title: Education Games in Culture Teaching
 ---
-# Educational Games in culture teaching
+# Educational Games in Culture Teaching
 
 <hr>
 ### ABSTRACT

@@ -2,7 +2,7 @@
 layout: proj
 title: Getting started with Open Source contribution
 ---
-# Open Source contribution
+# Open Source Contribution
 
 <hr>
 

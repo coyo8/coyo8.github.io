@@ -1,8 +1,8 @@
 ---
 layout: proj
-title: Beginners Python tutorial
+title: Beginners Python Tutorial
 ---
-# Beginners Python tutorial
+# Beginners Python Tutorial
 
 <hr>
 
