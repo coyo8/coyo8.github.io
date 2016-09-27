@@ -1,11 +1,38 @@
 <footer class="container footer">
-    <div class="footer-box">
-        {% if page.url != "/about/" %}
-            {% include social.html %}
-        {% endif %}
+  <div class="footer-hr">
+    <hr>
+  </div>
+  <div class="footer-box">
+    <div class="social-icon">
+      {% if site.trivium.social.twitter %}
+      <a id="twitter-ic" href="https://twitter.com/{{ site.trivium.social.twitter }}" target="_blank">
+        <i class="fa fa-twitter fa-lg"></i>
+      </a>
+      {% endif %}
+      {% if site.trivium.social.github %}
+      <a id="git-ic" href="https://github.com/{{ site.trivium.social.github }}" target="_blank">
+        <i class="fa fa-github-square fa-lg"></i>
+      </a>
+      {% endif %}
+      {% if site.trivium.social.facebook %}
+      <a id="fb-ic" href="https://facebook.com/{{ site.trivium.social.facebook }}" target="_blank">
+        <i class="fa fa-facebook-square fa-lg"></i>
+      </a>
+      {% endif %}
+      {% if site.trivium.social.gplus %}
+      <a id="gplus-ic" href="https://plus.google.com/{{ site.trivium.social.gplus }}" target="_blank">
+        <i class="fa fa-google-plus-square fa-lg"></i>
+      </a>
+      {% endif %}
+      {% if site.trivium.social.medium %}
+      <a id="medium-ic" href="https://medium.com/@{{ site.trivium.social.medium }}" target="_blank">
+        <i class="fa fa-medium fa-lg"></i>
+      </a>
+      {% endif %}
     </div>
-    <div class="footer-text">
-        <p> Code licensed under <a href="http://opensource.org/licenses/mit-license.html"> MIT </a> and content under <a href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons BY 4.0" target="_blank">CC 4.0</a>.</p>
-        <p>Icons used are made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
-    </div>
+  </div>
+  <div class="footer-text">
+      <p> Code licensed under <a href="http://opensource.org/licenses/mit-license.html"> MIT </a> and content under <a href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons BY 4.0" target="_blank">CC 4.0</a>.</p>
+      <p>Icons used are made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
+  </div>
 </footer>

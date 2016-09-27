@@ -20,14 +20,10 @@ layout: default
 	</div>
 </div>
 
-<hr>
-<!-- Add improve button -->
-{% include improve.html %}
-<hr>
-
+<!-- <hr>
 {% if site.related_posts %}
 <div class="related">
-	<h4>Related Posts</h2>
+	<h4>RELATED POSTS</h2>
 	<ul class="posts">
 	    {% for post in site.related_posts limit:3 %}
 	    <li>
@@ -38,10 +34,9 @@ layout: default
 	</ul>
 </div>
 {% endif %}
+<hr> -->
 
-<div style="clear:both"></div>
-<hr>
-
+<hr/>
 <div class="post-pagination">
 	<div class="first">
 		{% if page.previous %}
@@ -60,13 +55,16 @@ layout: default
 	</div>
 </div>
 
-<div style="clear:both"></div>
 <hr>
-
+<!-- Add improve button -->
+{% include improve.html %}
+<!-- share -->
+<hr>
+{% include social.html %}
+<hr>
 <!-- disqus js -->
 {% include disqus.html %}
-<div style="clear:both"></div>
-<hr>
+
 
 
 

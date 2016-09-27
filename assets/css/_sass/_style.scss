@@ -126,7 +126,7 @@ divs
     margin: auto;
 }
 .wrapper {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 100px);
 }
 
 .container a {
@@ -165,22 +165,34 @@ divs
 .footer {
     display: flex;
     flex-direction: column;
-    min-height: 70px;
-    align-items: flex-start;
+    min-height: 100px;
+    justify-content: center;
+}
+
+.footer-hr {
+  flex: 1;
+  height: 10%;
+
+  hr {
+    margin: 0.2rem 0 0.1rem 0;
+  }
 }
 
 .footer-text {
   flex: 1;
-  margin: auto;
+  height: 40%;
+  text-align: center;
   p {
-    font-size: 1.6vh;
-    line-height: 0.5em;
+    font-size: .75rem;
+    line-height: 0.1rem;
   }
 }
 
 .footer-box {
     flex: 1;
-    margin-top: 10px;
+    height: 40%;
+    margin: auto;
+    padding-bottom: 5px;
 }
 
 .footer-box a:hover {
@@ -221,15 +233,25 @@ divs
     }
 }
 
+.post-share {
+  margin-bottom: 1rem;
+
+  a:hover {
+    text-decoration: none !important;
+    opacity: 0.5;
+  }
+}
+
 
 /* -----------
- projects
+ project
+ type
 -------------- */
 
 .project-container {
-    position: relative;
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 2vh;
 }
 
 .box-item {
@@ -237,38 +259,30 @@ divs
     height: 200px;
     margin: .1vw;
     background: lighten($accent, 15);
-    /*transition: background 0.5s ease;*/
+    text-align: center;
     flex: 1 0 3;
 
-    text-align: center;
-
+    /* change font size to make bigger  */
     p {
         font-size: 4.0vh;
         margin-top: 20%;
         color: white;
     }
-
     /* This make the whole div clickable */
     a {
         display: block;
-        height: 100%;
         width: 100%;
+        height: 100%;
     }
 }
 
 .box-item:hover {
   background: lighten($accent, 3);
-
-  /* This make the whole div clickable */
-  a {
-    display: block;
-    /*width: 100%;*/
-  }
 }
 
 /* ------------
-  Project
-  List
+  project
+  list
 -------------- */
 .project-list-container {
   position: relative;
@@ -292,15 +306,6 @@ divs
     margin: 1.0vw 1.0vw 1.0vw 1.0vw;
    /* border: .1vw solid black;*/
   }
-
-  .sprite {
-    width: 75px;
-    height: 75px;
-    /*border-radius: 10%;*/
-    margin: 1.0vw 0 1.0vw 1.0vw;
-   /* border: .1vw solid black;*/
-  }
-
   .text {
     width: 80%;
     margin-left: 1.0vw;
@@ -309,7 +314,6 @@ divs
   p {
     color: black;
   }
-
   .project-title {
     font-size: 18px;
     font-weight: bold;
@@ -330,7 +334,8 @@ divs
   /* This make the whole div clickable */
   a {
       display: block;
-      /*width: 100%;*/
+      width: 100%;
+      height: 100%;
   }
 }
 
