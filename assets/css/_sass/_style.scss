@@ -362,6 +362,25 @@ divs
 }
 
 
+/* ----------
+Photos
+------------*/
+.photo {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+
+  .thumbnail {
+    background-size: cover;
+    width: 16.66667%;
+    padding-bottom: 16.66667%;
+    background: red;
+  }
+}
+
+
+
+
 /* ---------
    Mobile
 ----------- */
