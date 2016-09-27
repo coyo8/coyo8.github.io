@@ -63,6 +63,11 @@ modernizr: 2.8.3
 # Permalinks
 permalink: pretty
 
+# flickr
+flickr:
+  api_key: afe73db601e205051db6ffeaff48a6cc
+  user_id: 133775011@N07
+
 exclude:
   - CNAME
   - Gemfile
