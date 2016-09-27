@@ -14,6 +14,11 @@ body {
     font-family: "Inconsolata";
     font-color: #050604;
     line-height: 1.4em;
+
+    color: $base-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 /*--------------
@@ -285,7 +290,6 @@ divs
   list
 -------------- */
 .project-list-container {
-  position: relative;
   display: flex;
   flex-flow: column wrap;
 
@@ -299,6 +303,9 @@ divs
   width: 100%;
   margin: .1vw;
 
+  .project-tab {
+    display: flex;
+  }
   .thumbnail {
     height: $project-image-size;
     width: $project-image-size;
@@ -310,20 +317,15 @@ divs
     width: 80%;
     margin-left: 1.0vw;
 
-  }
-  p {
-    color: black;
-  }
-  .project-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: $accent;
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: $accent;
+      margin-bottom: 1rem;
+    }
   }
 }
 
-.project-tab {
-  display: flex;
-}
 
 .rect-item:hover {
   .text {

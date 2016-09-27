@@ -92,3 +92,7 @@ lang: en-US
 branch: master
 future: true
 
+gems:
+  - jemoji
+  - jekyll-mentions
+

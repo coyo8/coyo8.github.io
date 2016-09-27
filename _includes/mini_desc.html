@@ -1,18 +1,20 @@
 <div class="rect-item">
-  {% if project.url == nil %}
-    <a href="{{site.url}}/project/{{proj_cat}}/{{ project.name | downcase | replace:' ', '-' | url_encode }}">
-  {% else %}
-    <a href="{{project.url}}" target="_blank">
-  {% endif %}
-    <div class="project-tab">
-      <img class="thumbnail" src="{{site.url}}/assets/images/projects/{{project.img}}" alt="{{project.name}}"/>
-      <div class="text">
-        <div class="project-title"> {{ project.name }} </div>
-        <p> {{ project.desc }} </p>
-        {% if page.url == '/category/talks/' %}
-          <p> <i class="fa fa-map-marker" aria-hidden="true"></i> {{project.location}} </p>
+  <div class="project-tab">
+    <img class="thumbnail" src="{{site.url}}/assets/images/projects/{{project.img}}" alt="{{project.name}}"/>
+    <div class="text">
+      <div class="project-title">
+        {% if project.url == nil %}
+          <a href="{{site.url}}/project/{{proj_cat}}/{{ project.name | downcase | replace:' ', '-' | url_encode }}">
+        {% else %}
+          <a href="{{project.url}}" target="_blank">
         {% endif %}
+          {{ project.name }}
+        </a>
       </div>
+      <p> {{ project.desc }} </p>
+      {% if page.url == '/category/talks/' %}
+        <p> <i class="fa fa-map-marker" aria-hidden="true"></i> {{project.location}} </p>
+      {% endif %}
     </div>
-  </a>
+  </div>
 </div>
