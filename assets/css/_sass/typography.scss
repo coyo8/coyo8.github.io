@@ -116,15 +116,24 @@
         }
 
     }
-    .improve-article {
+    .improve-article-text {
         min-width: 70%;
         text-align: left;
         margin-top: 2%;
+
+        @media (max-width: 650px) {
+            display: none;
+        }
     }
-    .improve-button {
+    .improve-article-button {
         min-width: 30%;
         margin-left: 1rem;
         align-content: right;
+
+        @media (max-width: 650px) {
+            width: 100%;
+            margin-left: 40%;
+        }
     }
 
     .videowrapper {
