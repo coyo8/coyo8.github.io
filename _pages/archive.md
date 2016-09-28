@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blog Archive
-permalink: /blog/
+permalink: /archive/
 ---
 # Blog Archive
 <hr />

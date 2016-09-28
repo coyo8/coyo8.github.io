@@ -1,11 +1,11 @@
 <script type="text/javascript">
     var endpoint = "https://api.flickr.com/services/rest/"
     var apiKey = "{{site.flickr.api_key}}";
-    var extras = "url_sq,url_t,url_s,url_m,url_n,url_z,url_c,url_l,url_o,path_alias";
+    var extras = "url_m";
     var method = "flickr.people.getPublicPhotos"
     var user_id = "{{site.flickr.user_id}}";
     var per_page = "50";
-    var flickr_url = "https://www.flickr.com/photos/133775011@N07/%id%"
+    var flickr_url = "https://www.flickr.com/photos/{{site.flickr.user_id}}/%id%"
 
     var request = endpoint+"?method="+method+
                 "&api_key="+apiKey+
@@ -15,11 +15,11 @@
                 "&format=json&jsoncallback=?";
     $.getJSON(request,buildGallery);
 
-    function buildGallery(data,result){
+    function buildGallery(data, result){
         if(result=="success"){
             var photos = data.photos.photo;
             for(var i = 0; i < photos.length; i++){
-                $('<a class="thumbnail">').attr("style", "background-image:url(%src%)".replace("%src%", photos[i].url_m)).attr("href", flickr_url.replace("%id%", photos[i].id)).appendTo(".photo");
+                $('<a class="gallery-thumbnail">').attr("style", "background-image:url(%src%)".replace("%src%", photos[i].url_m)).attr("href", flickr_url.replace("%id%", photos[i].id)).attr("title", photos[i].title).appendTo(".photo");
             }
         }
     }
