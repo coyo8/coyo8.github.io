@@ -10,7 +10,7 @@ permalink: /things/
 </div> -->
 
 <div id="Photos">
-  <div class="post-title" style="text-align: center;"> <a href="https://www.flickr.com/photos/133775011@N07/" target="_blank">PHOTOSTREAM </a> </div>
+  <div class="post-title" style="text-align: center;"> <a href="https://www.flickr.com/photos/133775011@N07/" target="_blank">PHOTOSTREAM</a></div>
 </div>
 
 <div class="photo">
