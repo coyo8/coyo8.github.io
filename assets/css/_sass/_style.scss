@@ -388,23 +388,28 @@ Things
 ------------*/
 .thing-title {
   display: flex;
-  font-size: 2.5vh;
   flex-flow: row wrap;
   justify-content: center;
-  height: 50px;
+  max-height: 70px;
 
   .title-slot {
-    width: 15%;
+    max-width: 20%;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    margin: 1em;
     text-align: center;
-    margin-right: 1rem;
-    background: green;
-    padding-top: 10px;
+  }
+  a {
+    color: $accent;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 
 .thing-category {
   display: flex;
-  font-size: 2.5vh;
+  font-size: 1.2rem;
   height: 50px;
   justify-content: center;
   flex-flow: row wrap;
@@ -413,8 +418,14 @@ Things
     width: 15%;
     text-align: center;
     margin-right: 1rem;
-    background: orange;
-    padding-top: 10px;
+    padding: 0.5rem;
+  }
+
+  a {
+    color: $accent;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 
