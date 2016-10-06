@@ -72,25 +72,25 @@
         .small {
             max-width: 40%;
             height: auto;
-            margin: 0 3vh 3vh 3vh;
+            margin: 30px;
         }
 
         .large {
             max-width: 100%;
             height: auto;
-            margin: 0 0 1vh 0;
+            margin: 10px;
         }
 
         .medium {
             max-width: 60%;
             height: auto;
-            margin: 0 0 1vh 0;
+            margin: 10px;
         }
 
     }
 
     figcaption {
-        font-size: 1.8vh;
+        font-size: 0.6rem;
         font-style: italic;
         text-align: center;
     }
