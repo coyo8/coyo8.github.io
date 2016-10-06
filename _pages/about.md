@@ -33,6 +33,15 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 
 * Phone: [+91-9819737113](tel:+91-9819737113)
 
+---
+
+## More beans
+
+* [Travel History]({{ site.url }}/travel)
+* [Photography]({{ site.url }}/things)
+* [Books]({{ site.url }}/book)
+
+
 
 [github]: <https://github.com/{{ site.trivium.social.github }}>
 [medium]: <https://medium.com/@{{ site.trivium.social.medium }}>
