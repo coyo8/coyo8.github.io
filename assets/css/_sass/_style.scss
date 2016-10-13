@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     font-family: "Inconsolata";
-    font-color: #050604;
+    font-color: $light-gray;
     line-height: 1.4em;
 
     color: $base-color;
@@ -460,6 +460,7 @@ Things
         justify-content: center;
     }
 
+    /* Change the size of box item */
     .box-item {
       min-width: 100%;
     }

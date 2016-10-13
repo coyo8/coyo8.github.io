@@ -39,7 +39,7 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 
 * [Travel History]({{ site.url }}/travel)
 * [Photography]({{ site.url }}/things)
-* [Books]({{ site.url }}/book)
+<!-- * [Books]({{ site.url }}/book) -->
 
 
 
@@ -51,3 +51,4 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 [rudra]: <https://en.wikipedia.org/wiki/Rudra>
 [cmu]: <https://www.hcii.cmu.edu/>
 [disney]: <http://www.disneyinteractive.com/>
+

@@ -60,14 +60,16 @@
     }
     img {
         text-align: center;
-        max-width: 100%;
+        width: 100%;
         /*margin: 0 0 1rem;*/
     }
 
     figure {
         display: flex;
-        min-width: 100%;
+        width: 100%;
         flex-flow: row wrap;
+        flex-direction: left;
+        justify-content: space-between;
 
         .small {
             max-width: 40%;
