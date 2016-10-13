@@ -257,13 +257,13 @@ divs
 .project-container {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 2vh;
+    margin-bottom: 10px;
 }
 
 .box-item {
     width: 230px;
     height: 200px;
-    margin: .1vw;
+    margin: 1px;
     background: lighten($accent, 15);
     text-align: center;
     flex: 1 0 3;
@@ -271,7 +271,7 @@ divs
     /* change font size to make bigger  */
     p {
         font-size: 1.5rem;
-        margin-top: 20%;
+        padding-top: 20%;
         color: white;
     }
     /* This make the whole div clickable */
@@ -281,7 +281,6 @@ divs
         height: 100%;
     }
 }
-
 .box-item:hover {
   background: lighten($accent, 3);
 }
@@ -347,13 +346,6 @@ divs
   common
   settings
 --------- */
-.box-item, .rect-item {
-
-  a:hover {
-    text-decoration: none !important;
-  }
-}
-
 .project-list-container, .project-container, .social-icon {
   a:hover {
     text-decoration: none !important;
