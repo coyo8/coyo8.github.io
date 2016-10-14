@@ -6,3 +6,4 @@ $(window).load(function(){
     $(".progress-bar").css("width", totalScroll + "%");
   });
 });
+

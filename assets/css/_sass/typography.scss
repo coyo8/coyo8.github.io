@@ -102,21 +102,6 @@
         height: 20px;
         flex-direction: row;
         align-items: center;
-
-        .button {
-            background-color: #1976D2;
-            color: white;
-            padding: 1vh 3vh;
-            text-align: center;
-            display: inline-block;
-            font-size: 2vh;
-            text-decoration: none;
-        }
-
-        a:hover {
-            opacity: 0.5;
-        }
-
     }
     .improve-article-text {
         min-width: 70%;
