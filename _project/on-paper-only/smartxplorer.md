@@ -1,5 +1,7 @@
 ---
 layout: proj
+title: SmartXplorer
+desc: Voice based question recognistion system. No one will need to type a question again.
 ---
 
 # SmartXplorer

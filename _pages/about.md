@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About me
+title: About
 permalink: /about/
 ---
 
@@ -36,10 +36,9 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 ---
 
 ## More beans
-
+* [Photography]({{ site.url }}/photography)
 * [Travel History]({{ site.url }}/travel)
-* [Photography]({{ site.url }}/things)
-<!-- * [Books]({{ site.url }}/book) -->
+* [Reading List]({{ site.url }}/books)
 
 
 

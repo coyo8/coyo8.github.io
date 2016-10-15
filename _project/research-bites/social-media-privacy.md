@@ -1,6 +1,7 @@
 ---
 layout: proj
 title: Social Media Privacy
+desc: How to bridge advertising and privacy in Social Media?
 ---
 # Social Media Privacy
 

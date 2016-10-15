@@ -1,6 +1,7 @@
 ---
 layout: proj
 title: Wanderer
+desc: Using hidden markov model to determine patients movements pattern.
 ---
 # Wanderer
 

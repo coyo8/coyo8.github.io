@@ -1,6 +1,8 @@
 ---
 layout: proj
 title: Magus Mundus
+desc: Can game be used for learning complex concepts? In this project we tried 3-D game to teach scientific names of plants along with it's medicinal values to K-12 students.
+
 ---
 # Magus Mundus
 

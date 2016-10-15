@@ -1,7 +1,9 @@
 ---
 layout: proj
 title: Education Games in Culture Teaching
+desc: Exploring the potential of educational games in culture teaching.
 ---
+
 # Educational Games in Culture Teaching
 
 <hr>

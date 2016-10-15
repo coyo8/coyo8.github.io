@@ -1,5 +1,7 @@
 ---
 layout: proj
+title: TapLola
+desc: A human laughter tracker along with analytics.
 ---
 
 # TapLola

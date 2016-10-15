@@ -1,6 +1,7 @@
 ---
 layout: proj
-title: dwindler
+title: Dwindler
+desc: Automating switch boards particulary in Universities and offices for optimizing power usage.
 ---
 
 # Dwindler

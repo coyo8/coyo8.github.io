@@ -1,5 +1,7 @@
 ---
 layout: proj
+title: JScout
+desc: AI based tool to reduce your boringness!
 ---
 
 # JScout

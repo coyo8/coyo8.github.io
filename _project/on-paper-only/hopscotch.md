@@ -1,6 +1,7 @@
 ---
 layout: proj
-title: hopscotch
+title: Hopscotch
+desc: Enabling eyes as new interaction dimesnion particulary in playing games and operating smart phones.
 ---
 
 # HopScotch

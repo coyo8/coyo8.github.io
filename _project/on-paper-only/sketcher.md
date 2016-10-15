@@ -1,5 +1,7 @@
 ---
 layout: proj
+title: Sketcher
+desc: Kinect along with depth sensor based application which detects your writing using hand movements in air.
 ---
 
 # Sketcher

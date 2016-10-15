@@ -1,6 +1,7 @@
 ---
 layout: proj
 title: Beginners Python Tutorial
+desc: My first talk was on how to get started with python.
 ---
 # Beginners Python Tutorial
 
@@ -412,7 +413,7 @@ $ python compound_conditional.py
 Repeated execution of a set of statements is called iteration.
 
 <figure>
-  <div class="large ">
+  <div class="large">
     <img src="{{ site.url }}/assets/images/projects/others/talks/iteration.png" alt="system design">
   </div>
 </figure>

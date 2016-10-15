@@ -1,6 +1,7 @@
 ---
 layout: proj
-title: charperone
+title: Charperone
+desc: A travel companion which gives you path infomartion beforehand.
 ---
 
 # CHARPERONE

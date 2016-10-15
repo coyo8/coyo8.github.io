@@ -1,6 +1,7 @@
 ---
 layout: proj
 title: Personality Recommender
+desc: Build user personality profile using web interaction data and use this personality persona for recommendation.
 ---
 # Personality Recommender
 

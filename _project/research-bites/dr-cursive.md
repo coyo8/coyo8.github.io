@@ -1,6 +1,7 @@
 ---
 layout: proj
 title: Dr. Cursive
+desc: Cursive handwriting tutor App
 ---
 # [Dr. Cursive](http://buildinprogress.media.mit.edu/projects/608)
 
