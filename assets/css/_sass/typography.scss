@@ -6,10 +6,10 @@
     }
 
     blockquote {
-      padding: 0 0 0 1.5rem;
+      padding: 0.8rem;
       margin: 0 2rem 1rem 0;
       color: #999;
-      border-left: .5rem solid #e5e5e5;
+      border-left: .2rem solid $light-gray-color;
 
       p:last-child {
         margin-bottom: 0;
