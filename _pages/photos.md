@@ -17,6 +17,6 @@ permalink: /photography/
     <a href="https://www.flickr.com/photos/133775011@N07/albums" target="_blank"> ALBUMS </a>
   </div>
   <div class="category-slot">
-    <a href="{{site.url}}/cameras" target="_blank"> CAMERAS </a>
+    <a href="{{site.url}}/cameras"> CAMERAS </a>
   </div>
 </div>
