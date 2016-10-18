@@ -218,7 +218,7 @@ These are handy operations, so which types implements sequence.
 
 * List, Tuple and Range
 
-Apart from these [binary data(https://docs.python.org/3.4/library/stdtypes.html#binaryseq) and [text strings](https://docs.python.org/3.4/library/stdtypes.html#textseq) also implements tailored version of it. Now, you must be able to figure out why we were able to apply random access on String?
+Apart from these [binary data](https://docs.python.org/3.4/library/stdtypes.html#binaryseq){:target="_blank"} and [text strings](https://docs.python.org/3.4/library/stdtypes.html#textseq) also implements tailored version of it. Now, you must be able to figure out why we were able to apply random access on String?
 
 
 ### More of Sequence Type

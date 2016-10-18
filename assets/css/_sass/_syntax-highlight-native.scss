@@ -4,7 +4,9 @@
 
 code,
 pre {
+  display: block;
   font-family: $code-font;
+  overflow: auto;
 }
 
 code {
@@ -16,7 +18,7 @@ code {
 }
 
 pre {
-  display: block;
+  /*display: block;*/
   margin-top: 0;
   margin-bottom: 1rem;
   padding: .5rem;
@@ -25,7 +27,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
-  // word-wrap: break-word;
+  word-wrap: break-word;
   background-color: $code-background-color;
 }
 
