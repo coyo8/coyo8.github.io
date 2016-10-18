@@ -19,15 +19,14 @@ Though I don't deny in having best gear with you but capturing moments is 70:30 
   </div>
 </figure>
 
-I learnt developing photographs from film from my Uncle photo studio. I used to spend most of my after school afternoon in developing films. It used to be fun.
+I learnt developing photographs from film in my uncle photo studio. I used to spend most of my after school time in developing films. It used to be fun. Then I went to military school and almost forgot about this hobby as we were not allowed to to keep any electronics.
 
 ### [Cannon EOS M](http://amzn.to/2dVsfxi){:target="_blank"}
-After 7 years of photography exile, I retook it as hobby again last year and bought EOS M. It is a nice camera with Canon APS-C sensor. The only drawback I find it in as beginner DSLR camera is the view finder. The image quality is crip and vibrant in color. You can read the review at [DPReview](https://www.dpreview.com/reviews/canon-eos-m).
+After 7 years of photography exile, I retook it again last year and bought EOS M. It is a nice camera with Canon APS-C sensor which is good enogh for beginners. It have all the feature which you can expect in a beginner DSLR camera. The only drawback I find it in as beginner DSLR camera is the view finder. The image quality is crip and vibrant in color. You can read the review at [DPReview](https://www.dpreview.com/reviews/canon-eos-m).
 
 ***Why I choose this camera?***
 
 Because it is portable and have similar capability as of [7D](https://www.dpreview.com/reviews/canoneos7d).
-
 
 <figure>
   <div class="large">
@@ -37,7 +36,7 @@ Because it is portable and have similar capability as of [7D](https://www.dprevi
 </figure>
 
 ### [iPhone 6S](http://amzn.to/2dYpHPY){:target="_blank"}
-iPhone 6S tiny censor is capable of taking really good images. It is not great for night shooting but in daylight you can take really good images.
+iPhone 6S tiny censor is capable of taking really good images. Comparing it with samsung and other phone camera, I find iPhone 6S images much better. At the same time I will deny that it is not great for night shooting but in daylight you can take really good images.
 
 <figure>
   <div class="large">
@@ -54,4 +53,5 @@ I was looking to improve my photography skill and being more DIY type, I didn't 
 * [Fotodiox EW-54 Bayonet Lens Hood for Canon EF-M 18-55mm f/3.5-5.6 IS STM Lens](http://amzn.to/2en06ib){:target="_blank"}
 * [LensPen New DSLR Pro Camera Cleaning Kit](http://amzn.to/2eg13g4){:target="_blank"}
 * [Lowepro LP36658 Passport Sling III Camera Case, Grey](http://amzn.to/2eg1nLL){:target="_blank"}
+* [Manfrotto MTPIXI-B PIXI Mini Tripod, Black](http://amzn.to/2epHo9i){:target="_blank"}
 
