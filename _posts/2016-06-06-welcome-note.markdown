@@ -9,7 +9,6 @@ tags:
 - General
 ---
 
-<hr>
 When I told my friends that I bought a domain named *Rudrakos* for blogging and the first question I got was what does the name mean?
 
 The site name, Rudrakos (pronounced “roo d-ruh kohs”) is a combination of two sanskrit words i.e. Rudra (mightiest of mighty) and Kosa (pocket), meaning container of omnipotent.
