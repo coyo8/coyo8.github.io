@@ -14,7 +14,7 @@ Dr. Cursive is handwriting tutor app.
 ― Mokokoma Mokhonoana
 
 ### WHY?
-We have paper based method for improving hand writing but due to advent of digital technolgy, more and more people now rely on writing on digital devices. For us the problem was to bring the same expereince of imrpoving writing or learning the art of calligraphy on digital devices. These devices offer hand written messages and recently the use of this form has been becomming more prevalent. Since the ages people have appreciated beautiful handwriting and same holds true on digital devices.
+We have paper based method for improving hand writing but due to advent of digital technology, more and more people now rely on writing on digital devices. For us the problem was to bring the same experience of improving writing or learning the art of calligraphy on digital devices. These devices offer hand written messages and recently the use of this form has been becoming more prevalent. Since the ages people have appreciated beautiful handwriting and same holds true on digital devices.
 
 [Everyone has terrible handwriting these days.](http://www.slate.com/articles/life/human_guinea_pig/2009/09/dead_letters.html)
 
@@ -22,11 +22,11 @@ We have paper based method for improving hand writing but due to advent of digit
 <figure>
   <div class="small">
     <img src="{{ site.url }}/assets/images/projects/research/cursive/1.png" alt="system design">
-    <figcaption>Fig1.1 Brainstroming ideas </figcaption>
+    <figcaption>Fig1.1 Brainstorming ideas </figcaption>
   </div>
   <div class="small">
     <img src="{{ site.url }}/assets/images/projects/research/cursive/2.png" alt="system design">
-    <figcaption>Fig1.2 Paper wireframe </figcaption>
+    <figcaption>Fig1.2 Paper wire frame </figcaption>
   </div>
   <div class="small">
     <img src="{{ site.url }}/assets/images/projects/research/cursive/3.png" alt="system design">

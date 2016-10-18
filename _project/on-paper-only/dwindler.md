@@ -9,7 +9,7 @@ desc: Automating switch boards particulary in Universities and offices for optim
 <hr>
 ### INTRODUCTION
 
-Dwindler aims at automating the switches in common household and universities. It plans to save electricity by selective power distribution to the region where the user is present.It is a system based on RFIDs [1]  which aims on saving electricity.A person can enter the room/lab by tapping his/her unique ID[2]  at the RFID detector mounted at the entrance of room.Within few seconds his/her system along with all the lights and fans in his area are switched on.There will also be a provision for his/her system remaining on till a specific time say 10 minutes, This system allows only specified people access to the lab which can avoid unauthorised people from accessing the lab.It can also be used to eradicate the pen-paper entry system in various buildings and can be used for authentication purpose.
+Dwindler aims at automating the switches in common household and universities. It plans to save electricity by selective power distribution to the region where the user is present.It is a system based on RFIDs [1]  which aims on saving electricity.A person can enter the room/lab by tapping his/her unique ID[2]  at the RFID detector mounted at the entrance of room.Within few seconds his/her system along with all the lights and fans in his area are switched on.There will also be a provision for his/her system remaining on till a specific time say 10 minutes, This system allows only specified people access to the lab which can avoid unauthorized people from accessing the lab.It can also be used to eradicate the pen-paper entry system in various buildings and can be used for authentication purpose.
 
 ### FEATURES
 * Person Authentication: UID, identify person
@@ -46,7 +46,7 @@ We will first experiment with a couple RFID tag and readers and make a small dat
 ### Equiptments
 
 *   RFID Tag and Reader
-*   Microcontroller board
+*   Micro-controller board
 *   SCR and other various components (wire, breadboard etc.)
 
 ### OUTCOMES

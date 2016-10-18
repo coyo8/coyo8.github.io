@@ -1,7 +1,7 @@
 ---
 layout: proj
 title: SmartXplorer
-desc: Voice based question recognistion system. No one will need to type a question again.
+desc: Voice based question recognition system. No one will need to type a question again.
 ---
 
 # SmartXplorer
@@ -9,10 +9,10 @@ desc: Voice based question recognistion system. No one will need to type a quest
 <hr>
 ### INTRODUCTION
 
-SmartXplorer is a mobile app in which user can ask question directly in his voice related to any topic (Life, Science, Technology, etc) and App will be able to provide best possible answer to user by analysing the data of Social Platforms such as Quora, Facebook, and other question answer websites. The App will also provide suggestions for similar questions and answers.
+SmartXplorer is a mobile app in which user can ask question directly in his voice related to any topic (Life, Science, Technology, etc) and App will be able to provide best possible answer to user by analyzing the data of Social Platforms such as Quora, Facebook, and other question answer websites. The App will also provide suggestions for similar questions and answers.
 
 ### FEATURE
-* Speech_to_text (indian Accent too)
+* Speech_to_text (Indian Accent too)
 * Database(indexing) – Quora API –mongoDB for partial search
 * Best recommended answer
 * App/Web API
@@ -42,8 +42,8 @@ At the end, we would have to accept an user voice input to correct the drawing o
 ### Equipment Required
 The system consist of following hardware modules.
 * Microphone for speech detection.
-* Smartphone with internet connectivity.
-* Database for storing english language words.
+* Smartphone with INTERNET connectivity.
+* Database for storing English language words.
 * Web crawler for fetching the data from web links.
 * Text parser that will store the words in indexed form.
 

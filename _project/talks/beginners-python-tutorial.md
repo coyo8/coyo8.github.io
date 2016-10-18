@@ -9,14 +9,14 @@ desc: My first talk was on how to get started with python.
 
 This was my first talk and I can still recollect the day experience, I was waiting for my name to be called upon and at the same time my legs was shivering like it doesn't in winter. On other hand my face was covered with sweat. I was trying to squeeze my hand as hard as I can, it was my trick to overcome stage fear.
 
-While my brain was busy fighting with fear, involuntry movement was still in progress, I heard my name. I walked on the stage, I can only see more than 100 bobble heads. For second, I stopped and taken a deep breath and started the talk.
+While my brain was busy fighting with fear, involuntary movement was still in progress, I heard my name. I walked on the stage, I can only see more than 100 bobble heads. For second, I stopped and taken a deep breath and started the talk.
 
 
 ### WHY Python?
 * Ever imagined that your pseudo code can be your actual working code. Welcome to Python!
 * If you consider pointers(*) is too archaic as well as your biggest enemy.
 * Interpreter based, bug can be found easily. At the same time, it lead to create more bugs.
-* Prebuilt highly optimized datastructure i.e. tuple, list and dictionary.
+* Pre-built highly optimized data-structure i.e. tuple, list and dictionary.
 * [Zen of Python](https://www.python.org/dev/peps/pep-0020/) by Tim Peters.
 
 ### Compiler Vs Interpreter
@@ -30,8 +30,8 @@ While my brain was busy fighting with fear, involuntry movement was still in pro
 
 * Source Code: This is the input for any programming language.
 * Checker: It confirms the syntax, static semantic correct or not.
-* Compiler: It converts sequences in further low level intruction.
-* Object Code: It is the low level intruction file.
+* Compiler: It converts sequences in further low level instruction.
+* Object Code: It is the low level instruction file.
 * Interpreter: It follows the sequences of simple instruction given.
 * Output: final result.
 
@@ -132,7 +132,7 @@ False
 Comparisons yield boolean values: True or False.
 
 ### String
-We all know how important String is in our life. Python String comes with complete diamond package. It have all the improtant methods you will need on String manipulation.
+We all know how important String is in our life. Python String comes with complete diamond package. It have all the important methods you will need on String manipulation.
 
 ```python
 # lets apply some basic operators
@@ -224,10 +224,10 @@ Apart from these [binary data(https://docs.python.org/3.4/library/stdtypes.html#
 ### More of Sequence Type
 
 There are two types of sequence:
-* Immutable: This sequence is implemented by data structure whose value cannot be modified after the assignemnt. The only operation that immutable sequence types generally implement which is not in immutable is support for built in `hash()`. Example: Tuple
+* Immutable: This sequence is implemented by data structure whose value cannot be modified after the assignment. The only operation that immutable sequence types generally implement which is not in immutable is support for built in `hash()`. Example: Tuple
 * Mutable: The valued contained can be changed. Example: List, Dictionary
 
-Apart from above mentioned operations, follwing few more are also implemented by below data structures.
+Apart from above mentioned operations, following few more are also implemented by below data structures.
 
 del s[i:j] | same as s[i:j] = []
 s[i:j:k] = t | the elements of s[i:j:k] are replaced by those of t
@@ -418,7 +418,7 @@ Repeated execution of a set of statements is called iteration.
   </div>
 </figure>
 
-In python or in general any programming langauge, looping/iteration is defined on three steps.
+In python or in general any programming language, looping/iteration is defined on three steps.
 
 1. Assignment: A assignment in python makes an existing variable refer to a new value (and stop referring to the old value).
 2. Condition: It is our decision maker
@@ -561,7 +561,7 @@ print(sum_integer())
 4950
 ```
 
-Can improve it? Currectly our sum method method always return 100. What if we want sum for first 50 numbers.
+Can improve it? Currently our sum method method always return 100. What if we want sum for first 50 numbers.
 
 Here comes the concept of argument, function can take variable as argument.
 

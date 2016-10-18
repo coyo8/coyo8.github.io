@@ -14,7 +14,7 @@ In the process, he has to safeguard the rare plants in his environment from the 
 
 ### WHY?
 
-* To create factual knowledge associations in memory as above and thereby realising medicinal properties of plants and associated Indian cultural and traditional values.
+* To create factual knowledge associations in memory as above and thereby realizing medicinal properties of plants and associated Indian cultural and traditional values.
 * To develop understanding of the significance of conservation of endangered plants.
 * To develop resource management and decision making skills.
 * To instill a sense of social responsibility in the player.

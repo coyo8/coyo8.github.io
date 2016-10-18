@@ -1,7 +1,7 @@
 ---
 layout: proj
 title: Getting started with Open Source contribution
-desc: This talk demystifes the process getting started contributed to open source.
+desc: This talk demystifies the process getting started contributed to open source.
 ---
 # Open Source Contribution
 
