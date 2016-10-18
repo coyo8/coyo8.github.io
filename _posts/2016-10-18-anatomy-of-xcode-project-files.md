@@ -18,12 +18,14 @@ I will be taking project **Falcon** as demo and the content of it can be seen in
 <figure>
   <div class="large">
     <img src="{{ site.url }}/assets/images/posts/2016-10/cmd-file.png" alt="Project file snapshots">
+    <figcaption> Falcon project file list </figcaption>
   </div>
 </figure>
 
 <figure>
   <div class="small">
     <img src="{{ site.url }}/assets/images/posts/2016-10/project-file.png" alt="Xcode project explorer">
+    <figcaption> Falcon project in Xcode project explorer </figcaption>
   </div>
 </figure>
 
@@ -36,8 +38,8 @@ It specify in detail how a product/binary is built. They include build settings,
 <figure>
   <div class="large">
     <img src="{{ site.url }}/assets/images/posts/2016-10/target.png" alt="Target">
+    <figcaption> Each target have it's own setting </figcaption>
   </div>
-  <figcaption> Each target have it's own setting </figcaption>
 </figure>
 
 In above figure you can see that we have three targets.
@@ -61,8 +63,8 @@ Guess, what is workspaces then? Workspaces contain and manage projects. All the 
 <figure>
   <div class="small">
     <img src="{{ site.url }}/assets/images/posts/2016-10/workspace.png" alt="Target">
+    <figcaption> Another-Application is different project added to Falcon workspace </figcaption>
   </div>
-  <figcaption> Another Application is different project added to Falcon workspace </figcaption>
 </figure>
 
 ### Takeaways
