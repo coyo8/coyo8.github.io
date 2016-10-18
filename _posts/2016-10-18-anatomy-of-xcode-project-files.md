@@ -1,17 +1,16 @@
 ---
 layout: post
-title:  "Anatomy of Xcode Project files"
-date:   2016-10-18 22:48:45
-description: Learn what each Xcode project files means.
+title:  Anatomy of Xcode Project files
+date:   2016-10-18 18:10:15
+desc: Learn what each Xcode project files means.
 categories:
 - iOS
 tags:
 - Xcode
 - iOS
-- App Development
 ---
 
-I started developing iOS apps again and I found myself struggling with all nitty-gritty aspects of Xcode environment. This will be a short guide to know things before you start the app development.
+I started developing iOS app again and I found myself struggling with all nitty-gritty aspects of Xcode environment. This will be a short guide to know things before you start the app development.
 
 I will be taking project **Falcon** as demo and the content of it can be seen in below snapshot.
 
