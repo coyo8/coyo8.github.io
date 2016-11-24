@@ -5,7 +5,11 @@ permalink: /photography/
 ---
 
 <div id="Photos">
-  <div class="post-title" style="text-align: center;"> <a href="https://www.flickr.com/photos/133775011@N07/" target="_blank">PHOTOSTREAM</a></div>
+  <div style="text-align: center;">
+    <a class="button" href="https://www.flickr.com/photos/133775011@N07/" target="_blank">
+      <font size="5"> PHOTOSTREAM </font>
+    </a>
+  </div>
 </div>
 
 <div class="photo">
@@ -14,9 +18,9 @@ permalink: /photography/
 
 <div class="thing-category">
   <div class="category-slot">
-    <a href="https://www.flickr.com/photos/133775011@N07/albums" target="_blank"> ALBUMS </a>
+    <a class="button" href="https://www.flickr.com/photos/133775011@N07/albums" target="_blank"> <font size="5"> ALBUMS </font> </a>
   </div>
   <div class="category-slot">
-    <a href="{{site.url}}/cameras"> CAMERAS </a>
+    <a class="button" href="{{site.url}}/cameras"> <font size="5"> CAMERAS </font> </a>
   </div>
 </div>

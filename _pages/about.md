@@ -36,10 +36,9 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 ---
 
 ## More beans
+* [Reading List]({{ site.url }}/books)
 * [Photography]({{ site.url }}/photography)
 * [Travel History]({{ site.url }}/travel)
-* [Reading List]({{ site.url }}/books)
-
 
 
 [github]: <https://github.com/{{ site.trivium.social.github }}>

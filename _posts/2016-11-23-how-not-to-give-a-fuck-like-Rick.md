@@ -12,7 +12,7 @@ tags:
 
 TL;DR Spoiler Alert
 
-If you have stumbled upon this post, I will recommend you to go and first read Mark Manson post on [The Subtle Art of Not Giving a Fuck](https://markmanson.net/not-giving-a-fuck){:target="_blank"}. His post brings out the true definition of what it means to not give a fuck. I read his blog a year ago and truly followed the three described principle i.e.
+If you have stumbled upon this post, I will recommend you to go and first read Mark Manson post on [The Subtle Art of Not Giving a Fuck](https://markmanson.net/not-giving-a-fuck){:target="_blank"}. His post brings out the true definition of what it means to not give a fuck. I read his blog post a year ago and truly followed the three described principle i.e.
 
 * **NOT GIVING A FUCK DOES NOT MEAN BEING INDIFFERENT; IT MEANS BEING COMFORTABLE WITH BEING DIFFERENT**
 * **TO NOT GIVE A FUCK ABOUT ADVERSITY, YOU MUST FIRST GIVE A FUCK ABOUT SOMETHING MORE IMPORTANT THAN ADVERSITY**
