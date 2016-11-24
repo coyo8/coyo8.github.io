@@ -1,7 +1,7 @@
 <script type="text/javascript">
     var endpoint = "https://api.flickr.com/services/rest/"
     var apiKey = "{{site.flickr.api_key}}";
-    var extras = "url_m";
+    var extras = "url_m, url_l";
     var method = "flickr.people.getPublicPhotos"
     var user_id = "{{site.flickr.user_id}}";
     var per_page = "50";
@@ -19,8 +19,30 @@
         if(result=="success"){
             var photos = data.photos.photo;
             for(var i = 0; i < photos.length; i++){
-                $('<a class="gallery-thumbnail">').attr("style", "background-image:url(%src%)".replace("%src%", photos[i].url_m)).attr("href", flickr_url.replace("%id%", photos[i].id)).attr("title", photos[i].title).appendTo(".photo");
+                // Add fancybox http://fancyapps.com/fancybox/#license
+                $('<a class="gallery-thumbnail" rel="fancybox-thumb">').attr("style", "background-image:url(%src%)".replace("%src%", photos[i].url_m)).attr("href", photos[i].url_l).attr("title", photos[i].title).appendTo(".photo");
             }
         }
     }
+
+    $(document).ready(function() {
+    $(".gallery-thumbnail").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        padding : 0,
+        helpers : {
+            title   : {
+                type: 'outside'
+            },
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            },
+
+            overlay : {
+                closeClick : false
+            }
+        },
+        });
+    });
 </script>

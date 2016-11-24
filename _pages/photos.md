@@ -4,6 +4,7 @@ title: Photostream
 permalink: /photography/
 ---
 
+<br/>
 <div id="Photos">
   <div style="text-align: center;">
     <a class="button" href="https://www.flickr.com/photos/133775011@N07/" target="_blank">
@@ -15,6 +16,7 @@ permalink: /photography/
 <div class="photo">
   {% include flickr.html %}
 </div>
+<br/>
 
 <div class="thing-category">
   <div class="category-slot">
@@ -24,3 +26,5 @@ permalink: /photography/
     <a class="button" href="{{site.url}}/cameras"> <font size="5"> CAMERAS </font> </a>
   </div>
 </div>
+<br/>
+
