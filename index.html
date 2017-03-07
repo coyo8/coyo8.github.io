@@ -2,37 +2,34 @@
 layout: default
 ---
 <div>
+	{% for post in paginator.posts %}
 	<div>
-  		{% for post in site.posts limit:10 %}
-  			<div>
-          <div class="post-title">
-			      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-			        {{ post.title }}
-			      </a>
-          </div>
-          <p>
-            {% if post.categories.size > 0 %}
-            <span>
-            {{ post.categories | array_to_sentence_string }}
-            </span> |
-            {% endif %}
-            <span>
-            {{ post.date | date: "%b %-d, %Y" }}
-            </span>
-          </p>
-  				<p>
-	  				{{ post.description }}
-  				</p>
-  				<p>
-  					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
-  						Read More
-					</a>
-  				</p>
-  			</div>
-
-        <div style="clear:both"></div>
-        <hr>
-
-  		{% endfor %}
+    <div class="post-title">
+      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+        {{ post.title }}
+      </a>
+    </div>
+    <p>
+      {% if post.categories.size > 0 %}
+      <span>
+      {{ post.categories | array_to_sentence_string }}
+      </span> |
+      {% endif %}
+      <span>
+      {{ post.date | date: "%b %-d, %Y" }}
+      </span>
+    </p>
+		<p>
+			{{ post.description }}
+		</p>
+		<p>
+			<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
+				Read More
+		  </a>
+		</p>
 	</div>
+  <hr>
+	{% endfor %}
 </div>
+{% include pagination.html %}
+

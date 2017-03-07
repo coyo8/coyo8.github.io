@@ -493,6 +493,25 @@ Things
   }
 }
 
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+        width: 33%;
+        text-align: left;
+    }
+    .center {
+        width: 33%;
+        text-align: center;
+    }
+    .right {
+        width: 33%;
+        text-align: right;
+    }
+}
 
 /* ---------
    Mobile
