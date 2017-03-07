@@ -15,7 +15,7 @@ For last six month I was trying to attempt to buy stocks but each time I ended u
 *because I don't know how to choose a profitable stock.*
 
 
-But there are people who are making profits daily. Not only this they have been making profits from the markets all time and so I started following traders, investors online. Futhermore, I switched to reading books on stock investments and was deeply looking for a guidance to build a very simple trading system. After many days I eventually found three gems which basically decides your investment road map i.e.
+But there are people who are making profits daily. Not only this they have been making profits from the markets all time and so I started following traders, investors on-line. Furthermore, I switched to reading books on stock investments and was deeply looking for a guidance to build a very simple trading system. After many days I eventually found three gems which basically decides your investment road map i.e.
 
 * Entry Point: You are entering in the market with capital for Short, Medium or Long term.
 * Stop Loss (Exit Point): How much loss you can take? or your risk appetite.
@@ -33,10 +33,10 @@ P/E Ratio is most commonly use ratio to find cheaper stocks relatively. It stand
 P/E = Price of a share/ Earning Per Share
 
 What it tell?
-If P/E is 10 then it means it will take 10 years for the firm to make profits equivalent to its market capitalisation. So, A high growth firm with lower P/E will be consider cheap.
+If P/E is 10 then it means it will take 10 years for the firm to make profits equivalent to its market capitalization. So, A high growth firm with lower P/E will be consider cheap.
 
 Why?
-Higher growth firm will easily do breakeven.
+Higher growth firm will easily do break-even.
 
 Example:
 Let's take the example of two private sector banks in India.
@@ -59,7 +59,7 @@ ICICI:  P/E = 45.85
 
 Now which one you will choose?
 At first glance, you will say HDFC is no-no because it will take 178.07 years for it to be profitable which is a insane number but as said above P/E should not be looked without the growth rate.
-HDFC has a annualised growth rate of 46% where as ICICI have 11%.
+HDFC has a annualized growth rate of 46% where as ICICI have 11%.
 Now which one to choose?
 As the growth rate for HDFC is high so its earning and it is expected to produce better revenue and expand really fast but it is a gamble, maybe the growth rate might not be the same next year but it is I will make huge profit here. Again, its a high risk investment.
 
@@ -87,10 +87,10 @@ Dividend is a part of profit percentage a company gives to it's share holder. Le
 
 Dividend Yield = (Part given to holder/Price of Share) * 100
 
-Q: If a company is paying high divident yield, doesn't it means it is making great profit?
+Q: If a company is paying high dividend yield, doesn't it means it is making great profit?
 A: Maybe or Maybe Not
 
-Most of the times the companies which gives lesser dividends are profitable and have high growth rate. Why? because they are paying less to the invester saying you will have more profit in future. On other side if a company is paying high dividend it means it is trying to please the holders by giving back the money.
+Most of the times the companies which gives lesser dividends are profitable and have high growth rate. Why? because they are paying less to the investor saying you will have more profit in future. On other side if a company is paying high dividend it means it is trying to please the holders by giving back the money.
 
 Example:
 HDFC: Dividend yield = 1.24%
