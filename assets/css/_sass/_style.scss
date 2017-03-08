@@ -248,14 +248,6 @@ footer {
     justify-content: center;
 }
 
-.footer-hr {
-  flex: 1;
-  height: 10%;
-
-  hr {
-    margin: 0.2rem 0 0.2rem 0;
-  }
-}
 
 .footer-text {
   flex: 1;
@@ -272,7 +264,9 @@ footer {
 .footer-box {
     flex: 1;
     height: 40%;
-    margin: auto;
+    margin-left:40%;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 5px 0 5px 0;
 
     @media (max-width: 650px) {
