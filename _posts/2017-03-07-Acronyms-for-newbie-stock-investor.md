@@ -30,7 +30,7 @@ Ok, Now what? There are thousands of company listed on a stock exchange which on
 ### P/E Ratio
 P/E Ratio is most commonly use ratio to find cheaper stocks relatively. It stands for Price of a share divided by last year profit earned on each share.
 
-P/E = Price of a share/ Earning Per Share
+#### P/E = Price of a share/ Earning Per Share
 
 What it tell?
 If P/E is 10 then it means it will take 10 years for the firm to make profits equivalent to its market capitalization. So, A high growth firm with lower P/E will be consider cheap.
@@ -63,12 +63,12 @@ HDFC has a annualized growth rate of 46% where as ICICI have 11%.
 Now which one to choose?
 As the growth rate for HDFC is high so its earning and it is expected to produce better revenue and expand really fast but it is a gamble, maybe the growth rate might not be the same next year but it is I will make huge profit here. Again, its a high risk investment.
 
-So the rule of thumb, the lower the P/E ratio the cheaper it is and I will go for the ICICI.
+**Rule of thumb:** The lower the P/E ratio the cheaper it is and I will go for the ICICI.
 
 ### PEG Ratio
 It is improvement for the P/E ratio because P/E ratio is about last year earnings and it doesn't give any idea about what will be the earning for the current year. So PEG ratio consider basic value while taking earnings growth into account.
 
-PEG = (P/E Ratio) / Earning Growth Rate
+#### PEG = (P/E Ratio) / Earning Growth Rate
 
 It is based on the future earning. For Example, A house is worth of what rental income you can squeeze till it's life time. A average house life is 20 years and if the rental income per month is $ 2000 then the worth of house is 20 * 2000 * 20 = $800000 (excluding inflation).
 
@@ -82,13 +82,16 @@ ICICI | 45.85 | 12% | 45.85/12 = 3.82
 
 Again ICICI have lower PEG, it means it is cheaper.
 
+**Rule of thumb:**  The lower a PEG the better a stock is.
+
 ### Dividend Yield
 Dividend is a part of profit percentage a company gives to it's share holder. Let me ask you a question? you just need to think about it.
 
-Dividend Yield = (Part given to holder/Price of Share) * 100
+### Dividend Yield = (Part given to holder/Price of Share) * 100
 
-Q: If a company is paying high dividend yield, doesn't it means it is making great profit?
-A: Maybe or Maybe Not
+**Q:** If a company is paying high dividend yield, doesn't it means it is making great profit?
+
+**A:** Maybe or Maybe Not
 
 Most of the times the companies which gives lesser dividends are profitable and have high growth rate. Why? because they are paying less to the investor saying you will have more profit in future. On other side if a company is paying high dividend it means it is trying to please the holders by giving back the money.
 
@@ -99,6 +102,8 @@ ICICI: Dividend yield = 1.81%
 As in above case ICICI have more dividend yield and it is reflected to what I was saying. ICICI growth is almost stagnant i.e. 12-14% for last 7 years where as HDFC have very bumpy rides i.e. growth ranging from 10-50%. It want to keep the profit for expansion or for further investment.
 
 Here HDFC wins.
+
+**Rule of thumb:**  The lower a Dividend Yield the better a stock is.
 
 
 I will be writing about new acronyms soon. if you like it, please share your feedbacks in the comments.
