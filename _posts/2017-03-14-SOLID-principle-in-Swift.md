@@ -10,27 +10,27 @@ tags:
 - Design Principles
 ---
 
-This is story about Swifty who is like a god programmer at Swiftzen planet. On his planet, he is regarded as one of the greatest programmer ever born. He can code anything within minute. He also won the planet highest competition on coding DNA sequencing within a minute. Swifty recent work was on inter planet communication and one day finally he received a message "♍︎♈︎♨︎♒︎♇✜" on his screen. He was not able to decipher these weired shapes and so he decided to make changes to his program to display it correctly.
+This is a story about Swifty who is a god programmer at Swiftzen planet. On this planet, he is regarded as one of the greatest programmer ever born. He can code anything within minutes. He has also won planet's biggest coding competition on DNA sequencing by solving it within a minute. Swifty's recent work is on inter planet communication and one day he received a message **"♍︎♈︎♨︎♒︎♇✜"** on his screen. He was not able to decipher these weired shapes and so he decided to make changes in his program to display them in known shapes.
 
-Now, this is the first time Swifty was trying to extend the functionality of the program, till now almost all of his work were on frozen programs.
+Now, this is the first time Swifty was trying to extend the functionality of the program, till now almost all of his work was on frozen programs.
 
 > Walking on water and developing software from a specification are easy if both are frozen.
 
 -- Edward V. Berard
 
 
-Later on this journey we will learn how swifty was able to conquer create a software which can withstand the test of time.
+Later on this journey we will learn how Swifty was able to conquer and create a software which can withstand the test of time.
 
 ### Single Responsibility Principle
 
-Let first take a look into Swifty's communication program.
+Let's take a look into Swifty's communication program.
 
 ```swift
 import Foundation
 
 class InterPlanetMessageReceiver {
 
-    func receive() {
+    func receiveMessage() {
         print("Received the Message!")
     }
 
@@ -39,19 +39,21 @@ class InterPlanetMessageReceiver {
     }
 }
 ```
-Now let's understand what is Single Responsibilty Principle and how above program doesn't obey it.
+Now let's understand what is `Single Responsibility Principle(SRP)` and how the above program doesn't obey it.
 
 <figure>
   <div class="large">
     <img src="{{ site.url }}/assets/images/posts/2017-03/srp.png" alt="Single Responsibility Principle">
   </div>
 </figure>
+
 SRP says, "Just because you can implement all the features in a single device, you shouldn't".
+
+In Object Oriented terms it means: ***There should never be more than one reason for a class to change.*** It doesn't mean you can't have multiple methods but the only condition is that they should have one single purpose.
 
 **Why?**
 Because it adds a lot of manageability problems for you in the long run.
 
-In Object Oriented terms it means: ***There should never be more than one reason for a class to change.*** it doesn't mean you can't have multiple methods but only condition is they should meet one single purpose.
 
 <figure>
   <div class="large">
@@ -70,16 +72,16 @@ And, two applications are using this *InterPlanetMessageReceiver* class:
 * A messaging application uses this class to receive the message
 * A graphical application uses this class to draw the message on the UI
 
-Do you think it is violeting the SRP?
+Do you think it is violating the SRP?
 
 **YES**
 
-The InterPlanetMessageReceiver class is actually performing two different things. First, it handles the messaging, and then displaying the message on GUI. This causes some interesting problems:
+The InterPlanetMessageReceiver class is actually performing two different things. First, it handles the messaging, and second, displaying the message on GUI. This causes some interesting problems:
 
 1. Swifty must include the GUI into the messaging application and also while deploying the messaging application, we must include the GUI library.
 2. A change to the InterPlanetMessageReceiver class for the graphical application may lead to a change, build, and test for the messaging application, and vice-versa.
 
-Swifty was frustrated with the amount to changes it required. He thought it would be a minute job but now he has already spends hours on it. So he decided do make a change into his program and fix this dependency.
+Swifty got frustrated with the amount of changes it required. He thought it would be a minute job but now he has already spent hours on it. So he decided do make a change into his program and fix this dependency.
 
 This is what Swifty came up with
 
@@ -108,7 +110,7 @@ Here's how Swifty explained this:
 
 InterPlanetMessageReceiver class will be used by the messaging application, and the InterPlanetMessageDisplay class will be used by the graphical application. We could even separate the classes into two separate files, and that will allow us not to touch the other in case a change is needed to be implemented in one.
 
-Finally Swifty noted down on his online journal.
+Finally, Swifty noted down on his online journal.
 
 Why we need SRP?
 * Each responsibility is an agent of change.
@@ -116,7 +118,7 @@ Why we need SRP?
 
 
 ### Open-Close Principle
-Swifty was quite happy with these change and later part of the day in Swiftzen's best pub and while looking into one of the artifact hanging on the wall, there he saw all the symbols he has received today. Quickly, he opened his diary and completed deciphering all those shapes. It looks like this
+Swifty was quite happy with these change and later he celebrated it with a drink in Swiftzen's best pub and there his eyes fell upon an artifact hanging on the front wall and he found all the symbols he received in the message. Quickly, he opened his diary and completed deciphering all those shapes. It looks like this
 
 * ♍︎ = ▢
 * ♈ = ▭
@@ -125,7 +127,7 @@ Swifty was quite happy with these change and later part of the day in Swiftzen's
 * ♇ = ☆
 * ✜ = ⌓
 
-These all were geometric shapes. Next day when he returned back, he thought why not fix the DrawGraphic class which just draw circle shape only, directly to display the message with correct shape.
+These were all geometric shapes. Next day when he returned back, he thought why not fix the DrawGraphic class which draws only circle shape, to include the rest of the shapes and display the message correctly.
 
 
 ```swift
@@ -147,6 +149,9 @@ enum Shape {
   case triangle
   case pentagon
   case semicircle
+}
+class circle {
+
 }
 
 // This is the DrawGraphic
@@ -176,11 +181,11 @@ class DrawGraphic {
 <figure>
   <div class="small">
     <img src="{{ site.url }}/assets/images/posts/2017-03/shape.png" alt="Open Close Principle">
-    <figcaption> Showing concerete relation between Shape and DrawGraphic </figcaption>
+    <figcaption> Showing concrete relation between Shape and DrawGraphic </figcaption>
   </div>
 </figure>
 
-Swifty was not happy with these changes, what if in future if new shapes shows up, after all he saw in the artifacts that there were around 123. This class will become one fat class. Also, **DrawGraphics** class is used by other applications and so they also have to adapt to this change. it was nightmare for Swifty.
+Swifty was not happy with these changes, what if in future a new shape shows up, after all he saw in the artifacts that there were around 123 shapes. This class will become one fat class. Also, **DrawGraphics** class is used by other applications and so they also have to adapt to this change. it was nightmare for Swifty.
 
 <figure>
   <div class="large">
@@ -188,9 +193,9 @@ Swifty was not happy with these changes, what if in future if new shapes shows u
   </div>
 </figure>
 
-Open Closed Principle says **Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.** At the most basic level, that means, you should be able to extend a class's behavior without modifying it. It's just like I should be able to put on a dress without doing any change to my body. Imagine what would happen if for every dress I have to change my body.
+Open Closed Principle says **Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.** At the most basic level, this means, you should be able to extend a class behavior without modifying it. It's just like I should be able to put on a dress without doing any change to my body. Imagine what would happen if for every dress I have to change my body.
 
-Swifty started thinking and came up with below implementation of DrawGraphic class.
+After hours of thinking, Swifty came up with below implementation of DrawGraphic class.
 
 ```swift
 
@@ -209,7 +214,6 @@ class Rectangle: Draw {
         print("Rectangle is drawn!")
     }
 }
-
 
 class DrawGraphic {
     func drawShape(shape: Draw) {
@@ -231,23 +235,23 @@ Since the DrawGraphic is responsible for drawing all the shapes, and because the
 <figure>
   <div class="medium">
     <img src="{{ site.url }}/assets/images/posts/2017-03/draw.png" alt="Open Close Principle">
-    <figcaption> Showing correct implementation og Open Closed Principle </figcaption>
+    <figcaption> Showing correct implementation of Open Closed Principle </figcaption>
   </div>
 </figure>
 
 
-Hmmm, but that makes the DrawGraphoc still have to know about all the shapes, right? Because how does it know that the object it’s iterating over has an draw method? Sure, this could be solved with having each of the shape classes inherit from an protocol: the Draw protocol (this can be an abstract class too):
+Hmmm, but that means the DrawGraphic still have to know about all the shapes, right? Because how does it know that the object it’s iterating over has a draw method? Sure, this could be solved with having each of the shape classes inherit from a protocol: the Draw protocol (this can be an abstract class too):
 
-Shape class holds a reference to the protocol, and the concrete DrawGraphic class implements the protocl Draw class. So, if for any reason the DrawGraphic implementation is changed, the Shape class is not likely to require any change or vice-versa.
+Circle and Rectangle classes holds a reference to the protocol, and the concrete DrawGraphic class implements the protocol Draw class. So, if for any reason the DrawGraphic implementation is changed, the Circle and Rectangle classes are not likely to require any change or vice-versa.
 
 
 ### Liskov Subsitution Principle
 
-Swifty was wondering why he never learnt all these before. Then he remmeber the quote
+Swifty was wondering why he never learned all these before. Then he remember the quote
 
-> Necessity is mother of invention.
+> Necessity is the mother of invention.
 
-he can now feel the code smell. Moving ahead, Swifty was implementing the SenderOrigin class to know whether the sender is from a Planet or not.
+He can now feel the code smell. Moving ahead, Swifty was implementing the SenderOrigin class to know whether the sender is from a Planet or not.
 
 You can learn more about definition of planet [here](http://en.wikipedia.org/wiki/IAU_definition_of_planet){:target="_blank"}.
 
@@ -256,28 +260,30 @@ The Sender class looked something like this
 ```swift
 
 Class Planet {
-  func oribitAroundSun() {
-  }
-
-  func description() {
-    print(self)
+  func orbitAroundSun() {
   }
 }
 
 class Earth: Planet {
-  override func description() {
+  func description() {
     print("It is Earth!")
   }
 }
 
 class Pluto: Planet {
-  override func description() {
+  func description() {
     print("It is Pluto!")
   }
 }
 
+class Sender {
+  func senderOrigin(planet: Planet) {
+    planet.description()
+  }
+}
+
 ```
-So, even if in real world this seems natural, in the class design, Pluto should not inherit the Planet class, and there should be a separate class for Planet that has not cleared the neighborhood around its orbit and Pluto should inherit that.
+So, even if in real world this seems natural, in the class design, Pluto should not inherit the Planet class because it is a dwarf planet, and there should be a separate class for Planet that has not cleared the neighborhood around its orbit and Pluto should inherit that.
 
 <figure>
   <div class="medium">
@@ -286,7 +292,7 @@ So, even if in real world this seems natural, in the class design, Pluto should 
   <figcaption>Pluto is dwarf planet not a planet</figcaption>
 </figure>
 
-Now let's decribe Liskov Substitution Principle
+Now let's describe Liskov Substitution Principle
 
 ***"Subtypes must be substitutable for their base types."***
 
@@ -300,11 +306,11 @@ Objects in a program should be replaceable with instances of their subtypes with
   </div>
 </figure>
 
-Swifty whispered it is the polymorphism. Yes it is. "Inheritance" is usually described as an "is a" relationship. If a "Planet" is a "Dwarf", then the "Planet" class should inherit the "Dwarf" class. Such "Is a" relationships are very important in class designs, but it's easy to get carried away and end up in a wrong design with a bad inheritance.
+Swifty whispered it is the polymorphism. Yes it is. "Inheritance" is usually described as an "is a" relationship. If a "Planet" is a "Dwarf", then the "Planet" class should inherit the "Dwarf" class. Such "Is a" relationships are very important in class designs, but it's easy to get carried away and end up with a wrong design and a bad inheritance.
 
 The "Liskov's Substitution Principle" is just a way of ensuring that inheritance is used correctly.
 
-In the above case, both Earth and Pluto can orbit around sun but Pluto is not a planet. It have not cleared the neighborhood around its orbit. Swifty understood this and changed the program.
+In the above case, both Earth and Pluto can orbit around the Sun but Pluto is not a planet. It has not cleared the neighborhood around its orbit. Swifty understood this and changed the program.
 
 ```swift
 
@@ -312,26 +318,23 @@ class Planet {
     func oribitAroundSun() {
         print("This planet Orbit around Sun!")
     }
-
-    func description() {
-        print(self)
-    }
 }
 
 class Earth: Planet {
-    override func description() {
-        print(self)
+    func description() {
+        print("Earth")
     }
 }
 
 class DwarfPlanet: Planet {
-    func clearedNeighbourhoodOrbit() {
+    func notClearedNeighbourhoodOrbit() {
+
     }
 }
 
 class Pluto: DwarfPlanet {
-  override func description() {
-        print(self)
+  func description() {
+        print("Pluto")
     }
 }
 
@@ -353,10 +356,10 @@ sender.senderOrigin(from: earth) // Earth
   <div class="medium">
     <img src="{{ site.url }}/assets/images/posts/2017-03/planet-2.png" alt="Liskov Subsitution Principle">
   </div>
-  <figcaption>Correct Inheritence Order following LSP </figcaption>
+  <figcaption>Correct Inheritance Order following LSP </figcaption>
 </figure>
 
-Here, Pluto inherited the planet but added the clearedNeigbourhood method which distingishes a dwarf and regular planet.
+Here, Pluto inherited the planet but added the notClearedNeigbourhood method which distinguishes a dwarf and regular planet.
 
 * If LSP is not maintained, class hierarchies would be a mess, and if a subclass instance was passed as parameter to methods, strange behavior might occur.
 * If LSP is not maintained, unit tests for the base classes would never succeed for the subclass.
