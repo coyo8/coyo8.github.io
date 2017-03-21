@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Exploring concurrency in iOS and in general
-date:   2017-03-14 10:12:16
+date:   2017-03-21 10:12:16
 desc:   Learn what iOS offer to make your programs concurrent
 categories:
 - iOS
@@ -32,7 +32,7 @@ Rob was not surprised with his reply, after all, he has known Bob for years. He 
 
 Bob replied: **No.** A code is concurrent if it is broken up into pieces which could be treated in parallel, whereas Parallelism implies that those pieces are actually running at the same time.
 
-Bob quickly made a diagram showing the architecture of his computer vs Rob's iPhone 7 (A10 chip has a dual-core) to make him understand the difference.
+Bob quickly made a diagram showing the architecture of his computer vs Rob's **iPhone 7** (A10 chip has a dual-core) to make him understand the difference.
 
 <figure>
   <div class="large">
@@ -125,13 +125,13 @@ Out of above four cases, three are concurrent. ***Which are those?***
 3. Asynchronous Multi-Threaded
 
 **Why?**
-Concurrency simply means executing independent blocks code at same time.
+Concurrency simply means executing independent blocks code at same time and above three paradigm provides it.
 
-Rob was very happy with the explanation. He told Bob that lately he was using concurrency in iOS apps but never knew it's a subtle difference with parallelism.
+Rob was very happy with the explanation. He told Bob that lately he was using concurrency in iOS apps but never knew the subtle difference with parallelism.
 
 
 ### iOS Concurrency
-Apple has provided a higher level apis for multi-threading using **Operation** and **GCD (Grand Central Dispatch)**. If you are more interested into threading then you can also look upon **Thread** and **pthread**.
+Apple Foundation framework has provided a higher level apis for multi-threading using **Operation** and **GCD (Grand Central Dispatch)**. If you are more interested into threading then you can also look upon **Thread** and **pthread**.
 
 
 Let's first learn about the **Operation**. We will walk through what capabilities Operation have used examples.
