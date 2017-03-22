@@ -10,7 +10,7 @@ tags:
 - Concurrency
 ---
 
-Let me introduced you to Bob, he is currently enjoying post-retirement days of his life after spending years working on computer chips. He has seen transiting of transistors from centimeters to nanometers. He still uses his **Pentium pro (232 MHz)** running Windows 95 for most of his tasks which includes writing and why? you will know later.
+Let me introduce you to Bob, he is currently enjoying post-retirement days of his life after spending years working on computer chips. He has seen transition of transistors from centimeters to nanometers. He still uses his **Pentium pro (232 MHz)** running Windows 95 for most of his tasks which includes writing and do you know why? you will come to know later.
 
 Want to know how Bob computer looks like, check out the below video.
 
@@ -18,9 +18,9 @@ Want to know how Bob computer looks like, check out the below video.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/3STKYEBTiFU" frameborder="0" allowfullscreen></iframe>
 </div>
 
-His best friend Rob was coming to visit him in the afternoon. They were meeting after a year as Rob went to the different country for his software assignment. Finally, Rob, the time has come when Rob arrived. He was very excited to see Bob's old machine is still working. Contrary to Bob, Rob is tech fanatics, he likes new machines and updated software. He upgrades to the new version as soon as they get launched and uses it to flaunt. Recently when iPhone 7 launched, he became the first customer to own it.
+His best friend Rob was coming to visit him in the afternoon. They were meeting after a year as Rob went to a different country for his software assignment. Finally, the time has come when Rob arrived. He was very excited to see Bob's old machine is still working. Contrary to Bob, Rob is a tech fanatics, he likes new machines and updated softwares. He upgrades to the new version as soon as they get launched and uses it to flaunt. Recently when iPhone 7 launched, he became the first customer to own it.
 
-*Rob asked Bob why you are still stuck with this old computer?*
+*Rob asked Bob why are you still stuck with this old computer?*
 
 Bob replied: I hate multitasking!
 
@@ -28,7 +28,7 @@ Bob replied: I hate multitasking!
 
 --Publilius Syrus
 
-Rob was not surprised with his reply, after all, he has known Bob for years. He is kind of a person who immerses himself into one thing and doesn't want to any distraction. His old machine helps him to achieve it at great level by not providing swift multitasking at first place. Finally, Rob saw an article "Threading Vs Concurrency". Rob told Bob concurrency is same as threading and Parallelism.
+Rob was not surprised with his reply, after all, he has known Bob for years. He is a kind of a person who immerses himself into one thing and doesn't want any distractions. His old machine helps him to achieve it at a great level by not providing swift multitasking at first place. Finally, Rob saw an article "Threading Vs Concurrency". Rob told Bob that concurrency is same as threading and Parallelism.
 
 Bob replied: **No.** A code is concurrent if it is broken up into pieces which could be treated in parallel, whereas Parallelism implies that those pieces are actually running at the same time.
 
@@ -41,30 +41,30 @@ Bob quickly made a diagram showing the architecture of his computer vs Rob's **i
   </div>
 </figure>
 
-Bob continued: My computer has single CPU and ideally capable of executing a single program at a time. Later due to advancement in software **multitasking** came which meant that computers could execute multiple programs (or processes) at the same time. The single CPU was shared between the programs. The operating system would switch between the programs running, executing each of them for a little while before switching.
+Bob continued: My computer has a single CPU and is ideally capable of executing a single program at a time. Later due to advancement in software **multitasking** came which meant that computers could execute multiple programs (or processes) at the same time. The single CPU was shared between the programs. The operating system would switch between the programs running, executing each of them for a little while before switching.
 
-Later came **multithreading** which mean that you could have multiple threads of execution inside the same program. A thread of execution can be thought of as a CPU executing the program. When you have multiple threads executing the same program, it is like having multiple CPUs execute within the same program.
+Later came **multithreading** which means that you could have multiple threads of execution inside the same program. A thread of execution can be thought of as a CPU executing the program. When you have multiple threads executing the same program, it is like having multiple CPUs executing within the same program.
 
 Finally came **Concurrency**, which means that you can process multiple requests/tasks at a time inside a thread. It makes it appear that tasks are executing in parallel.
 
 
 Rob: We do a lot of asynchronous programming and it is same as parallel programming.
 
-Bob: It feels like you are executing parallel but if you deep dive underneath, it's not and so let do it.
+Bob: It feels like you are executing in parallel but if you deep dive underneath, it's not.
 
-Let divided our discussion into a simple matrix:
+Let's divide our discussion into a simple matrix:
 
 |              | Synchronous | Asynchronous
 Single Threaded | single-threaded synchronous | single-threaded asynchronous
 Multi-Threaded | multi-threaded synchronous | multi-threaded asynchronous
 
 ### Synchronous execution
-When you execute something synchronously, you wait for one task to finish before moving on to another task. For Example you cannot go for running without waking up.
+When you execute something synchronously, you wait for one task to finish before moving on to another task. For example you cannot go for running without waking up.
 
-In programs, it means when a thread is assigned to one task and start executing. It will wait till the taken task is complete before taking another one.
+In programs, it means when a thread is assigned to one task and start executing. It will wait till the taken task is completed before taking another one.
 
 #### Single Threaded:
-Say you have several tasks to be executed and have a single thread. In a single thread, these tasks will be picked by one by one and processed as
+Say you have several tasks to be executed and have a single thread. In a single thread, these tasks will be picked up one by one and processed as
 
 <figure>
   <div class="large">
@@ -73,7 +73,7 @@ Say you have several tasks to be executed and have a single thread. In a single 
   </div>
 </figure>
 
-In above figure, thread 1 is having four tasks and they are getting executed one by one. The order or priority in which tasks were picked up doesn't matter what matter is they will execute inside the thread one after another.
+In above figure, thread 1 is having four tasks and they are getting executed one by one. The order of priority in which tasks were picked up doesn't matter what matter is that they will execute inside the thread one after another.
 
 #### Multi-Threaded:
 Say you have several tasks to be executed but also have multiple threads on your disposal. In a multi-thread scenario, tasks will be picked by different threads and whose-ever finished first will take another.
@@ -85,10 +85,10 @@ Say you have several tasks to be executed but also have multiple threads on your
   </div>
 </figure>
 
-We have four threads and four tasks, this doesn't happen in the real world most of the times, you will have more tasks than a number of threads. In above case also, after the task has been picked it will be processed in their respective thread. Now, if a new task arrives it will be put in the thread which will get free first.
+We have four threads and four tasks, this doesn't happen in the real world most of the times, you will have more tasks than the number of threads. In the above case also, after the task has been picked it will be processed in their respective thread. Now, if a new task arrives it will be put in the thread which will get free first.
 
 ### Asynchronous
-Asynchronous is antonyms for synchronous meaning When you execute something asynchronously, you can move on to another task before it finishes.
+Asynchronous is an antonym for synchronous which means when you execute something asynchronously, you can move on to another task before it finishes.
 
 #### Single Threaded
 
@@ -104,7 +104,7 @@ You will have one thread in which the same task can be interleaved with each oth
 As you can see, in asynchronous execution one tasks doesn't wait for another to be finished. A thread saves task state and moves on to execute another one.
 
 #### Multi-Threaded
-The above same model can be extended for the Multi-Thread. Let's look into the below diagram
+The above same model can be extended for the Multi-Thread. Let's look into the diagram below
 
 <figure>
   <div class="large">
@@ -113,35 +113,35 @@ The above same model can be extended for the Multi-Thread. Let's look into the b
   </div>
 </figure>
 
-As you can see Task 4, Task 5, Task 8 are handled by a different thread. So how does thread able to do it? As said above, thread saves the current state of the task and later it get picked up from the saved state.
+As you can see Task 4, Task 5, Task 8 are handled by a different thread. So how does a thread is able to do it? As said above, thread saves the current state of the task and later it gets picked up from the saved state.
 
 *For Asynchronous execution, always make your tasks independent entity unless it will lead to data corruption and crashing of the program.*
 
 
-Out of above four cases, three are concurrent. ***Which are those?***
+Out of above four cases, three are concurrent. ***What are those?***
 
 1. Synchronous Multi-Threaded
 2. Asynchronous Single Threaded
 3. Asynchronous Multi-Threaded
 
 **Why?**
-Concurrency simply means executing independent blocks code at same time and above three paradigm provides it.
+Concurrency simply means executing independent blocks code at the same time and above three paradigm provides it.
 
-Rob was very happy with the explanation. He told Bob that lately he was using concurrency in iOS apps but never knew the subtle difference with parallelism.
+Rob was very happy with the explanation. He told Bob that lately he was using concurrency in iOS apps but never knew the subtle difference in parallelism.
 
 
 ### iOS Concurrency
-Apple Foundation framework has provided a higher level apis for multi-threading using **Operation** and **GCD (Grand Central Dispatch)**. If you are more interested into threading then you can also look upon **Thread** and **pthread**.
+Apple Foundation framework has provided a higher level APIs for multi-threading using **Operation** and **GCD (Grand Central Dispatch)**. If you are more interested into threading then you can also look upon **Thread** and **pthread**.
 
 
-Let's first learn about the **Operation**. We will walk through what capabilities Operation have used examples.
+Let's first learn about the **Operation**. We will walk through what capabilities operation have used examples.
 
 ### Operation
 
 The Operation class is an abstract class you use to encapsulate the code and data associated with a single task. Because it is abstract, you do not use this class directly but instead subclass or use one of the system-defined subclasses (Invocation​Operation or Block​Operation) to perform the actual task.
 
-Rob created a sub-class of Operation with a sum task which is mentioned below. He also told Bob that there are various properties and method which can be overridden to suit the need of a task.
-read more about it [here](https://developer.apple.com/reference/foundation/operation){:target="_blank"}
+Rob created a sub-class of operation with a sum task which is mentioned below. He also told Bob that there are various properties and methods which can be overridden to suit the need of a task.
+Read more about it [here](https://developer.apple.com/reference/foundation/operation){:target="_blank"}
 
 ```swift
 // A simple operation class which sums up two number
@@ -256,7 +256,7 @@ public enum QueuePriority : Int {
     case veryHigh
 }
 ```
-Using above example, Rob set the queue priority of both the operation to see is there is change in order of execution
+Using the above example, Rob set the queue priority of both the operation to see if there is change in order of execution
 
 ``` swift
 op2.queuePriority = .veryHigh
@@ -302,7 +302,7 @@ Dependency helps you serial or synchronous execution of the task. Depending on t
 For Example, Many times Rob likes a picture while browsing on his phone and then save it to his personal server. In this cases, until download from the public server has not completed he cannot upload it.
 
 <figure>
-  <div class="large">
+  <div class="medium">
     <img src="{{ site.url }}/assets/images/posts/2017-03/dependency_operation.png" alt="Dependency Operation">
     <figcaption> Save to server is dependent on download from URL </figcaption>
   </div>
@@ -327,17 +327,17 @@ Checkout ["Asynchronous Versus Synchronous Operations"](https://developer.apple.
 >❗️ When you add an operation to an operation queue, the queue ignores the value of the asynchronous property and always calls the start method from a separate thread. Therefore, if you always run operations by adding them to an operation queue, there is no reason to make them asynchronous.
 
 #### What we have learned?
-let's recap it quickly
+Let's recap it quickly
 
-* How to create an Operation using subclassing Operation abstract class and also using closures.
-* How to set properties like priority, quality of service etc
+* How to create an Operation using subclassing Operation abstract class and also using closures ?
+* How to set properties like priority, quality of service etc ?
 * If Operation is executed in Operation Queue then they are asynchronous unless by default Operation is a synchronous entity.
 
 
 ### Grand Central Dispatch
 GCD is a low-level C-based API that enables the very simple use of a task-based concurrency model. It helps execute code concurrently on multicore hardware by submitting work to dispatch queues managed by the system.
 
-The best place to learn about the all the API it provides would go visit official Apple [documentation](https://developer.apple.com/reference/dispatch){:target="_blank"}.
+The best place to learn about the all the API it provides is to go visit official Apple [documentation](https://developer.apple.com/reference/dispatch){:target="_blank"}.
 
 Although you may write your code to use concurrent execution under GCD, it’s up to GCD to decide how much parallelism is required. Parallelism requires concurrency, but concurrency does not guarantee parallelism.
 
@@ -352,7 +352,7 @@ GCD provides **dispatch queues** to handle blocks of code; these queues manage t
 As the name suggests, Tasks in **serial queues** execute one at a time, each task starting only after the preceding task has finished. Also, the time consumed by each task is not defined.
 
 #### Concurrent Queues
-Here get things interesting. Tasks in **concurrent queues** are guaranteed to start in the order they were added and that's it and you don't don't have any knowledge when they gonna finish. Here one task doesn't wait for other and this is entirely up to GCD to decide.
+Here the things get interesting. Tasks in **concurrent queues** are guaranteed to start in the order they were added and that's it and you don't have any knowledge when they are gonna finish. Here one task doesn't wait for the other and this is entirely up to GCD to decide.
 
 #### Main Queue
 The system provides you with a special serial queue known as the **main queue**. Like any serial queue, tasks in this queue execute one at a time. However, it’s guaranteed that all tasks will execute on the main thread and that's why use it for updating UI or in the aspect where responsiveness is critical.
@@ -465,11 +465,11 @@ Asynchronous Execution!
 Asynchronous Execution!
 Not inside a queue!
 ```
-Bob, you guessed it right. you see that the code on the main queue (the second for loop) and the code of our dispatch queue run in parallel. The important here is to make clear that our main queue is free to “work” while we have another task running in the background, and this didn’t happen on the synchronous execution of the queue.
+Bob, you guessed it right. you see that the code on the main queue (the second for loop) and the code of our dispatch queue run in parallel. The important thing here is to make clear that our main queue is free to “work” while we have another task running in the background, and this didn’t happen on the synchronous execution of the queue.
 
 #### Queue Priority and Quality of Service
 
-GCD also provide Quality of Service similar to Operations for prioritising the task.
+GCD also provide Quality of Service similar to Operations for prioritizing the task.
 
 ```swift
 public enum QualityOfService: Int {
@@ -488,7 +488,7 @@ let queue2 = DispatchQueue(label: "com.rundrakos.queue2", qos: DispatchQoS.utili
 ```
 
 #### Delay a Execution
-Sometimes it’s required by the workflow of the app to delay the execution of a work item. GCD allows doing that by calling a special method and setting the amount of time after of which the defined task will be executed.
+Sometimes it’s required by the workflow of the app to delay the execution of a work item. GCD allows doing that by calling a special method and setting the amount of time after which the defined task will be executed.
 
 ```swift
 let delayQueue = DispatchQueue(label: "com.rundrakos.delayqueue", qos: .background)
@@ -506,7 +506,7 @@ Calculate delay in execution: 2017-03-21 19:12:26 +0000
 ```
 
 #### DispatchWorkItem
-A DispatchWorkItem is a block of code that can be dispatched on any queue and therefore the contained code to be executed on a background or the main thread.
+A DispatchWorkItem is a block of code that can be dispatched on any queue and therefore the contained code will be executed on a background or the main thread.
 
 ```swift
 let workItem = DispatchWorkItem {
