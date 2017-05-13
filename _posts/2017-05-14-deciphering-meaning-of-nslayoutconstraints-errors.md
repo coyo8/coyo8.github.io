@@ -13,16 +13,16 @@ tags:
 
 Recently, I switched to creating all the UI programmatically in iOS. There are few reasons to support my decision.
 
-- I wanted to learn about internals of these **UIKit** components and would like flag it out that this is the most important reason for me. I used to get scared whenever I saw **CGRect**, **Frames** in the code. My brain used to give up thinking that it is not comprehensible. I was unaware about how things get laid out on screen because of basic understanding.
+- I wanted to learn about the internals of these **UIKit** components and would like to flag it out that this was the most important reason for me. I used to get scared whenever I saw **CGRect**, **Frames** in the code. My brain used to give up thinking that it is not comprehensible. I was unaware about how things get laid out on screen because of lack of basic understanding.
 
-* Though it's great have to Interface Builder to create things using drag and drop which reminds me of Java **Swing** library, I did some **Swing** programming during college in where I used to struggle to customize smaller things like changing **Button** size or making it corner rounded. It used to make me feel I don't have control over what I am doing.
+* Though it's great to have Interface Builder to create things using drag and drop which reminds me of Java **Swing** library, I did some **Swing** programming during college in where I used to struggle to customize smaller things like changing **Button** size or making it's corners rounded. It used to make me feel that I don't have control over what I am doing.
 
-* People always asks: Why not **Storyboard** using **Interface Builder**? It is **Apple** recommended way. I agree but there are places where **Storyboards** are not appropriate tools and as a skill programmer having as many tools is always beneficial.
+* People always ask: Why not **Storyboard** using **Interface Builder**? It is **Apple** recommended way. I agree but there are places where **Storyboards** are not appropriate tools and as a skilled programmer having as many tools as possible is always beneficial.
 
 
-OK, now the reasons are over. Lets move to why we are here. I will break the post in three parts.
+OK, now the reasons are over. Lets move on to why we are here. I will break the post in three parts.
 
-* I will show a example project in which a Autolayout issue exists
+* I will show an example project in which a Autolayout issue exists
 * Now I will explore ways to remove the issues (Feel free to provide your own solution)
 * Finally, we will have some learnings to take away 
 
@@ -105,7 +105,7 @@ This is how the App looks. The **Label** is horizontally and vertically centered
 
 ## Bugs Injection
 
-Now, let introduce some bugs 
+Now, let's introduce some bugs 
 
 ### 1. **TranslatesAutoresizingMaskIntoConstraints:**  
 
@@ -139,7 +139,7 @@ When you haven't set **translatesAutoresizingMaskIntoConstraints** to *false*. Y
 )
 ```
 
-The things you need to look is **h=--& v=--&**, if it is there then the error is because you haven't set the *translatesAutoresizingMaskIntoConstraints* property to be false. For info read Apple guide [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1){:target="_blank"}.
+The things you need to look is **h=--& v=--&**, if it is there then the error is because you haven't set the *translatesAutoresizingMaskIntoConstraints* property to false. For info read Apple guide [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1){:target="_blank"}.
 
 
 ### 2. **Unsatisfiable constraints:** 
@@ -161,11 +161,11 @@ titleLabel.widthAnchor.constraint(equalToConstant: titleLabelWidth).isActive = t
 titleLabel.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
 ```
 
-Now I get a error, why because initially we have set the **width** of *titleLabel* to its *SuperView* width but now we have extra constraints which says it's width have constant value which doesn't satisfy by previous constraints.
+Now I get an error, why because initially we have set the **width** of *titleLabel* to its *SuperView* width but now we have extra constraints which says it's width have constant value which doesn't satisfy the previous constraints.
 
 ### Error 2 
 
-**Note:** Because you know the reason why we are getting the error, it's makes it easy but in real world the scenario will be different. You will have many views and will don't know which is causing the error.
+**Note:** Because you know the reason why we are getting the error, it makes it easy but in real world the scenario will be different. You will have many views and will not know what is causing the error.
 
 ```bash
 2017-05-13 15:20:08.740153+0530 NSLayoutContrainstsExample[43393:4192925] [LayoutConstraints] Unable to simultaneously satisfy constraints.
@@ -188,7 +188,7 @@ The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in
 
 Does the log make sense?
 
-Let me pin out few points here:
+Let me pin out a few points here:
 
 * It is talking about a **UILabel** but I don't know whether it is *titleLabel* or some other one.
 * Which particular constraints it is breaking, we can have multiple width constraints.
@@ -200,7 +200,7 @@ Let resume our discussion, the biggest problem in debugging **NSLayoutConstraint
 ```bash
 <NSLayoutConstraint:0x60800008c4e0 UILabel:0x7fbbc95067b0'Testing out NSLayoutConst...'.width == UIView:0x7fbbc9506a40.width   (active)>"
 ```
-Focus on **Testing out NSLayoutConst...'** which is the text we have setup on *titleLabel*. Hence most of views can be found out like this way.
+Focus on **Testing out NSLayoutConst...'** which is the text we have setup on *titleLabel*. Hence most of the views can be found out using this way.
 
 
 > What about the other views?
@@ -212,7 +212,7 @@ Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch th
 The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
 ```
 
-when I was looking for how to create **symbolic breakpoints**, I tried everything but no success, then [stackOverflow](http://stackoverflow.com/questions/26389273/how-to-trap-on-uiviewalertforunsatisfiableconstraints){:target="_blank"} comes for rescue. 
+when I was looking for how to create **symbolic breakpoints**, I tried everything but no success, then as always [stackOverflow](http://stackoverflow.com/questions/26389273/how-to-trap-on-uiviewalertforunsatisfiableconstraints){:target="_blank"} comes for rescue. 
 
 This post also started assuming I know how to create breakpoints. Finally I found the crux i.e.
 
@@ -249,7 +249,7 @@ The steps are shown in the figure below.
 </figure>
 
 
-After adding this break point you can use few method to get the description about a view. As, I said identifying correct view is the biggest hurdle.
+After adding this break point, you can use few method to get the description about a view. As I said, identifying correct view is the biggest hurdle.
 
 ```bash
 (lldb) po 0x7ff7a0c093c0
