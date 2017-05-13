@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Deciphering meaning of NSlayoutContrainsts erros
+title:  Deciphering meaning of NSlayoutConstraints Errors
 date:   2017-05-14 10:12:16
-desc:   How to debug constrainsts error
+desc:   How to debug constraints error
 categories:
 - iOS
 tags:
@@ -11,13 +11,13 @@ tags:
 ---
 
 
-Recently, I switched to creating all the UI programmatically. There are few reasons to support it
+Recently, I switched to creating all the UI programmatically in iOS. There are few reasons to support my decision.
 
-* I wanted to learn about internals of these `UIKit`. This is the most important reason. I used to get scared whenever I found `CGRect` `Frames` in the App code. My brain used to give up.
+- I wanted to learn about internals of these **UIKit** components and would like flag it out that this is the most important reason for me. I used to get scared whenever I saw **CGRect**, **Frames** in the code. My brain used to give up thinking that it is not comprehensible. I was unaware about how things get laid out on screen because of basic understanding.
 
-* Though it's great have to Interface Builder to create things using drag and drop which reminds me of Java `Swing` library, I did some `Swing` programming during college in where I used to struggle to customize smaller things like changing `Button` size or making it corner rounded. It used to make me feel I don't have control over what I am doing.
+* Though it's great have to Interface Builder to create things using drag and drop which reminds me of Java **Swing** library, I did some **Swing** programming during college in where I used to struggle to customize smaller things like changing **Button** size or making it corner rounded. It used to make me feel I don't have control over what I am doing.
 
-* People always asks: Why not `Storyboard` using `Interface Builder`? It is `Apple` recommended way. I agree but there are places where `Storyboards` are not appropriate tools and as a skill programmer having as many tools is always beneficial.
+* People always asks: Why not **Storyboard** using **Interface Builder**? It is **Apple** recommended way. I agree but there are places where **Storyboards** are not appropriate tools and as a skill programmer having as many tools is always beneficial.
 
 
 OK, now the reasons are over. Lets move to why we are here. I will break the post in three parts.
@@ -28,7 +28,9 @@ OK, now the reasons are over. Lets move to why we are here. I will break the pos
 
 ### Example Project
 
-This is a default single page application. I have removed my `Storyboard` file and my `AppDelegate.swift` and `ViewController.swift` files looks like:
+You can download/checkout the project at [Github](https://github.com/rahulrrixe/nslayoutconstraints-example){:target="_blank"}.
+
+This is a default single page application. I have removed my **Storyboard** file and my *AppDelegate.swift* and *ViewController.swift* files looks like:
 
 ```swift
   // As I have removed Storyboard file, I need to
@@ -86,10 +88,10 @@ class ViewController: UIViewController {
 }
 
 ```
-That's it. We have a `titleText` label which I am trying to set to the center of the view using Autolayout constraints.
+That's it. We have a *titleText* label which I am trying to set to the center of the view using Autolayout constraints.
 
 
-This is how the App looks. The `Label` is horizontally and vertically centered. Here is the image
+This is how the App looks. The **Label** is horizontally and vertically centered. Here is the image
 
 <figure>
   <div class="large">
@@ -98,25 +100,30 @@ This is how the App looks. The `Label` is horizontally and vertically centered. 
   </div>
 </figure>
 
-### Bugs Injection
+
+
+
+## Bugs Injection
 
 Now, let introduce some bugs 
 
-1. **TranslatesAutoresizingMaskIntoConstraints:**  Remove the `translatesAutoresizingMaskIntoConstraints` from the `titleLabel` view or set it to `false`.
+### 1. **TranslatesAutoresizingMaskIntoConstraints:**  
+
+Remove the **translatesAutoresizingMaskIntoConstraints** from the *titleLabel* view or set it to **false**.
 
 ```Swift
 label.translatesAutoresizingMaskIntoConstraints = false
 
 ```
-After running this project I get first error mentioned below in `Errors` section and so I set the `translatesAutoresizingMaskIntoConstraints` property correctly and hurray the App is running fine again.
+After running this project I get first error mentioned below in **Error** section and so I set the **translatesAutoresizingMaskIntoConstraints** property correctly and hurray the App is running fine again.
 
 ```swift
 label.translatesAutoresizingMaskIntoConstraints = false
 
 ```
 
-##### Error 1
-When you haven't set `translatesAutoresizingMaskIntoConstraints` to `false`. You will get `constraints` error like below in console which looks all the same to other errors on first glance.
+### Error 1
+When you haven't set **translatesAutoresizingMaskIntoConstraints** to *false*. You will get constraints error like below in console which looks all the similar to other errors (we will look into them later part of the blog) on first glance.
 	
 ```bash
 		2017-05-13 14:26:15.594780+0530 NSLayoutContrainstsExample[41595:4124608] [LayoutConstraints] Unable to simultaneously satisfy constraints.
@@ -132,10 +139,12 @@ When you haven't set `translatesAutoresizingMaskIntoConstraints` to `false`. You
 )
 ```
 
-The things you need to look is `h=--& v=--&`, if it is there then the error is because you haven't set the `translatesAutoresizingMaskIntoConstraints` property to be false. For info read Apple guide [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1){:target="_blank"}.
+The things you need to look is **h=--& v=--&**, if it is there then the error is because you haven't set the *translatesAutoresizingMaskIntoConstraints* property to be false. For info read Apple guide [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1){:target="_blank"}.
 
 
-2. **Unsatisfiable constraints:** Now lets create a bug in Autolayout constraints. Currently the `width` of the `titleLabel` is fixed to it's `SuperView` width. Let's make another constraints with a constant greater than `SuperView` width. In code which will look something like below.
+### 2. **Unsatisfiable constraints:** 
+
+Now lets create a bug in Autolayout constraints. Currently the **width** of the **titleLabel** is fixed to it's **SuperView** width. Let's make another constraints with a constant greater than **SuperView's** width. In code which will look something like below.
 
 ```swift
 let viewWidth = view.frame.width
@@ -152,9 +161,9 @@ titleLabel.widthAnchor.constraint(equalToConstant: titleLabelWidth).isActive = t
 titleLabel.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
 ```
 
-Now I get a error, why because initially we have set the `width` of `titleLabel` to its `SuperView` width but now we have extra constraints which says it's width have constant value which doesn't satisfy by previous constraints.
+Now I get a error, why because initially we have set the **width** of *titleLabel* to its *SuperView* width but now we have extra constraints which says it's width have constant value which doesn't satisfy by previous constraints.
 
-##### Error 2 
+### Error 2 
 
 **Note:** Because you know the reason why we are getting the error, it's makes it easy but in real world the scenario will be different. You will have many views and will don't know which is causing the error.
 
@@ -181,32 +190,38 @@ Does the log make sense?
 
 Let me pin out few points here:
 
-* It is talking about a `UILabel` but I don't know whether it is `titleLabel` or some other one.
+* It is talking about a **UILabel** but I don't know whether it is *titleLabel* or some other one.
 * Which particular constraints it is breaking, we can have multiple width constraints.
-* The last line which is `Will attempt to recover by breaking constraint ...` means Autolayout engine will discard this constraint. 
+* The last line which is **Will attempt to recover by breaking constraint ...** means Autolayout engine will discard this constraint. 
 
 
-Let resume our discussion, the biggest problem in debugging `NSLayoutConstraints` is finding the correct view. `Xcode` uses a label’s text, a button’s title, or a text field’s placeholder to identify these views and so we are able to find that this constraint belong to `titleLabel` as
+Let resume our discussion, the biggest problem in debugging **NSLayoutConstraints** is finding the correct view. **Xcode** uses a label’s text, a button’s title, or a text field’s placeholder to identify these views and so we are able to find that this constraint belong to *titleLabel* as
 
 ```bash
 <NSLayoutConstraint:0x60800008c4e0 UILabel:0x7fbbc95067b0'Testing out NSLayoutConst...'.width == UIView:0x7fbbc9506a40.width   (active)>"
 ```
-Focus on `Testing out NSLayoutConst...'` which is the text we have setup on `titleLabel`. Hence most of views can be found out like this way.
+Focus on **Testing out NSLayoutConst...'** which is the text we have setup on *titleLabel*. Hence most of views can be found out like this way.
 
 
 > What about the other views?
 
-`Symbolic breakpoints` are here for rescue. The error log say 
+**Symbolic breakpoints** are here for rescue. The error log say 
 
 ```
 Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
 The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
 ```
 
-when I was looking for how to create `symbolic breakpoints`, I tried everything but no success, then [stackOverflow](http://stackoverflow.com/questions/26389273/how-to-trap-on-uiviewalertforunsatisfiableconstraints){:target="_blank"} comes for rescue. 
+when I was looking for how to create **symbolic breakpoints**, I tried everything but no success, then [stackOverflow](http://stackoverflow.com/questions/26389273/how-to-trap-on-uiviewalertforunsatisfiableconstraints){:target="_blank"} comes for rescue. 
 
-This post also started assuming I know how to create breakpoints. Finally I found the crux.
+This post also started assuming I know how to create breakpoints. Finally I found the crux i.e.
 
+* Goto Breakpoint Navigator **cmd+7**
+* Click the Add (+) button in the lower left corner
+* Select Add Symbolic Breakpoint from the option
+* Where it says Symbol just type in **UIViewAlertForUnsatisfiableConstraints**
+
+The steps are shown in the figure below.
 
 <figure>
   <div class="large">
@@ -216,14 +231,11 @@ This post also started assuming I know how to create breakpoints. Finally I foun
 </figure>
 
 <figure>
-  <div class="small">
+  <div class="medium">
     <img src="{{ site.url }}/assets/images/posts/2017-05/breakpoint-2.png" alt="Select Symbolic Breakpoint">
     <figcaption> 2. Select Symbolic Breakpoint </figcaption>
   </div>
-</figure>
-
-<figure>
-  <div class="small">
+  <div class="medium">
     <img src="{{ site.url }}/assets/images/posts/2017-05/breakpoint-3.png" alt="Add the correct class">
     <figcaption> 3. Add the correct class </figcaption>
   </div>
@@ -236,11 +248,6 @@ This post also started assuming I know how to create breakpoints. Finally I foun
   </div>
 </figure>
 
-
-* Goto Breakpoint Navigator `cmd+7`
-* Click the Add (+) button in the lower left corner
-* Select Add Symbolic Breakpoint from the option
-* Where it says Symbol just type in `UIViewAlertForUnsatisfiableConstraints`
 
 After adding this break point you can use few method to get the description about a view. As, I said identifying correct view is the biggest hurdle.
 
@@ -257,24 +264,26 @@ After adding this break point you can use few method to get the description abou
 ```
 
 
-3. **Ambiguous Layout:** The above issue was about adding extra constraints (Unsatisfiable constraints) which can be discarded but what about ambiguous constraints.
+### 3. **Ambiguous Layout:** 
 
-Ambiguous layouts[1](Ambiguous Layout) occur when the system of constraints has two or more valid solutions. There are two main causes:
+The above issue was about adding extra constraints (Unsatisfiable constraints) which can be discarded but what about ambiguous constraints.
 
-		* The layout needs additional constraints to uniquely specify the position and location of every view.
-		After you determine which views are ambiguous, just add constraints to uniquely specify both the view’s position and its size.
-		* The layout has conflicting optional constraints with the same priority, and the system does not know which constraint it should break.
-		Here, you need to tell the system which constraint it should break, by changing the priorities so that they are no longer equal. The system breaks the constraint having the lowest priority first.
+[Ambiguous layouts](Ambiguous Layout) occur when the system of constraints has two or more valid solutions. There are two main causes:
+
+* The layout needs additional constraints to uniquely specify the position and location of every view.
+* After you determine which views are ambiguous, just add constraints to uniquely specify both the view’s position and its size.
+* The layout has conflicting optional constraints with the same priority, and the system does not know which constraint it should break.
+* Here, you need to tell the system which constraint it should break, by changing the priorities so that they are no longer equal. The system breaks the constraint having the lowest priority first.
 
 
-Now, we will add a `Ambiguous` constraints. We can easily do in our project example by removing `Y` position constraint.
+Now, we will add a **Ambiguous** constraints. We can easily do in our project example by removing **Y** position constraint.
 
 ```swift
 // titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 ```
 
 
-##### Error 3
+### Error 3
 
 The console prints out this:
 
@@ -298,17 +307,17 @@ The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in
 
 ```
 
-In this it weired because it is yelling the same error which we had with `Unsatisfiable constraints`. 
+The above error is same weired jargon which we have seen with **Unsatisfiable constraints** and not telling about the ambiguity. 
 
 ***Now what to do?*** 
 
-From the `StackOverFlow` post mentioned above, we can also add `Debugger Command` in the symbolic breakpoint to show whole trace of views.
+From the [StackOverFlow](http://stackoverflow.com/questions/26389273/how-to-trap-on-uiviewalertforunsatisfiableconstraints){:target="_blank"} post mentioned above, we can also add **Debugger Command** in the symbolic breakpoint to show whole trace of views.
 
 ```bash
 expr -l objc++ -O -- [[UIWindow keyWindow] _autolayoutTrace]
 ```
 
-Now console logs the `Error 3` in below format:
+Now console logs the **Error 3** in below format:
 
 ```bash
 •UIWindow:0x7fdb69d06bb0
@@ -322,7 +331,7 @@ Legend:
 ```
 
 
-The above issue is understandable. It is saying we haven't provided the `Y` value.
+The above issue is understandable. It is saying we haven't provided the **Y** value.
 
 I think, this is a good stopping point. I will explore more on debugging Autolayout issue for complex views in later posts.
 
