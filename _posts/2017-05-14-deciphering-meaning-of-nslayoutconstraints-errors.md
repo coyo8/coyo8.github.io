@@ -249,7 +249,7 @@ The steps are shown in the figure below.
 </figure>
 
 
-After adding this break point, you can use few method to get the description about a view. As I said, identifying correct view is the biggest hurdle.
+After adding this break point, you can use few method to get the description about a view. As I said,` identifying correct view is the biggest hurdle.
 
 ```bash
 (lldb) po 0x7ff7a0c093c0
