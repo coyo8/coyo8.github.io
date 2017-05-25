@@ -9,15 +9,38 @@ tags:
 - Experience
 ---
 
-I believe that a book is a life work of an author and he tries to take you through the journey of his own experiences. A question always intrigued me for quite a long time and it may be the same for many of you. i.e.
+> I always believe that there is a some hidden power inside a book. 
 
-***Why should I read other people writing's?***
+A book is a life work of an author which means to if you read a book it means you have squeezed the author whole life experiences and knowledge. Feels like you getting some power tonic. The author tries to take us through the journey of his life and we kind of get a chance to live in very short span of time. 
 
-I always tried to think the answer in terms of pros and cons i.e. I want to succeed, I want to be smart or may be I want to enjoy; because that's the way we have been taught and so I was not able to grasp the essence of why.
 
-One day, I decide to give a fresh look on finding the true reason and so started thinking about my childhood. During those years, I was kind of a story hunters/explorer. I used to keep looking for new stories in libraries and old books lying in home to satisfy my storyphile neurons. I used to hop around miles of distances to my friends houses to collect new comics books and weekly magazines which used to be filled with mystery, funny, good and bad emotions and most of the time after reading them, I used to have endless question in mind and some times I use to go in infinite loop thinking about them for weeks. The questions used to be: What if I become the superhero? What will I do with supers powers? Should I kill my oppunger neighbor with the power? Is killing good? What If I become the disguise villain who world thinks the Saviour?
+Coming to my question which always intrigued me  i.e.
 
-***I discovered the essence of reading i.e. good stories/writing fuels curiosity and imagination.*** Which are colossal thing to have in one's life.
+***Why should I read others work?***
+
+I tried to figure out the answer in terms of pros and cons i.e. 
+
+
+  * I want to succeed
+  * I want to be smarter than my peers or may be 
+  * I want to just enjoy so that I can release some good pheromones
+
+but still I was not able to grasp the essence of why?
+
+So one day, I decide to go out and have a fresh look on the reason to find out. I was seating on bench near a lake which reminded me about a incident in childhood. We used to have very strict math teacher and used to beat us a lot. I used to like reading stories and during his class I was reading a comic story book. He caught me and you can easily imagine my punishment.
+
+
+> But at the same time I didn't felt bad
+
+
+After that incident, I can easily recollect my memories which is, I started spending lot of time in libraries and old books to satisfy my storyphile neurons. I was in fifth grade and I read all the Hindi and English course book till grade 12. Not only this, I used to hop around miles of distances to collect new books and story magazines which used to be filled with mystery, funny, good and bad emotions and most of the time after reading them, I used to have endless question in my curios mind and some times I use to go in infinite loop thinking about them for weeks. 
+
+
+So finally,
+
+**I discovered the essence of reading i.e. good stories/writing fuels curiosity and imagination.** 
+
+Which are colossal thing to have in one's life.
 
 What your essence? type in the comments!
 

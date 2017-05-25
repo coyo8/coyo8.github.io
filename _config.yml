@@ -39,6 +39,7 @@ trivium:
     gplus: +RahulRanjan
     medium: RahulRRixe
     amazon: rudrakos-20
+    stackoverflow: 2577337
 
   # Toggle disclaimer in footer
   show_disclaimer: true
@@ -58,7 +59,7 @@ jquery: 2.2.2
 modernizr: 2.8.3
 
 #Pagination
-paginate: 5
+paginate: 6
 paginate_path: "/blog/page:num/"
 
 # Permalinks
