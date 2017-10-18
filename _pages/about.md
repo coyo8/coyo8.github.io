@@ -9,9 +9,11 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! I make software, teach students and help lazy brains grow. I like everything about computers and science behind learning.
+Welcome to my virtual realm! I create apps, run and trigger growth mindset. I am passionate about computers and science behind learning. These days I am pondering over this question:
 
-I am currently a course manager at [Udacity][udacity] leading [Full Stack Nanodegree][fsnd] program. I am also a member of [Python Software Foundation][PSF]. I’ve worked at [The Walt Disney Company][disney] and [CMU][cmu] as a Software Engineer and HCI Researcher respectively.
+> Why becoming expert in a field takes so long? Is there a way to accelerate it?
+
+Right now, I am pushing my limit as an iOS Developer at [Grab][grab] codebase. Just before it, I was leading [Udacity Full Stack Nanodegree][fsnd] program and made it most revered by students. I am also a member of [Python Software Foundation][PSF]. In past, I’ve worked at [The Walt Disney Company][disney] and [CMU][cmu] as a Software Engineer and Educational Game Researcher respectively.
 
 To get updated with my newest projects, go straight to my [GitHub][github] account. Apart from these, if you would like to stumble upon my older writings which still reside in my [medium][medium] blog.
 
@@ -26,12 +28,20 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 </div>
 
 ---
+## Crypto Currency
+
+If you'd like to donate towards my efforts in open source, you can use the following wallet addresses, and any contributions (no matter how small) will be deeply appreciated.
+
+* Bitcoin: 1JadUZmUBBbJCVtxeG7P9yfW4HHCFHKyqG
+* Etherium: 0xA1Ca9D81A0123326e64Fb4F2A4Cd1A235fc93fc9
+* Litecoin: LVwHRP2HKPYEz5bcZTugSxJQubnUPvVf92
+
+---
 
 ## Contact me
 
 * Email: [rahul@rudrakos.com](mailto:rahul@rudrakos.com)
-
-* Phone: [+91-9819737113](tel:+91-9819737113)
+* Phone: [+65-84207614](tel:+65-84207614)
 
 ---
 
@@ -49,4 +59,5 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 [rudra]: <https://en.wikipedia.org/wiki/Rudra>
 [cmu]: <https://www.hcii.cmu.edu/>
 [disney]: <http://www.disneyinteractive.com/>
+[grab]: <https://www.grab.com/sg/>
 
