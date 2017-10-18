@@ -99,7 +99,7 @@ lang: en-US
 branch: master
 future: true
 
-gems:
+plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-redirect-from
