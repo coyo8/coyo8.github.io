@@ -33,8 +33,8 @@ trivium:
 
   # Profile links, leave blank to ignore
   social:
-    github: rahulrrixe
-    twitter: RahulRRixe
+    github: coyotelius
+    twitter: coyotelius
     facebook: rranjan93
     gplus: +RahulRanjan
     medium: RahulRRixe
@@ -94,7 +94,7 @@ collections:
     permalink: /category/:path/
 
 # githib meta info
-repository: rahulrrixe/rahulrrixe.github.io
+repository: coyotelius/rahulrrixe.github.io
 lang: en-US
 branch: master
 future: true

@@ -9,7 +9,7 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! I create apps, run and trigger growth mindset. I am passionate about computers and science behind learning. These days I am pondering over this question:
+Welcome to my virtual realm! I am software engineer who create mobile apps and extremely curious about finding what is absolute truth. I am passionate about computers and science behind learning, if you have any crazy and ideas worth sharing do write me up. These days I am pondering over this question:
 
 > Why becoming expert in a field takes so long? Is there a way to accelerate it?
 
@@ -24,7 +24,7 @@ Still haven't found what you are looking for or want to meet for a coffee? Feel 
 <div class="social-icon"><a id="pdf-ic" href="{{ site.url }}/assets/pdf/resume.pdf" target="_blank">
     <i class="fa fa-file-pdf-o social-icon"></i>
   </a>
-  <span><font size="1">Download Resume | Updated on 15 May, 2017 </font></span>
+  <span><font size="1">Download Resume | Updated on 15 December, 2018 </font></span>
 </div>
 
 ---
