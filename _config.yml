@@ -22,7 +22,7 @@ trivium:
   author: # Author details
     name: Rahul Ranjan
     email: rahul@rudrakos.com
-    url: http://rudrakos.com/rahul
+    url: https://rudrakos.com/rahul
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-41921241-4
@@ -33,11 +33,11 @@ trivium:
 
   # Profile links, leave blank to ignore
   social:
-    github: coyotelius
-    twitter: coyotelius
-    facebook: rranjan93
+    github: coyo8
+    twitter: coyo8
+    facebook: coyo8
     gplus: +RahulRanjan
-    medium: RahulRRixe
+    medium: coyo8
     amazon: rudrakos-20
     stackoverflow: 2577337
 
@@ -94,7 +94,7 @@ collections:
     permalink: /category/:path/
 
 # githib meta info
-repository: coyotelius/rahulrrixe.github.io
+repository: coyo8/coyo8.github.io
 lang: en-US
 branch: master
 future: true
