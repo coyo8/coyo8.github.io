@@ -55,7 +55,7 @@ Wanderer has been made to solve above problem using mobile phones integrated wit
   </div>
 </figure>
 
-Click <a href="{{ site.url }}/assets/apps/wanderer.apk" target="_blank">here</a> to download the Android APK.
+Click <a href="https://www.dropbox.com/s/f4lyjja9b8318i3/wanderer.apk?dl=0" target="_blank">here</a> to download the Android APK.
 
 ### MENTOR
 1. [Kshitij Marwah](http://www.kshitijmarwah.com/)
