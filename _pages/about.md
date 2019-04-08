@@ -9,22 +9,16 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! I am software engineer who create mobile apps and extremely curious about finding what is absolute truth. I am passionate about computers and science behind learning, if you have any crazy and ideas worth sharing do write me up. These days I am pondering over this question:
+Welcome to my virtual realm! I am software engineer who create mobile apps and extremely curious about finding what is absolute truth. I am extremely about computers and science behind learning. I am pondering over this questions these days.
 
-> Why becoming expert in a field takes so long? Is there a way to accelerate it?
+> Does Gödel's Incompleteness Theorem proves that Singularity is not possible?
 
-Right now, I am pushing my limit as an iOS Developer at [Grab][grab] codebase. Just before it, I was leading [Udacity Full Stack Nanodegree][fsnd] program and made it most revered by students. I am also a member of [Python Software Foundation][PSF]. In past, I’ve worked at [The Walt Disney Company][disney] and [CMU][cmu] as a Software Engineer and Educational Game Researcher respectively.
-
-To get updated with my newest projects, go straight to my [GitHub][github] account. Apart from these, if you would like to stumble upon my older writings which still reside in my [medium][medium] blog.
-
-The site name, [Rudrakos]() (pronounced “roo d-ruh kohs”) is a combination of two sanskrit words i.e. [Rudra][rudra] (mightiest of mighty) and Kosa (pocket), meaning container of omnipotent.
-
-Still haven't found what you are looking for or want to meet for a coffee? Feel free to contact me.
+To get updated with my newest projects, go straight to my [GitHub][github] account or checkout the [projects]({{ site.url }}/projects/) section. If you have something intresting to share and want to meet for a coffee? Feel free to contact me.
 
 <div class="social-icon"><a id="pdf-ic" href="{{ site.url }}/assets/pdf/resume.pdf" target="_blank">
     <i class="fa fa-file-pdf-o social-icon"></i>
   </a>
-  <span><font size="1">Download Resume | Updated on 15 December, 2018 </font></span>
+  <span><font size="2">Download Resume | Updated on 15 December, 2018 </font></span>
 </div>
 
 ---
