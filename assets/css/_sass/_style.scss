@@ -11,7 +11,7 @@ html {
 }
 body {
     margin: 0;
-    font-family: "Inconsolata";
+    font-family: $font-family;
     font-color: $light-gray;
     line-height: 1.4em;
 
@@ -482,7 +482,6 @@ Things
     margin-right: 1rem;
     padding: 0.5rem;
   }
-
   a {
     color: $accent;
   }
@@ -493,7 +492,6 @@ Things
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     .left {
         width: 33%;
         text-align: left;
@@ -534,16 +532,13 @@ Things
     #author-name {
         display: inline-block;
     }
-
     .project-container, .project-tap {
         justify-content: center;
     }
-
     /* Change the size of box item */
     .box-item {
       min-width: 100%;
     }
-
     /* arrange the title text */
     .text {
       min-width: 100%;
