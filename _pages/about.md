@@ -9,7 +9,7 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! I am software engineer who create mobile apps and extremely curious about finding what is absolute truth. I am extremely about computers and science behind learning. I am pondering over this questions these days.
+Welcome to my virtual realm! I am a builder of softwares. I have several open source projects ranging with wide varites of application. I am extremely passionate about computers and science behind learning and currently, I am pondering over this questions.
 
 > Does Gödel's Incompleteness Theorem proves that Singularity is not possible?
 
