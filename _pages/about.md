@@ -13,7 +13,7 @@ Welcome to my virtual realm! I am software engineer who create mobile apps and e
 
 > Does Gödel's Incompleteness Theorem proves that Singularity is not possible?
 
-To get updated with my newest projects, go straight to my [GitHub][github] account or checkout the [projects]({{ site.url }}/projects/) section. If you have something intresting to share and want to meet for a coffee? Feel free to contact me.
+To get updated with my newest projects, go straight to my [GitHub][github] account or checkout the [projects]({{ site.url }}/projects/) section. If you have something interesting to share and want to meet for a coffee? Feel free to contact me.
 
 <div class="social-icon"><a id="pdf-ic" href="{{ site.url }}/assets/pdf/resume.pdf" target="_blank">
     <i class="fa fa-file-pdf-o social-icon"></i>

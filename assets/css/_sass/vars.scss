@@ -22,6 +22,7 @@ $small-width: 480px;
 */
 $font-family: "Inconsolata";
 $base-spacing: 1.2 * 1em;
+$line-height: 1.4 * 1em;
 
 /* colors */
 $black-color: #000;
@@ -35,9 +36,10 @@ $background-color: #fff;
 $background-over-color: #f5f7f9;
 $black: #263238;
 $light-gray: #050604;
+$title-color: #1A237E;
 
 /* Font Colors */
-$base-font-color: rgba($dark-gray-color, .8);
+$base-font-color: rgba($dark-gray-color, .9);
 
 /* code */
 $code-color: #bf616a;
