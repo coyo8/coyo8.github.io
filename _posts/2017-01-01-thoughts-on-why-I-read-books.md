@@ -41,9 +41,6 @@ So finally,
 
 Which are colossal thing to have in one's life.
 
-What your essence of reading? type in the comments!
-
-
-If you want to go through my reading list, click [here](http://rudrakos.com/books/).
+What your essence of reading? type in the comments! If you want to go through my reading list, click [here](http://rudrakos.com/books/).
 
 Thank you for reading!

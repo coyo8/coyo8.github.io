@@ -22,20 +22,12 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 </div>
 
 ---
-## Crypto Currency
-
-If you'd like to donate towards my efforts in open source, you can use the following wallet addresses, and any contributions (no matter how small) will be deeply appreciated.
-
-* Bitcoin: 1JadUZmUBBbJCVtxeG7P9yfW4HHCFHKyqG
-* Etherium: 0xA1Ca9D81A0123326e64Fb4F2A4Cd1A235fc93fc9
-* Litecoin: LVwHRP2HKPYEz5bcZTugSxJQubnUPvVf92
-
----
 
 ## Contact me
 
 * Email: [rahul@rudrakos.com](mailto:rahul@rudrakos.com)
 * Phone: [+65-84207614](tel:+65-84207614)
+* Twitter: [@coyo8](https://twitter.com/coyo8)
 
 ---
 
