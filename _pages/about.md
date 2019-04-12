@@ -27,7 +27,6 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 
 * Email: [rahul@rudrakos.com](mailto:rahul@rudrakos.com)
 * Phone: [+65-84207614](tel:+65-84207614)
-* Twitter: [@coyo8_][twitter]
 
 ---
 
@@ -46,4 +45,4 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 [cmu]: <https://www.hcii.cmu.edu/>
 [disney]: <http://www.disneyinteractive.com/>
 [grab]: <https://www.grab.com/sg/>
-[twitter]: <https://twitter.com/coyo8_>
+[twitter]: <https://twitter.com/{{ site.trivium.social.github }}>
