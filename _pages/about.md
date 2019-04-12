@@ -18,7 +18,7 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 <div class="social-icon"><a id="pdf-ic" href="{{ site.url }}/assets/pdf/resume.pdf" target="_blank">
     <i class="fa fa-file-pdf-o social-icon"></i>
   </a>
-  <span><font size="2">Download Resume | Updated on 15 December, 2018 </font></span>
+  <span><font size="2">Download Resume | Updated on 31st March, 2019 </font></span>
 </div>
 
 ---
@@ -27,7 +27,7 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 
 * Email: [rahul@rudrakos.com](mailto:rahul@rudrakos.com)
 * Phone: [+65-84207614](tel:+65-84207614)
-* Twitter: [@coyo8_](https://twitter.com/coyo8_)
+* Twitter: [@coyo8_][twitter]
 
 ---
 
@@ -46,4 +46,4 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 [cmu]: <https://www.hcii.cmu.edu/>
 [disney]: <http://www.disneyinteractive.com/>
 [grab]: <https://www.grab.com/sg/>
-
+[twitter]: <https://twitter.com/coyo8_>
