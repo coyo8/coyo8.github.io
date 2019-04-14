@@ -48,4 +48,4 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 [cmu]: <https://www.hcii.cmu.edu/>
 [disney]: <http://www.disneyinteractive.com/>
 [grab]: <https://www.grab.com/sg/>
-[twitter]: <https://twitter.com/{{ site.trivium.social.github }}>
+[twitter]: <https://twitter.com/{{ site.trivium.social.twitter }}>
