@@ -12,9 +12,10 @@ html {
 body {
     margin: 0;
     font-family: $font-family;
+    letter-spacing: $letter-spacing;
     line-height: $line-height;
     font-size: $font-size;
-    color: $base-color;
+    color: $base-font-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -261,10 +262,6 @@ footer {
     height: 40%;
     text-align: center;
     margin-bottom: 0.5rem;
-
-    @media (max-width: 650px) {
-      margin-left: 15%;
-    }
 }
 
 .footer-box a:hover {

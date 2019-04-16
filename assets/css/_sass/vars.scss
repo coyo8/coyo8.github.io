@@ -20,13 +20,14 @@ $small-width: 480px;
 /*
   Font Sizes
 */
-$font-family: "Inconsolata";
-$base-spacing: 1.2 * 1em;
-$line-height: 1.4 * 1em;
-$font-size: 1.2 * 1em;
+$font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
+$base-spacing: 1.1 * 1em;
+$line-height: 1.6 * 1em;
+$font-size: 1em;
+$letter-spacing: 0.02em;
 
 /* Font Colors */
-$base-font-color: #333333;
+$base-font-color: rgba(#333,0.9);
 
 /* colors */
 $black-color: #000;
@@ -44,6 +45,7 @@ $title-color: #1A237E;
 
 /* code */
 $code-color: #bf616a;
-$code-background-color: #f9f9f9;
+$code-font-size: 0.9 * 1em;
+$code-background-color: #eeee;
 $code-font: Menlo, Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace !important;
