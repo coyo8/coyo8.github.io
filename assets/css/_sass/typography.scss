@@ -8,8 +8,9 @@
     blockquote {
       padding: 0.8rem;
       margin: 0 2rem 1rem 0;
-      color: #999;
+      color: $dark-gray-color;
       border-left: .2rem solid $light-gray-color;
+      font-weight: bold;
 
       p:last-child {
         margin-bottom: 0;
