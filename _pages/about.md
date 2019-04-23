@@ -9,7 +9,7 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! Most of my life is about software development but there is much more happening with me everyday. I am exploring different things and tries to deep dive into it as much as possible. I use my blog to share those ideas, knowledge and wisdom; I assimilated during this journey.
+Welcome to my virtual realm! Most of my life is about software development but there is much more. I am exploring different things and most of the time I try to deep dive into it them much as possible. I use this blog to share those ideas, knowledge and wisdom; I assimilated during this journey.
 
 I don't have much to showcase here but in past I have had several open source projects ranging with wide variaties of applications(finance, search engine, games, pshycologoy) but these days I am working full time in iOS ecosystem.
 
