@@ -9,9 +9,11 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to the virtual realm! Though my life is much more than software development but it occupies the most of it. I don't have much to showcase here but in past I have had several open source projects ranging with wide variates of applications(finance, search engine, games, pshycologoy) but these days I am mostly looking for more low level development(programming languages, os, drivers). 
+Welcome to my virtual realm! Most of my life is about software development but there is much more happening with me everyday. I am exploring different things and tries to deep dive into it as much as possible. I use my blog to share those ideas, knowledge and wisdom; I assimilated during this journey.
 
-I am extremely passionate about computers and science behind learning. These days I am reading about the history of computation and it what it holds in future and currently, I am pondering over this questions.
+I don't have much to showcase here but in past I have had several open source projects ranging with wide variaties of applications(finance, search engine, games, pshycologoy) but these days I am working full time in iOS ecosystem.
+
+I am extremely passionate about computers and how we learn. These days I am diving myself into the history of computation and what it holds for future and currently, I am pondering over this question.
 
 > Does Gödel's Incompleteness Theorem proves that Singularity is not possible?
 
