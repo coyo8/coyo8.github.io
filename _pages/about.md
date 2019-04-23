@@ -28,7 +28,6 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 ## Contact me
 
 * Email: [rahul@rudrakos.com](mailto:rahul@rudrakos.com)
-* Phone: [+65-84207614](tel:+65-84207614)
 * Twitter: [@coyo8_][twitter]
 
 ---
