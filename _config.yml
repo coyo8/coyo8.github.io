@@ -57,7 +57,7 @@ jquery: 3.4.0
 modernizr: 3.5.0
 
 #Pagination
-paginate: 10
+paginate: 7
 paginate_path: "/blog/page:num/"
 
 # Permalinks
