@@ -21,10 +21,10 @@ $small-width: 480px;
   Font Sizes
 */
 $font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
-$base-spacing: 1.0 * 1em;
-$line-height: 1.5 * 1em;
-$font-size: 1em;
-$letter-spacing: 0.02em;
+$base-spacing: 1.0rem;
+$line-height: 1.5rem;
+$font-size: 1rem;
+$letter-spacing: 0.02rem;
 
 /* Font Colors */
 $base-font-color: rgba(#333,0.9);
@@ -45,7 +45,7 @@ $title-color: #1A237E;
 
 /* code */
 $code-color: #bf616a;
-$code-font-size: 0.9 * 1em;
+$code-font-size: 0.9rem;
 $code-background-color: #eeee;
 $code-font: Menlo, Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace !important;

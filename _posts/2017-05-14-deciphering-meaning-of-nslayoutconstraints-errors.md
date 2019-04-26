@@ -111,22 +111,20 @@ Now, let's introduce some bugs
 
 Remove the **translatesAutoresizingMaskIntoConstraints** from the *titleLabel* view or set it to **false**.
 
-```Swift
+```swift
 label.translatesAutoresizingMaskIntoConstraints = false
-
 ```
 After running this project I get first error mentioned below in **Error** section and so I set the **translatesAutoresizingMaskIntoConstraints** property correctly and hurray the App is running fine again.
 
 ```swift
 label.translatesAutoresizingMaskIntoConstraints = false
-
 ```
 
 ### Error 1
 When you haven't set **translatesAutoresizingMaskIntoConstraints** to *false*. You will get constraints error like below in console which looks all the similar to other errors (we will look into them later part of the blog) on first glance.
 	
 ```bash
-		2017-05-13 14:26:15.594780+0530 NSLayoutContrainstsExample[41595:4124608] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+  2017-05-13 14:26:15.594780+0530 NSLayoutContrainstsExample[41595:4124608] [LayoutConstraints] Unable to simultaneously satisfy constraints.
 	Probably at least one of the constraints in the following list is one you don't want. 
 	Try this: 
 		(1) look at each constraint and try to figure out which you don't expect; 
@@ -139,7 +137,7 @@ When you haven't set **translatesAutoresizingMaskIntoConstraints** to *false*. Y
 )
 ```
 
-The things you need to look is **h=--& v=--&**, if it is there then the error is because you haven't set the *translatesAutoresizingMaskIntoConstraints* property to false. For info read Apple guide [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1){:target="_blank"}.
+The things you need to look is `h=--& v=--&`, if it is there then the error is because you haven't set the *translatesAutoresizingMaskIntoConstraints* property to false. For info read Apple guide [here](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1){:target="_blank"}.
 
 
 ### 2. **Unsatisfiable constraints:** 
@@ -276,12 +274,11 @@ The above issue was about adding extra constraints (Unsatisfiable constraints) w
 * Here, you need to tell the system which constraint it should break, by changing the priorities so that they are no longer equal. The system breaks the constraint having the lowest priority first.
 
 
-Now, we will add a **Ambiguous** constraints. We can easily do in our project example by removing **Y** position constraint.
+Now, we will add a **Ambiguous** constraints. We can easily do in our project example by removing **Y** position constraint. Just comment out the below line
 
 ```swift
 // titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 ```
-
 
 ### Error 3
 
