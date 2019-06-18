@@ -5,9 +5,7 @@ layout: default
 	{% for post in paginator.posts %}
 	<div>
     <div class="post-title">
-      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
         {{ post.title }}
-      </a>
     </div>
     <p>
       {% if post.categories.size > 0 %}

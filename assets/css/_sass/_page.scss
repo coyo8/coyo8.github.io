@@ -85,7 +85,7 @@
 */
 
 div.search-query {
-    $button-color: lighten($accent, 15%);
+    $button-color: lighten($title-color, 15%);
     $border-radius: 3px !default;
     $border-width: 1px !default;
     $border-color: #444 !default;
@@ -101,7 +101,7 @@ div.search-query {
     }
 
     a, a:hover, a:focus, a:active {
-        color: $light-gray;
+        color: $title-color;
         text-decoration: none;
     }
 

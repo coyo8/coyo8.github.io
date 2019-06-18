@@ -5,7 +5,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600';
 
 /* Custom */
-$accent: #2962FF;
+$accent: #ff2e88;
 $image-size: 85px;
 $project-image-size: 70px;
 
@@ -23,11 +23,11 @@ $small-width: 480px;
 $font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
 $base-spacing: 1.0rem;
 $line-height: 1.5rem;
-$font-size: 1rem;
+$font-size: 1.0rem;
 $letter-spacing: 0.02rem;
 
 /* Font Colors */
-$base-font-color: rgba(#333,0.9);
+$base-font-color: #cccccc;
 
 /* colors */
 $black-color: #000;
@@ -36,16 +36,16 @@ $light-gray-color: #ccc;
 $light-red-color: #ef5350;
 $light-blue-color: #8C9EFF;
 $light-green-color: #f44336;
-$base-color: rgba(#333,0.8);
-$background-color: #fafcf8;
-$background-over-color: #f5f7f9;
+$base-color: #cccccc;
+$background-color: #22222b;
+$background-over-color: #ff2e88;
 $black: #263238;
 $light-gray: #050604;
-$title-color: #1A237E;
+$title-color: #ef5350;
 
 /* code */
-$code-color: #bf616a;
+$code-color: #cccccc;
 $code-font-size: 0.9rem;
-$code-background-color: #eeee;
+$code-background-color: #333333;
 $code-font: Menlo, Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace !important;
