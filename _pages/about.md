@@ -19,8 +19,9 @@ I am extremely passionate about computers and how we learn. These days I am divi
 
 To get updated with my newest projects, go straight to my [GitHub][github] account or checkout the [projects]({{ site.url }}/projects/) section. If you have something interesting to share and want to meet for a coffee; Feel free to contact me.
 
+---
 <div class="social-icon"><a id="pdf-ic" href="{{ site.url }}/assets/pdf/resume.pdf" target="_blank">
-    <i class="fa fa-file-pdf-o social-icon"></i>
+    <i class="far fa-file-pdf fa-lg social-icon"></i>
   </a>
   <span><font size="1">Download Resume | Updated on 31st March, 2019 </font></span>
 </div>
