@@ -398,7 +398,7 @@ Flickr Photos
 .photo {
   display: flex;
   flex-direction: column;
-  flex-flow: column wrap;
+  flex-flow: column;
   margin: 2rem 0 2rem 0;
   justify-content: center;
   
@@ -435,13 +435,13 @@ Things
 .thing-category {
   display: flex;
   font-size: 1.2rem;
-  height: 3rem;
-  justify-content: space-between;
+  height: 2rem;
+  justify-content: center;
 
   .category-slot {
-    width: 20%;
+    width: 30%;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
   }
   a {
     color: $accent;
