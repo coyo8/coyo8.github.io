@@ -4,27 +4,18 @@ layout: default
 <div>
   {% for post in paginator.posts %}
   <div>
-    <div class="post-title">
-        {{ post.title }}
+    <div class>
+       <h1> {{ post.title }} </h1>
     </div>
-    <h5>
-      {% if post.categories.size > 0 %}
-      <span>
-      {{ post.categories | array_to_sentence_string }}
-      </span> |
-      {% endif %}
-      <span>
-      {{ post.date | date: "%b %-d, %Y" }}
-      </span>
-    </h5>
+      {% include time_to_read.html %}
     <p>
       {{ post.description }}
     </p>
-    <p>
-      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
-	Read More
-      </a>
-    </p>
+    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
+      <span class="fas fa-external-link-alt fa-sm footer-social">
+        Read More
+      </span>
+    </a>
   </div>
   <hr>
   {% endfor %}

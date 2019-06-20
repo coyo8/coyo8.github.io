@@ -2,55 +2,38 @@
 layout: default
 ---
 <div>
-  <div class="post-title"> {{ page.title }} </div>
-  <h5>
-    {% if page.categories.size > 0 %}
-    <span>
-      {{ page.categories | array_to_sentence_string }}
-    </span> |
-    {% endif %}
-    <span>
-      {{ page.date | date: "%b %-d, %Y" }}
-    </span>
-  </h5>
+  <div> <h1> {{ page.title }} </h1> </div>
+  {% include time_to_read.html %}
   <hr/>
   <article>
     {{ content }}
   </article>
 </div>
 
-<!-- <hr>
-{% if site.related_posts %}
-<div class="related">
-	<h4>RELATED POSTS</h2>
-	<ul class="posts">
-	    {% for post in site.related_posts limit:3 %}
-	    <li>
-		  <span>{{ post.date | date_to_string }} &raquo;</span>
-		  <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
-	    </li>
-	    {% endfor %}
-	</ul>
-</div>
-{% endif %}
-<hr> -->
-
 <hr/>
 <div class="post-pagination">
   <div class="first">
     {% if page.previous %}
-    <a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}"><< {{ page.previous.title }} </a>                                                               {% else %}
-                                                                                    <span><< {{ page.previous.title }}</span>
-                                                                                             {% endif %}
-	</div>
-	<div class="second"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
-	<div class="third">
-		{% if page.next %}
-			<a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">{{ page.next.title }} >></a>
-		{% else %}
-			<span>{{ page.next.title }} >></span>
-		{% endif %}
-	</div>
+    <a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}">
+      <span class="fas fa-backward fa-2x footer-social"></span>
+    </a>
+    {% else %}
+      <span class="fas fa-backward fa-2x footer-social"></span>                                                   {% endif %}
+  </div>
+  <div class="second">
+    <a href="/">
+      <span class="fas fa-home fa-2x footer-social">
+   </a>
+  </div>
+  <div class="third">
+    {% if page.next %}
+    <a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">
+      <span class="fas fa-forward fa-2x footer-social"></span>
+    </a>
+    {% else %}
+    <span class="fas fa-forward fa-2x footer-social"></span>
+    {% endif %}
+  </div>
 </div>
 
 <hr>
@@ -60,6 +43,9 @@ layout: default
 <hr>
 {% include social.html %}
 <hr>
-<!-- disqus js -->
-{% include disqus.html %}
+
+<div id="commento"></div>
+<script defer
+        src="https://cdn.commento.io/js/commento.js">
+</script>
 

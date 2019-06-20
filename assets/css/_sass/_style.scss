@@ -30,33 +30,33 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: $line-height;
-  color: $title-color;
   letter-spacing: -.025rem;
+  color: $heading-color;
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 h4{
-  font-size: 1.0rem;
+    font-size: 1.0rem;
 }
 
 h5{
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 h6 {
-  font-size: 0.7rem;
-  color: #aaa;
+    font-size: 0.7rem;
+    color: #aaa;
 }
 
 p {
@@ -83,23 +83,6 @@ dd {
   margin-left: 200px;
   margin-bottom: .5rem;
 }
-
-/*ul {
-  list-style: inside circle;
-  padding-left: 0;
-
-  li {
-    margin-bottom: .25rem;
-  }
-
-  ul,
-  ol {
-    list-style: inside;
-    margin-left: 2rem;
-    margin-top: .25rem;
-    margin-bottom: .5rem;
-  }
-}*/
 
 ol {
   list-style: inside decimal;
@@ -136,7 +119,7 @@ hr {
 }
 
 strong {
-  color: $title-color;
+  color: $heading-color;
   font-weight: bold;
 }
 
@@ -167,11 +150,12 @@ textarea {
 
 #title-name {
     font-size: 1.8rem;
-    color: $title-color;
+    color: $blog-title-color;
     display: inline-block;
 }
 .navbar {
     padding: 40px 0 70px 0;
+    font-weight: 450;
 }
 .navbar-ul {
     display: inline-block;
@@ -213,7 +197,6 @@ divs
 .container a:hover {
     text-decoration: underline;
 }
-
 
 /*
     Social Icons
@@ -276,13 +259,6 @@ footer {
    posts
 ------------- */
 
-.post-title {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: $base-color;
-    margin-bottom: 0.5rem;
-}
-
 .post-pagination {
   display: flex;
   flex-direction: row;
@@ -325,7 +301,7 @@ footer {
   width: 230px;
   height: 200px;
   margin: 1px;
-  background: $accent;
+  background: $heading-color;
   text-align: center;
   flex: 1 0 3;
 
@@ -344,7 +320,8 @@ footer {
 }
 .box-item:hover {
     text-decoration: underline;
-    text-decoration-color: $background-color;
+    text-decoration-color: $base-color;
+    background: rgba($heading-color, 0.7);
 }
 
 /* ------------
@@ -420,15 +397,14 @@ Flickr Photos
 ------------*/
 .photo {
   display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
+  flex-direction: column;
+  flex-flow: column wrap;
   margin: 2rem 0 2rem 0;
-
+  justify-content: center;
+  
   .gallery-thumbnail {
     background-size: cover;
-    width: 16.66667%;
-    padding-bottom: 16.66667%;
-    /*background: red;*/
+    padding-bottom: 80%;
   }
   .gallery-thumbnail:hover {
     opacity:0.7;
@@ -459,15 +435,13 @@ Things
 .thing-category {
   display: flex;
   font-size: 1.2rem;
-  height: 50px;
-  justify-content: center;
-  flex-flow: row wrap;
+  height: 3rem;
+  justify-content: space-between;
 
   .category-slot {
-    width: 15%;
+    width: 20%;
     text-align: center;
-    margin-right: 1rem;
-    padding: 0.5rem;
+    margin: 2rem;
   }
   a {
     color: $accent;
@@ -479,6 +453,7 @@ Things
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
   .left {
       width: 33%;
       text-align: left;
@@ -505,13 +480,13 @@ Things
 
 @media (max-width: 650px) {
   .container {
-    max-width: 83%;
+      max-width: 83%;
   }
   .navbar-ul {
       margin-top: 5px;
   }
   .thumbnail {
-    display: none;
+      display: none;
   }
 }
 

@@ -1,28 +1,4 @@
-
-.progress-container {
-  left:0;
-  width: 100%;
-  height: 3px;
-  margin-top: 0px;
-  position: fixed;
-  top: 0px;
-  overflow: hidden;
-  background-color: white;
-  display: table;
-  table-layout: fixed;
-}
-
-.progress-bar {
-  width: 0%;
-  float: left;
-  height: 100%;
-  z-index:99;
-  max-width: 100%;
-  background-color: $accent;
-  -webkit-transition: width .6s ease;
-  -o-transition: width .6s ease;
-  transition: width .6s ease;
-}
+@import "vars";
 
 .button {
     background-color: $background-color;
@@ -85,7 +61,7 @@
 */
 
 div.search-query {
-    $button-color: lighten($title-color, 15%);
+    $button-color: lighten($search-color, 15%);
     $border-radius: 3px !default;
     $border-width: 1px !default;
     $border-color: #444 !default;
@@ -101,16 +77,16 @@ div.search-query {
     }
 
     a, a:hover, a:focus, a:active {
-        color: $title-color;
+        color: $search-color;
         text-decoration: none;
     }
 
     input[type="text"] {
         width: 80%;
         vertical-align: middle;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding: 20px;
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+        padding: 1rem;
 
         border-style: solid;
         border-color: $border-color;
@@ -134,7 +110,7 @@ div.search-results {
     width: 85%;
 
     div.single-search-result {
-        border-bottom: 1px solid transparentize(black, 0.9);
+        border-bottom: 1px solid transparentize($search-color, 0.9);
         padding-top: 0.25em;
         padding-bottom: 0.25em;
         margin: 0;
@@ -158,7 +134,7 @@ div.search-results {
     }
 
     p.date {
-        color: transparentize(black, 0.5);
+        color: transparentize($search-color, 0.5);
         font-style: italic;
     }
 }

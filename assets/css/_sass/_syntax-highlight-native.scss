@@ -4,11 +4,13 @@
 
 code,
 pre {
-  display: block;
+  align-self: flex-start;
   font-family: $code-font;
   font-size: $code-font-size;
   overflow: auto;
+  margin: 0.5rem;
   white-space: pre;
+  min-width: 100%;
 }
 
 code {
@@ -17,19 +19,6 @@ code {
   background-color: $code-background-color;
   border-radius: 3px;
   display: inline;
-}
-
-pre {
-  /*display: block;*/
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: .5rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: $code-background-color;
 }
 
 pre code {
