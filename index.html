@@ -2,12 +2,12 @@
 layout: default
 ---
 <div>
-	{% for post in paginator.posts %}
-	<div>
+  {% for post in paginator.posts %}
+  <div>
     <div class="post-title">
         {{ post.title }}
     </div>
-    <p>
+    <h5>
       {% if post.categories.size > 0 %}
       <span>
       {{ post.categories | array_to_sentence_string }}
@@ -16,18 +16,18 @@ layout: default
       <span>
       {{ post.date | date: "%b %-d, %Y" }}
       </span>
+    </h5>
+    <p>
+      {{ post.description }}
     </p>
-		<p>
-			{{ post.description }}
-		</p>
-		<p>
-			<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
-				Read More
-		  </a>
-		</p>
-	</div>
+    <p>
+      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
+	Read More
+      </a>
+    </p>
+  </div>
   <hr>
-	{% endfor %}
+  {% endfor %}
 </div>
 {% include pagination.html %}
 

@@ -2,10 +2,8 @@
  * Customization Variables
  */
 
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600';
-
 /* Custom */
-$accent: #ff2e88;
+$accent: #14a5ff;
 $image-size: 85px;
 $project-image-size: 70px;
 
@@ -20,10 +18,10 @@ $small-width: 480px;
 /*
   Font Sizes
 */
-$font-family: 'Menlo';
+$font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $base-spacing: 1.0rem;
-$line-height: 1.5rem;
-$font-size: 0.9rem;
+$line-height: 1.5;
+$font-size: 1.0rem;
 $letter-spacing: normal;
 
 /* Font Colors */
@@ -41,11 +39,11 @@ $background-color: #22222b;
 $background-over-color: #ff2e88;
 $black: #263238;
 $light-gray: #050604;
-$title-color: #ef5350;
+$title-color: #f58025;
 
 /* code */
 $code-color: #cccccc;
 $code-font-size: 0.9rem;
-$code-background-color: #333333;
+$code-background-color: #7d7b7a;
 $code-font: Menlo, Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace !important;

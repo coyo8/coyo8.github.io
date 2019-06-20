@@ -1,23 +1,22 @@
 ---
 layout: default
 ---
-
 <div>
-	<div class="post-title"> {{ page.title }} </div>
-	<p>
-		{% if page.categories.size > 0 %}
+  <div class="post-title"> {{ page.title }} </div>
+  <h5>
+    {% if page.categories.size > 0 %}
     <span>
-    {{ page.categories | array_to_sentence_string }}
+      {{ page.categories | array_to_sentence_string }}
     </span> |
     {% endif %}
     <span>
-  	{{ page.date | date: "%b %-d, %Y" }}
+      {{ page.date | date: "%b %-d, %Y" }}
     </span>
-	</p>
-	<hr/>
-	<article>
-		{{ content }}
-	</article>
+  </h5>
+  <hr/>
+  <article>
+    {{ content }}
+  </article>
 </div>
 
 <!-- <hr>
@@ -38,12 +37,11 @@ layout: default
 
 <hr/>
 <div class="post-pagination">
-	<div class="first">
-		{% if page.previous %}
-			<a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}"><< {{ page.previous.title }} </a>
-		{% else %}
-			<span><< {{ page.previous.title }}</span>
-		{% endif %}
+  <div class="first">
+    {% if page.previous %}
+    <a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}"><< {{ page.previous.title }} </a>                                                               {% else %}
+                                                                                    <span><< {{ page.previous.title }}</span>
+                                                                                             {% endif %}
 	</div>
 	<div class="second"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }} ">Home</a></div>
 	<div class="third">
