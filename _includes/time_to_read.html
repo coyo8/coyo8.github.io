@@ -1,4 +1,5 @@
 {% if post == null %}
+{% assign words = content | number_of_words %}
 {% if page.categories.size > 0%}
 <span class="fas fa-tags fa-sm footer-social">
   {{ page.categories | array_to_sentence_string }}
@@ -8,6 +9,7 @@
   {{ page.date | date: "%Y-%m-%d" }}
 </span>
 {% else %}
+{% assign words = post.content | number_of_words %}
 {% if post.categories.size > 0 %}
 <span  class="fas fa-tags fa-sm footer-social">
   {{ post.categories | array_to_sentence_string }}
@@ -18,7 +20,6 @@
 </span>
 {% endif %}
 <span class="fas fa-clock fa-sm footer-social">
-  {% assign words = content | number_of_words %}
   {% if words < 360 %} 1 min {% else %}
    {{ words | divided_by:180 }} mins
   {% endif %}

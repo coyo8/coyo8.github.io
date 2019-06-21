@@ -21,7 +21,8 @@
     <!-- Add favicon -->
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}/assets/css/images/logo1.png">
     <!-- trivium styles -->
-    <script src="https://kit.fontawesome.com/{{site.font-awesome}}.js"></script>
+    <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v{{site.font-awesome}}/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();
+    </script>
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
     <!-- RSS feed -->
     <link rel="alternate" type="application/rss+xml" title="Example" href="{{ site.url }}/blog/feed/"/>

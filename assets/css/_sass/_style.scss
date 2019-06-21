@@ -17,6 +17,7 @@ body {
     font-size: $font-size;
     color: $base-font-color;
     background-color: $background-color;
+    overflow-wrap: break-word;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }

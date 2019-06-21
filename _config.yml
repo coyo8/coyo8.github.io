@@ -51,7 +51,7 @@ incremental:        false
 
 
 # JavaScript
-font-awesome: d177fda68d 
+font-awesome: 5.9.0 
 leafletjs: v0.4.0
 jquery: 3.4.0
 modernizr: 3.5.0

@@ -8,9 +8,10 @@ pre {
   font-family: $code-font;
   font-size: $code-font-size;
   overflow: auto;
-  margin: 0.5rem;
-  white-space: pre;
+  margin: 1rem;
+  white-space: pre-wrap;
   min-width: 100%;
+  overflow-wrap: break-word;
 }
 
 code {
