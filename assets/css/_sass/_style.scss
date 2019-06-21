@@ -27,12 +27,12 @@ body {
   -------------- */
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
+  margin: 1rem 0 0.5rem 0;
   font-weight: bold;
   line-height: $line-height;
   letter-spacing: -.025rem;
   color: $heading-color;
+//  text-transform: uppercase;
 }
 
 h1 {
@@ -302,7 +302,7 @@ footer {
   width: 230px;
   height: 200px;
   margin: 1px;
-  background: $heading-color;
+  background: $accent;
   text-align: center;
   flex: 1 0 3;
 
@@ -310,7 +310,7 @@ footer {
   p {
       font-size: 1.5rem;
       padding-top: 20%;
-      color: white;
+      color: $background-color;
   }
   /* This make the whole div clickable */
   a {
@@ -321,8 +321,8 @@ footer {
 }
 .box-item:hover {
     text-decoration: underline;
-    text-decoration-color: $base-color;
-    background: rgba($heading-color, 0.7);
+    text-decoration-color: $background-color;
+    background: rgba($accent, 0.7);
 }
 
 /* ------------
@@ -349,10 +349,8 @@ footer {
   .thumbnail {
     height: $project-image-size;
     width: $project-image-size;
-    /*border-radius: 10%;*/
-    margin: 1.0vw 1.0vw 1.0vw 1.0vw;
-   /* border: .1vw solid black;*/
-  }
+     margin: 1.0vw 1.0vw 1.0vw 1.0vw;
+   }
   .text {
     width: 80%;
     margin-left: 1.0vw;
