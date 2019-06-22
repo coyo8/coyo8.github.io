@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-## About me
+# About me
+-------
 
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 

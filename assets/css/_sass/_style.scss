@@ -1,4 +1,5 @@
 @import "vars";
+@import "font";
 
 /*----------
   Basic
@@ -485,9 +486,6 @@ Things
   .navbar-ul {
       margin-top: 5px;
   }
-  .thumbnail {
-      display: none;
-  }
 }
 
 @media (max-width: 580px) {
@@ -514,4 +512,3 @@ Things
 @import "tables";
 @import "syntax-highlight-native";
 @import "page";
-
