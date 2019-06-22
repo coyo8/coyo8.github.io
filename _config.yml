@@ -26,11 +26,7 @@ trivium:
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-41921241-4
-  # Addthis
-  addthis_key: ra-56eccc9a39a92456
-  # Disqus
-  disqus_key: rudrakos
-
+  
   # Profile links, leave blank to ignore
   social:
     github: coyo8
@@ -57,7 +53,7 @@ jquery: 3.4.0
 modernizr: 3.5.0
 
 #Pagination
-paginate: 10
+paginate: 7
 paginate_path: "/blog/page:num/"
 
 # Permalinks

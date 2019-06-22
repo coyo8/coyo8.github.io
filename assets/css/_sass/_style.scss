@@ -334,6 +334,7 @@ footer {
 .project-list-container {
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
 
   hr {
     margin-left: 0;
@@ -343,19 +344,22 @@ footer {
 
 .rect-item {
   width: 100%;
-  margin: .1vw;
+  margin: 1rem;
 
   .project-tab {
     display: flex;
+    flex-flow: row wrap;
   }
   .thumbnail {
-    height: $project-image-size;
-    width: $project-image-size;
-     margin: 1.0vw 1.0vw 1.0vw 1.0vw;
+    height: 3rem;
+    position: center;
+    width: 3rem;
+     margin: 1rem;
    }
   .text {
-    width: 80%;
     margin-left: 1.0vw;
+    overflow-wrap: break-word;
+    width: 80%;
 
     .project-title {
       font-size: 1.2rem;
@@ -495,6 +499,14 @@ Things
   .project-container, .project-tap {
       justify-content: center;
   }
+  
+  /*
+    Hide the icon
+  */
+  .thumbnail {
+    display: none;
+  }
+
   /* Change the size of box item */
   .box-item {
     min-width: 100%;
