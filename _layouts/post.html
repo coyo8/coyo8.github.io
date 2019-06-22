@@ -15,23 +15,23 @@ layout: default
   <div class="first">
     {% if page.previous %}
     <a href="{{page.previous.url | prepend: site.baseurl | prepend: site.url }}">
-      <span class="fas fa-backward fa-2x footer-social"></span>
+      <span class="fas fa-backward fa-lg"></span>
     </a>
     {% else %}
-      <span class="fas fa-backward fa-2x footer-social"></span>                                                   {% endif %}
+      <span class="fas fa-backward fa-lg"></span>                                                   {% endif %}
   </div>
   <div class="second">
     <a href="/">
-      <span class="fas fa-home fa-2x footer-social">
+      <span class="fas fa-home fa-lg">
    </a>
   </div>
   <div class="third">
     {% if page.next %}
     <a href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}">
-      <span class="fas fa-forward fa-2x footer-social"></span>
+      <span class="fas fa-forward fa-lg"></span>
     </a>
     {% else %}
-    <span class="fas fa-forward fa-2x footer-social"></span>
+    <span class="fas fa-forward fa-lg"></span>
     {% endif %}
   </div>
 </div>

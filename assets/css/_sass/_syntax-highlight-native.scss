@@ -8,7 +8,6 @@ pre {
   font-family: $code-font;
   font-size: $code-font-size;
   overflow: auto;
-  margin: 1rem;
   white-space: pre-wrap;
   min-width: 100%;
   overflow-wrap: break-word;
@@ -26,6 +25,10 @@ pre code {
   padding: 0;
   color: inherit;
   background-color: transparent;
+}
+
+pre {
+    margin: 1rem;
 }
 
 .highlight {

@@ -6,7 +6,7 @@
 $accent: #66ccff;
 $image-size: 85px;
 $project-image-size: 70px;
-$blog-title-color: #ff66cc;
+$blog-title-color: #fffff;
 
 /*
  * Build Variables, don't touch
@@ -19,14 +19,14 @@ $small-width: 480px;
 /*
   Font Sizes
 */
-$font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
 $base-spacing: 1.0rem;
 $line-height: 1.5;
 $font-size: 1.0rem;
 $letter-spacing: normal;
 
 /* Font Colors */
-$base-font-color: #fff;
+$base-font-color: #cccccc;
 
 /* colors */
 $black-color: #000;
@@ -36,16 +36,16 @@ $light-red-color: #ef5350;
 $light-blue-color: #8C9EFF;
 $light-green-color: #f44336;
 $base-color: #fff;
-$background-color: #10171e;
+$background-color: #010101;
 $background-over-color: #ff2e88;
 $black: #263238;
 $light-gray: #050604;
-$search-color: #ccff66;
-$heading-color: #ccff66;
+$search-color: #acdbdf;
+$heading-color: #acdbdf;
 
 /* code */
-$code-color: #cccccc;
-$code-font-size: 0.9rem;
-$code-background-color: #7d7b7a;
+$code-color: #282a36;
+$code-font-size: 0.8rem;
+$code-background-color: #ef5350;
 $code-font: Menlo, Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace !important;
