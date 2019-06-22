@@ -6,65 +6,77 @@
 ------------- */
 
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
-    margin: 0;
-    font-family: $font-family;
-    letter-spacing: $letter-spacing;
-    line-height: $line-height;
-    font-size: $font-size;
-    color: $base-font-color;
-    background-color: $background-color;
-    overflow-wrap: break-word;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  margin: 0;
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+  font-size: $font-size;
+  color: $base-font-color;
+  background-color: $background-color;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+  font-variant-ligatures: contextual;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 /*--------------
   Header
   -------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1rem 0 0.5rem 0;
   font-weight: bold;
   line-height: $line-height;
-  letter-spacing: -.025rem;
+  letter-spacing: -0.025rem;
   color: $heading-color;
-//  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 h2 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 h3 {
-    font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
-h4{
-    font-size: 1.0rem;
+h4 {
+  font-size: 1rem;
 }
 
-h5{
-    font-size: 0.8rem;
+h5 {
+  font-size: 0.8rem;
 }
 
 h6 {
-    font-size: 0.7rem;
-    color: #aaa;
+  font-size: 0.7rem;
+  color: #aaa;
 }
 
 p {
   margin: 0 0 1rem;
 }
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -78,12 +90,12 @@ dt {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: bold;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 dd {
   margin-left: 200px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 ol {
@@ -91,14 +103,14 @@ ol {
   padding-left: 0;
 
   li {
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
   }
 
   ul,
   ol {
     margin-left: 2rem;
-    margin-top: .25rem;
-    margin-bottom: .5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -115,9 +127,9 @@ ol + h3 {
 }
 
 hr {
-    border-top: 1px dotted $background-color;
-   // border-bottom: 1px dotted #fff; 
-    margin: 1.0rem auto;
+  border-top: 1px dotted $background-color;
+  // border-bottom: 1px dotted #fff;
+  margin: 1rem auto;
 }
 
 strong {
@@ -141,9 +153,9 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 2 */
-    margin: 0; /* 3 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 2 */
+  margin: 0; /* 3 */
 }
 
 /* --------------
@@ -151,90 +163,103 @@ textarea {
 --------------- */
 
 #title-name {
-    font-size: 1.8rem;
-    color: $blog-title-color;
-    display: inline-block;
+  font-size: 1.8rem;
+  color: $blog-title-color;
+  display: inline-block;
 }
 .navbar {
-    padding: 40px 0 70px 0;
-    font-weight: 700;
-    font-size: 0.8rem;
+  padding: 40px 0 70px 0;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 .navbar-ul {
-    display: inline-block;
-    margin-top: 1.5rem;
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 .nav-list {
-    list-style-type: none;
-    margin: 0 2px 0 2px;
+  list-style-type: none;
+  margin: 0 2px 0 2px;
 }
 .alignable {
-    display: inline-block;
+  display: inline-block;
 }
 .pull-left {
-    @extend .alignable;
-    float: left;
+  @extend .alignable;
+  float: left;
 }
 .pull-right {
-    @extend .alignable;
-    float: right;
+  @extend .alignable;
+  float: right;
 }
-
 
 /* -----------
 divs
 ------------- */
 
 .container {
-    max-width: $max-width;
-    margin: auto;
+  max-width: $max-width;
+  margin: auto;
 }
 .wrapper {
-    min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 
 .container a {
-    color: $accent;
-    text-decoration: none;
+  color: $accent;
+  text-decoration: none;
 }
 .container a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*
     Social Icons
 */
-#twitter-ic {color: #55acee !important;}
-#git-ic {color: #cccccc !important;}
-#rss-ic {color: #ff9933 !important;}
-#fb-ic {color: #3b5998 !important;}
-#medium-ic {color: #3CB371 !important;}
-#stackoverflow-ic {color: #ff6600 !important;}
-#pdf-ic {color: #ff0000 !important;}
+#twitter-ic {
+  color: #55acee !important;
+}
+#git-ic {
+  color: #cccccc !important;
+}
+#rss-ic {
+  color: #ff9933 !important;
+}
+#fb-ic {
+  color: #3b5998 !important;
+}
+#medium-ic {
+  color: #3cb371 !important;
+}
+#stackoverflow-ic {
+  color: #ff6600 !important;
+}
+#pdf-ic {
+  color: #ff0000 !important;
+}
 
 .social-icon {
   display: inline;
   margin: 0 5px;
-    a:hover {
-        opacity: 0.5;
-    }
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 /* ------------
  footer
 --------------- */
 footer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  justify-content: center;
 }
 
 .footer-text {
   flex: 1;
   height: 50%;
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 0.9rem;
 
   p span {
@@ -243,19 +268,19 @@ footer {
 }
 
 .footer-box {
-    flex: 1;
-    height: 40%;
-    text-align: center;
-    margin-bottom: 0.5rem;
+  flex: 1;
+  height: 40%;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .footer-box a:hover {
-    text-decoration: none;
-    opacity: 0.5;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 .footer-social {
-    padding-right: 0.3rem;
+  padding-right: 0.3rem;
 }
 
 /* ----------
@@ -267,16 +292,16 @@ footer {
   flex-direction: row;
 
   .first {
-      width: 33%;
-      text-align: left;
+    width: 33%;
+    text-align: left;
   }
   .second {
-      width: 33%;
-      text-align: center;
+    width: 33%;
+    text-align: center;
   }
   .third {
-      width: 33%;
-      text-align: right;
+    width: 33%;
+    text-align: right;
   }
 }
 
@@ -295,9 +320,9 @@ footer {
 -------------- */
 
 .project-container {
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
 }
 
 .box-item {
@@ -310,21 +335,21 @@ footer {
 
   /* change font size to make bigger  */
   p {
-      font-size: 1.5rem;
-      padding-top: 20%;
-      color: $background-color;
+    font-size: 1.5rem;
+    padding-top: 20%;
+    color: $background-color;
   }
   /* This make the whole div clickable */
   a {
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 .box-item:hover {
-    text-decoration: underline;
-    text-decoration-color: $background-color;
-    background: rgba($accent, 0.7);
+  text-decoration: underline;
+  text-decoration-color: $background-color;
+  background: rgba($accent, 0.7);
 }
 
 /* ------------
@@ -354,10 +379,10 @@ footer {
     height: 3rem;
     position: center;
     width: 3rem;
-     margin: 1rem;
-   }
+    margin: 1rem;
+  }
   .text {
-    margin-left: 1.0vw;
+    margin-left: 1vw;
     overflow-wrap: break-word;
     width: 80%;
 
@@ -370,7 +395,6 @@ footer {
   }
 }
 
-
 .rect-item:hover {
   .text {
     .project-title {
@@ -379,9 +403,9 @@ footer {
   }
   /* This make the whole div clickable */
   a {
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -390,12 +414,13 @@ footer {
   common
   settings
 --------- */
-.project-list-container, .project-container, .social-icon {
+.project-list-container,
+.project-container,
+.social-icon {
   a:hover {
     text-decoration: none !important;
   }
 }
-
 
 /* ----------
 Flickr Photos
@@ -406,7 +431,7 @@ Flickr Photos
   flex-flow: column;
   margin: 2rem 0 2rem 0;
   justify-content: center;
-  
+
   .gallery-thumbnail {
     background-size: cover;
     padding-bottom: 80%;
@@ -458,18 +483,18 @@ Things
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
+
   .left {
-      width: 33%;
-      text-align: left;
+    width: 33%;
+    text-align: left;
   }
   .center {
-      width: 33%;
-      text-align: center;
+    width: 33%;
+    text-align: center;
   }
   .right {
-      width: 33%;
-      text-align: right;
+    width: 33%;
+    text-align: right;
   }
 }
 
@@ -485,21 +510,22 @@ Things
 
 @media (max-width: 650px) {
   .container {
-      max-width: 83%;
+    max-width: 83%;
   }
   .navbar-ul {
-      margin-top: 5px;
+    margin-top: 5px;
   }
 }
 
 @media (max-width: 580px) {
   #author-name {
-      display: inline-block;
+    display: inline-block;
   }
-  .project-container, .project-tap {
-      justify-content: center;
+  .project-container,
+  .project-tap {
+    justify-content: center;
   }
-  
+
   /*
     Hide the icon
   */

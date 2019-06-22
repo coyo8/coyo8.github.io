@@ -5,16 +5,17 @@ layout: default
   {% for post in paginator.posts %}
   <div>
     <div>
+    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
        <h1> {{ post.title }} </h1>
+    </a>
     </div>
       {% include time_to_read.html %}
     <p>
       {{ post.description }}
     </p>
     <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
-      <span class="fas fa-external-link-alt fa-sm footer-social">
-        Read More
-      </span>
+      <strong>Read More</strong>
+      <span class="fas fa-external-link-alt fa-sm"></span> 
     </a>
   </div>
   <hr>

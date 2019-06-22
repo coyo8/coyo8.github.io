@@ -20,9 +20,9 @@ $small-width: 480px;
   Font Sizes
 */
 $font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
-$base-spacing: 1.0rem;
-$line-height: 1.5;
-$font-size: 1.0rem;
+$base-spacing: normal;
+$line-height: 1.54;
+$font-size: 0.9rem;
 $letter-spacing: normal;
 
 /* Font Colors */
@@ -37,7 +37,7 @@ $light-blue-color: #8C9EFF;
 $light-green-color: #f44336;
 $base-color: #fff;
 $background-color: #010101;
-$background-over-color: #ff2e88;
+$background-over-color: #ff8246;
 $black: #263238;
 $light-gray: #050604;
 $search-color: #acdbdf;

@@ -1,26 +1,21 @@
 {% if post == null %}
 {% assign words = content | number_of_words %}
 {% if page.categories.size > 0%}
-<span class="fas fa-tags fa-sm footer-social">
-  {{ page.categories | array_to_sentence_string }}
-</span>
+{{ page.categories | array_to_sentence_string }}
+<span class="fas fa-tags fa-sm footer-social"></span>
 {% endif %}
-<span  class="fas fa-calendar-day fa-sm footer-social">
-  {{ page.date | date: "%Y-%m-%d" }}
-</span>
+{{ page.date | date: "%Y-%m-%d" }}
+<span class="fas fa-calendar-day fa-sm footer-social"></span>
 {% else %}
 {% assign words = post.content | number_of_words %}
 {% if post.categories.size > 0 %}
-<span  class="fas fa-tags fa-sm footer-social">
-  {{ post.categories | array_to_sentence_string }}
-</span>
+{{ post.categories | array_to_sentence_string }}
+<span  class="fas fa-tags fa-sm footer-social"></span>
 {% endif %}
-<span  class="fas fa-calendar-day fa-sm footer-social">
-  {{ post.date | date: "%Y-%m-%d" }}
-</span>
+{{ post.date | date: "%Y-%m-%d" }}
+<span  class="fas fa-calendar-day fa-sm footer-social"></span>
 {% endif %}
-<span class="fas fa-clock fa-sm footer-social">
-  {% if words < 360 %} 1 min {% else %}
-   {{ words | divided_by:180 }} mins
-  {% endif %}
-</span>
+{% if words < 360 %} 1 min {% else %}
+{{ words | divided_by:180 }} mins
+{% endif %} 
+<span class="fas fa-clock fa-sm footer-social"></span>
