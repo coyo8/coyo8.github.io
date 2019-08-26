@@ -41,26 +41,21 @@
 
     figure {
         display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 1rem;
-        
+        flex-direction: column;
+        justify-content: space-between;
+                
         .small {
             max-width: 40%;
-            height: auto;
             margin: 1rem;      
         }
 
         .large {
             max-width: 100%;
-            height: auto;
             margin: 1rem;
         }
 
         .medium {
             max-width: 70%;
-            height: auto;
             margin: 1rem;
         }
     }
@@ -71,32 +66,6 @@
         text-align: center;
         color: $background-over-color;
         text-transform: uppercase;
-    }
-
-    .improve-article-wrapper {
-        display: flex;
-        height: 20px;
-        flex-direction: row;
-        align-items: center;
-    }
-    .improve-article-text {
-        min-width: 70%;
-        text-align: left;
-        margin-top: 2%;
-
-        @media (max-width: 650px) {
-            display: none;
-        }
-    }
-    .improve-article-button {
-        min-width: 30%;
-        margin-left: 1rem;
-        align-content: right;
-
-        @media (max-width: 650px) {
-            width: 100%;
-            margin-left: 40%;
-        }
     }
     .videowrapper {
         position: relative;

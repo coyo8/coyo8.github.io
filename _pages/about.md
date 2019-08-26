@@ -10,11 +10,9 @@ permalink: /about/
 <img class="profile-picture" src="{{ site.url }}/assets/images/profile.jpg" alt="profile">
 
 
-Welcome to my virtual realm! Most of my life is about software development but there is much more. I am exploring different things and most of the time I try to deep dive into it them much as possible. I use this blog to share those ideas, knowledge and wisdom; I assimilated during this journey.
+Welcome to my virtual realm! I am a software engineer(iOS) based in Singapore.
 
-I don't have much to showcase here but in past I have had several open source projects ranging with wide variaties of applications(finance, search engine, games, pshycologoy) but these days I am working full time in iOS ecosystem.
-
-I am extremely passionate about computers and how we learn. These days I am diving myself into the history of computation and what it holds for future and currently, I am pondering over this question.
+I am passionate about computers, photography, music and learning science. These days I am diving myself into the history of computation and what it holds for future. For the moment, I am pondering over this question.
 
 > Does Gödel's Incompleteness Theorem proves that Singularity is not possible?
 
@@ -44,8 +42,6 @@ To get updated with my newest projects, go straight to my [GitHub][github] accou
 
 [github]: <https://github.com/{{ site.trivium.social.github }}>
 [medium]: <https://medium.com/@{{ site.trivium.social.medium }}>
-[udacity]: <https://udacity.com>
-[fsnd]: <https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004>
 [PSF]: <https://www.python.org/psf>
 [rudra]: <https://en.wikipedia.org/wiki/Rudra>
 [cmu]: <https://www.hcii.cmu.edu/>

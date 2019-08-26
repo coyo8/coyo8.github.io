@@ -318,7 +318,6 @@ footer {
  project
  type
 -------------- */
-
 .project-container {
   display: flex;
   flex-flow: row wrap;
@@ -329,7 +328,7 @@ footer {
   width: 230px;
   height: 200px;
   margin: 1px;
-  background: $accent;
+  background: $project-box-color;
   text-align: center;
   flex: 1 0 3;
 
@@ -337,7 +336,7 @@ footer {
   p {
     font-size: 1.5rem;
     padding-top: 20%;
-    color: $background-color;
+    color: $base-font-color;
   }
   /* This make the whole div clickable */
   a {
@@ -348,13 +347,12 @@ footer {
 }
 .box-item:hover {
   text-decoration: underline;
-  text-decoration-color: $background-color;
-  background: rgba($accent, 0.7);
+  text-decoration-color: $project-box-color;
+  background: rgba($accent, 0.5);
 }
 
 /* ------------
-  project
-  list
+  project box
 -------------- */
 .project-list-container {
   display: flex;
@@ -367,6 +365,9 @@ footer {
   }
 }
 
+/*
+Each project box item
+*/
 .rect-item {
   width: 100%;
   margin: 1rem;
@@ -410,9 +411,7 @@ footer {
 }
 
 /* -------
-  Some
-  common
-  settings
+  Some common settings
 --------- */
 .project-list-container,
 .project-container,
@@ -427,7 +426,7 @@ Flickr Photos
 ------------*/
 .photo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-flow: column;
   margin: 2rem 0 2rem 0;
   justify-content: center;
@@ -499,7 +498,7 @@ Things
 }
 
 /* ---------
-   Mobile
+   Media Query for mobile adaptability
 ----------- */
 @media (max-width: 800px) {
   .container {

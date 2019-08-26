@@ -19,5 +19,13 @@
         if(result=="success"){
             var photos = data.photos.photo;
             for(var i = 0; i < photos.length; i++){
-                $('<a class="gallery-thumbnail" rel="fancybox-thumb">').attr("style", "background-image:url(%src%)".replace("%src%", photos[i].url_l)).attr("href", photos[i].url_l).attr("title", photos[i].title).appendTo(".photo").after("<hr/>"); }}}
+                $('<a class="gallery-thumbnail" rel="fancybox-thumb">')
+                .attr("style", "background-image:url(%src%)"
+                .replace("%src%", photos[i].url_l)).attr("href", photos[i].url_l)
+                .attr("title", photos[i].title)
+                .appendTo(".photo")
+                .after("<hr/>"); 
+            }
+        }
+    }
 </script>
