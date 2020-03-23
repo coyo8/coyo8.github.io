@@ -62,6 +62,7 @@ There are so many resouces avaialable online for leaning these two.
 3. [Learn Git](https://www.codecademy.com/learn/learn-git).
 4. [Linux for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/).
 5. [Ryans Linux Tutorial](http://ryanstutorials.net/linuxtutorial/).
+6. [Understanding Open Source Software, and How It Makes You Money Online](https://www.websiteplanet.com/blog/what-is-open-source-software/).
 
 
 That's all you need and Thank you for reading it!
